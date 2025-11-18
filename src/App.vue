@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
+  <div id="app" class="bg-primary-dark grain min-h-screen">
     <Header />
-    <main class="container mx-auto p-4">
+    <main>
       <router-view />
     </main>
     <Footer />
@@ -9,6 +9,6 @@
 </template>
 
 <script setup lang="ts">
-import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
+import Header from './components/Header.vue'
 </script>
