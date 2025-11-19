@@ -33,7 +33,9 @@ jobs:
         run: bun install
 
       - name: Build
-        run: bun run build
+        run: |
+          bun run type-check
+          bun run build-only -- --base=/vimasi-vedacoes-vue/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
