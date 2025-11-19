@@ -1,14 +1,11 @@
 <template>
   <div id="app" class="bg-primary-dark grain min-h-screen">
-    <Header />
+    <AppHeader />
     <main>
       <router-view />
     </main>
-    <Footer />
+    <AppFooter />
   </div>
 </template>
 
-<script setup lang="ts">
-import Footer from './components/Footer.vue'
-import Header from './components/Header.vue'
-</script>
+<script setup lang="ts"></script>
