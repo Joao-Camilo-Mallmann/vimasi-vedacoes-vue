@@ -9,7 +9,7 @@
           <img
             src="@/assets/images/logo.png"
             alt="Vimasi Vedações"
-            class="h-[64px] object-contain transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(228,199,170,0.6)] "
+            class="h-[48px] object-contain transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(228,199,170,0.6)]"
           />
         </a>
 
@@ -45,7 +45,7 @@
           <a
             href="https://wa.me/555196194676"
             target="_blank"
-            class="bg-accent-red hover:bg-accent-red/90 hover:shadow-accent-red/50 animate-pulse-subtle group relative overflow-hidden rounded-full px-6 py-2.5 text-xs font-bold tracking-wide text-white uppercase shadow-md transition-all duration-300 hover:scale-110 hover:shadow-xl"
+            class="animate-pulse-subtle group relative overflow-hidden rounded-full bg-[#25D366] px-6 py-2.5 text-xs font-bold tracking-wide text-white uppercase shadow-md transition-all duration-300 hover:scale-110 hover:bg-[#25D366]/90 hover:shadow-xl hover:shadow-[#25D366]/50"
           >
             <span class="relative z-10 flex items-center gap-2">
               <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
@@ -167,7 +167,7 @@
           <a
             href="https://wa.me/555196194676"
             target="_blank"
-            class="bg-accent-red hover:bg-accent-red/90 hover:shadow-accent-red/50 group relative mt-2 overflow-hidden rounded-full px-4 py-3 text-center text-sm font-bold tracking-wide text-white uppercase transition-all hover:scale-105 hover:shadow-xl"
+            class="group relative mt-2 overflow-hidden rounded-full bg-[#25D366] px-4 py-3 text-center text-sm font-bold tracking-wide text-white uppercase transition-all hover:scale-105 hover:bg-[#25D366]/90 hover:shadow-xl hover:shadow-[#25D366]/50"
           >
             <span class="relative z-10 flex items-center justify-center gap-2">
               <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">

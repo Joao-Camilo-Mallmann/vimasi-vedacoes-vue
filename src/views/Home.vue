@@ -16,14 +16,14 @@
 
       <div class="relative z-10 px-4">
         <h1
-          class="font-anton animate-fade-in-up mb-8 text-6xl leading-tight uppercase italic drop-shadow-lg md:text-7xl lg:text-8xl"
+          class="font-anton animate-fade-in-up mb-8 text-5xl leading-tight uppercase italic drop-shadow-lg md:text-6xl lg:text-7xl"
         >
           A VEDAÇÃO <span class="text-accent-gold">HIDRÁULICA</span><br />
           QUE VOCÊ PRECISA
         </h1>
         <a
           href="#contato"
-          class="font-staatliches animate-fade-in-up hover:shadow-accent-red/60 group from-accent-red hover:shadow-3xl hover:to-accent-red relative inline-flex items-center gap-3 overflow-hidden rounded-full bg-gradient-to-r to-red-600 px-12 py-5 text-2xl text-white uppercase shadow-2xl transition-all duration-500 hover:scale-110 hover:from-red-600"
+          class="font-staatliches animate-fade-in-up hover:shadow-accent-red/60 group from-accent-red hover:shadow-3xl hover:to-accent-red relative inline-flex items-center gap-3 overflow-hidden rounded-full bg-gradient-to-r to-red-600 px-12 py-5 text-xl md:text-2xl text-white uppercase shadow-2xl transition-all duration-500 hover:scale-110 hover:from-red-600"
           style="animation-delay: 0.2s"
         >
           <span class="relative z-10 flex items-center gap-3">
