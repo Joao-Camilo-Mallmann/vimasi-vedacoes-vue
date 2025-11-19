@@ -2,7 +2,7 @@
   <footer class="relative overflow-hidden bg-black/95 py-16 text-white">
     <div class="relative z-10 container mx-auto px-4">
       <!-- Main Footer Content -->
-      <div class="mb-12 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+      <div class="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:grid-cols-4">
         <!-- Company Info -->
         <div class="space-y-4">
           <img

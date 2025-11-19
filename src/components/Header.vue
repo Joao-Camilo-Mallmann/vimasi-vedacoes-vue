@@ -2,14 +2,14 @@
   <header
     class="bg-primary-dark/95 border-accent-gold/20 sticky top-0 z-50 border-b shadow-2xl backdrop-blur-md transition-all duration-300"
   >
-    <div class="container mx-auto px-6">
-      <div class="flex items-center justify-between py-4">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="flex items-center justify-between py-3 md:py-4">
         <!-- Logo -->
         <a href="#home" class="group flex items-center">
           <img
             src="@/assets/images/logo.png"
             alt="Vimasi Vedações"
-            class="h-[48px] object-contain transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(228,199,170,0.6)]"
+            class="h-[40px] object-contain transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(228,199,170,0.6)] md:h-[48px]"
           />
         </a>
 

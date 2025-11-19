@@ -1,0 +1,6 @@
+//ignore
+
+User-agent: *
+Allow: /
+
+Sitemap: https://joao-camilo-mallmann.github.io/vimasi-vedacoes-vue/sitemap.xml

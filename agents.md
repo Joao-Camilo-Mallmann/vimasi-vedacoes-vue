@@ -7,6 +7,8 @@
 - **Primary Dark**: `#141414` - Fundo principal do site
 - **Accent Gold**: `#e4c7aa` - Destaques, títulos e elementos de contraste
 - **Accent Red**: `#e53935` - CTAs, botões de ação e elementos de urgência
+- **WhatsApp Green**: `#25D366` - Botões e cards de contato WhatsApp
+- **Email Blue**: `#3B82F6` - Links e cards de e-mail
 
 ### Uso das Cores
 
@@ -102,6 +104,16 @@ arredondadas: rounded-full ou rounded-lg
 
 ### Cards de Contato
 
+````html
+<div
+  class="group border-accent-gold/30 hover:border-accent-gold/70 from-primary-dark hover:shadow-accent-gold/40 relative overflow-hidden bg-gradient-to-br to-black/90 backdrop-blur-sm transition-all duration-500 hover:-translate-y-2"
+>
+  <div class="bg-accent-gold/10 group-hover:bg-accent-gold/20 transition-all group-hover:scale-110">
+    <svg class="group-hover:rotate-12">...</svg>
+  </div>
+  <h3 class="group-hover:scale-105">Título</h3>
+  <span class="group-hover:animate-shimmer">Efeito</span>
+</div>
 ```html
 <div
   class="group border-accent-gold/30 hover:border-accent-gold/70 from-primary-dark hover:shadow-accent-gold/40 relative overflow-hidden bg-gradient-to-br to-black/90 backdrop-blur-sm transition-all duration-500 hover:-translate-y-2"
@@ -112,7 +124,27 @@ arredondadas: rounded-full ou rounded-lg
   <h3 class="group-hover:scale-105">Título</h3>
   <span class="group-hover:animate-shimmer">Efeito</span>
 </div>
-```
+````
+
+### Cores dos Cards de Contato
+
+- **WhatsApp**:
+  - Cor base: `#25D366`
+  - Hover border: `hover:border-[#25D366]/70`
+  - Hover shadow: `hover:shadow-[#25D366]/40`
+  - Ícones e Texto: `text-[#25D366]`
+
+- **E-mail**:
+  - Cor base: `#3B82F6`
+  - Hover border: `hover:border-[#3B82F6]/70`
+  - Hover shadow: `hover:shadow-[#3B82F6]/40`
+  - Ícones e Texto: `text-[#3B82F6]`
+
+- **Endereço**:
+  - Cor base: `#e53935` (Accent Red)
+  - Hover border: `hover:border-[#e53935]/70`
+  - Hover shadow: `hover:shadow-[#e53935]/40`
+  - Ícones e Texto: `text-[#e53935]`
 
 ## 🖼️ Backgrounds e Overlays
 
@@ -219,6 +251,26 @@ arredondadas: rounded-full ou rounded-lg
 - Usar `relative` e `absolute` com cuidado
 - Evitar `!important` no CSS
 - Preferir classes Tailwind a CSS customizado
+
+## 🔍 SEO e Metadados
+
+### Meta Tags Obrigatórias
+
+- `lang="pt-BR"` no html
+- `title` descritivo e único
+- `meta name="description"` (150-160 caracteres)
+- `meta name="keywords"` relevantes
+
+### Open Graph e Social
+
+- `og:title`, `og:description`, `og:image`, `og:url`
+- `twitter:card`, `twitter:title`, `twitter:description`, `twitter:image`
+
+### Acessibilidade e Semântica
+
+- `alt` em todas as imagens (descritivo)
+- Uso correto de tags semânticas (`header`, `nav`, `main`, `section`, `footer`)
+- Hierarquia de headings (`h1` -> `h2` -> `h3`)
 
 ## 📁 Estrutura de Arquivos
 
