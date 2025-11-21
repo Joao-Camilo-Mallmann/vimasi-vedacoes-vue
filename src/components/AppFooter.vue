@@ -1,5 +1,12 @@
 <template>
-  <footer class="relative overflow-hidden bg-[#020202] py-20 text-white">
+  <footer class="bg-primary-dark relative overflow-hidden py-20 text-white">
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0 z-0">
+      <div
+        class="from-accent-red/5 via-primary-dark/95 to-primary-dark absolute inset-0 bg-gradient-to-b"
+      ></div>
+    </div>
+
     <!-- Grain overlay -->
     <div class="grain pointer-events-none absolute inset-0 opacity-20"></div>
 
@@ -77,7 +84,7 @@
           <div class="flex flex-col gap-5">
             <div class="group flex items-start gap-4">
               <div
-                class="text-accent-gold group-hover:bg-accent-gold group-hover:text-primary-dark mt-1 flex h-8 w-8 items-center justify-center rounded bg-white/5 transition-colors"
+                class="text-accent-gold mt-1 flex h-8 w-8 items-center justify-center rounded bg-white/5 transition-colors group-hover:bg-[#25D366] group-hover:text-white"
               >
                 <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
@@ -94,7 +101,7 @@
                 >
                 <a
                   href="tel:+555196194676"
-                  class="font-arimo hover:text-accent-gold text-sm text-white/90 transition-colors"
+                  class="font-arimo text-sm text-white/90 transition-colors hover:text-[#25D366]"
                 >
                   (51) 99619-4676
                 </a>
@@ -103,7 +110,7 @@
 
             <div class="group flex items-start gap-4">
               <div
-                class="text-accent-gold group-hover:bg-accent-gold group-hover:text-primary-dark mt-1 flex h-8 w-8 items-center justify-center rounded bg-white/5 transition-colors"
+                class="text-accent-gold mt-1 flex h-8 w-8 items-center justify-center rounded bg-white/5 transition-colors group-hover:bg-[#3B82F6] group-hover:text-white"
               >
                 <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
@@ -120,7 +127,7 @@
                 >
                 <a
                   href="mailto:vimasicomerciopecas@gmail.com"
-                  class="font-arimo hover:text-accent-gold text-sm break-all text-white/90 transition-colors"
+                  class="font-arimo text-sm break-all text-white/90 transition-colors hover:text-[#3B82F6]"
                 >
                   vimasicomerciopecas@gmail.com
                 </a>
@@ -136,7 +143,7 @@
           </h3>
           <div class="group flex items-start gap-4">
             <div
-              class="text-accent-gold group-hover:bg-accent-gold group-hover:text-primary-dark mt-1 flex h-8 w-8 items-center justify-center rounded bg-white/5 transition-colors"
+              class="text-accent-gold group-hover:bg-accent-red mt-1 flex h-8 w-8 items-center justify-center rounded bg-white/5 transition-colors group-hover:text-white"
             >
               <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
@@ -162,7 +169,7 @@
               <a
                 href="https://maps.app.goo.gl/VQzXHJzPMdCavSP56"
                 target="_blank"
-                class="text-accent-gold inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase transition-colors hover:text-white"
+                class="text-accent-gold hover:text-accent-red inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase transition-colors"
               >
                 Ver no mapa
                 <svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -174,6 +181,21 @@
                   />
                 </svg>
               </a>
+
+              <!-- Dark Mode Map -->
+              <div class="mt-4 h-32 w-full overflow-hidden rounded-lg border border-white/10">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=R.+Eugênia+Mello+de+Oliveira+Kirchheim,+151,+Lajeado+-+RS&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  class="h-full w-full opacity-70 contrast-[0.85] grayscale invert transition-all duration-500"
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>

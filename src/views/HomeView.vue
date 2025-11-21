@@ -24,10 +24,7 @@
           class="font-anton animate-fade-in-up mb-8 text-5xl leading-tight uppercase italic drop-shadow-2xl sm:text-6xl md:text-7xl lg:text-8xl"
         >
           A VEDAÇÃO
-          <span
-            class="from-accent-gold via-accent-gold-light to-accent-gold bg-gradient-to-r bg-clip-text text-transparent"
-            >HIDRÁULICA</span
-          ><br />
+          <span class="hydraulic-text" data-text="HIDRÁULICA">HIDRÁULICA</span><br />
           QUE VOCÊ PRECISA
         </h1>
 
@@ -68,7 +65,7 @@
       <!-- Scroll Indicator -->
       <a
         href="#vedacoes"
-        class="hover:text-accent-gold absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-white/50 transition-colors"
+        class="hover:text-accent-red absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-white/50 transition-colors"
         aria-label="Rolar para baixo"
       >
         <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -97,7 +94,7 @@
           <h2
             class="font-anton mb-4 bg-gradient-to-r from-white via-white to-white/50 bg-clip-text text-5xl text-transparent uppercase italic md:text-6xl"
           >
-            Nossas <span class="text-accent-gold">Soluções</span>
+            Nossas <span class="text-accent-red">Soluções</span>
           </h2>
           <p class="font-arimo mx-auto max-w-2xl text-lg text-white/60">
             Tecnologia de ponta em vedações para garantir a máxima eficiência do seu sistema
@@ -108,9 +105,9 @@
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <!-- Product 1: Gaxetas -->
           <div
-            class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-white/5"
+            class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:-translate-y-2 hover:bg-white/5"
           >
-            <div class="aspect-[4/5] overflow-hidden">
+            <div class="aspect-[2/3] overflow-hidden">
               <img
                 src="@/assets/images/product-1.png"
                 alt="Gaxetas de vedação hidráulica"
@@ -125,7 +122,9 @@
               >
                 Gaxetas
               </h3>
-              <div class="h-0 overflow-hidden transition-all duration-300 group-hover:h-auto">
+              <div
+                class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
+              >
                 <p class="font-arimo border-accent-gold/30 border-t pt-2 text-sm text-white/80">
                   Vedação essencial para hastes e eixos rotativos.
                 </p>
@@ -135,9 +134,9 @@
 
           <!-- Product 2: Raspadores -->
           <div
-            class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-white/5"
+            class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:-translate-y-2 hover:bg-white/5"
           >
-            <div class="aspect-[4/5] overflow-hidden">
+            <div class="aspect-[2/3] overflow-hidden">
               <img
                 src="@/assets/images/product-2.png"
                 alt="Raspadores industriais"
@@ -152,7 +151,9 @@
               >
                 Raspadores
               </h3>
-              <div class="h-0 overflow-hidden transition-all duration-300 group-hover:h-auto">
+              <div
+                class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
+              >
                 <p class="font-arimo border-accent-gold/30 border-t pt-2 text-sm text-white/80">
                   Proteção contra impurezas e contaminantes externos.
                 </p>
@@ -162,9 +163,9 @@
 
           <!-- Product 3: Conjuntos ZW/ZO -->
           <div
-            class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-white/5"
+            class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:-translate-y-2 hover:bg-white/5"
           >
-            <div class="aspect-[4/5] overflow-hidden">
+            <div class="aspect-[2/3] overflow-hidden">
               <img
                 src="@/assets/images/product-3.png"
                 alt="Conjuntos de vedação ZW/ZO"
@@ -179,7 +180,9 @@
               >
                 Kits ZW/ZO
               </h3>
-              <div class="h-0 overflow-hidden transition-all duration-300 group-hover:h-auto">
+              <div
+                class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
+              >
                 <p class="font-arimo border-accent-gold/30 border-t pt-2 text-sm text-white/80">
                   Soluções completas para aplicações específicas.
                 </p>
@@ -189,9 +192,9 @@
 
           <!-- Product 4: Anéis -->
           <div
-            class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-white/5"
+            class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:-translate-y-2 hover:bg-white/5"
           >
-            <div class="aspect-[4/5] overflow-hidden">
+            <div class="aspect-[2/3] overflow-hidden">
               <img
                 src="@/assets/images/product-4.png"
                 alt="Anéis O-ring e vedações circulares"
@@ -206,7 +209,9 @@
               >
                 Anéis
               </h3>
-              <div class="h-0 overflow-hidden transition-all duration-300 group-hover:h-auto">
+              <div
+                class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
+              >
                 <p class="font-arimo border-accent-gold/30 border-t pt-2 text-sm text-white/80">
                   O-rings e vedações estáticas de alta precisão.
                 </p>
@@ -228,7 +233,7 @@
         <div class="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           <div class="space-y-8">
             <h2
-              class="font-anton from-accent-gold via-accent-gold-light to-accent-gold mb-6 bg-gradient-to-r bg-clip-text text-5xl leading-tight text-transparent uppercase italic md:text-6xl"
+              class="font-anton from-accent-gold via-accent-gold to-accent-gold mb-6 bg-gradient-to-r bg-clip-text text-5xl leading-tight text-transparent uppercase italic md:text-6xl"
             >
               Excelência em<br />Cada Detalhe
             </h2>
@@ -247,7 +252,7 @@
             <div class="pt-4">
               <a
                 href="#contato"
-                class="text-accent-gold inline-flex items-center gap-2 font-bold tracking-wider uppercase transition-all hover:gap-4"
+                class="text-accent-red inline-flex items-center gap-2 font-bold tracking-wider uppercase transition-all hover:gap-4"
               >
                 Fale com um especialista
                 <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -352,7 +357,7 @@
           <h2
             class="font-anton mb-4 bg-gradient-to-r from-white via-white to-white/50 bg-clip-text text-5xl text-transparent uppercase italic md:text-6xl"
           >
-            Entre em <span class="text-accent-gold">Contato</span>
+            Entre em <span class="text-accent-red">Contato</span>
           </h2>
           <p class="font-arimo mx-auto max-w-2xl text-lg text-white/60">
             Nossa equipe técnica está pronta para atender você e encontrar a melhor solução.
@@ -489,3 +494,41 @@ defineOptions({
   name: 'HomeView',
 })
 </script>
+
+<style scoped>
+.hydraulic-text {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(
+    90deg,
+    #e53935 0%,
+    #ff8a80 25%,
+    #e53935 50%,
+    #d32f2f 75%,
+    #e53935 100%
+  );
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: hydraulic-flow 3s linear infinite;
+  filter: drop-shadow(0 0 15px rgba(229, 57, 53, 0.4));
+  transition: all 0.3s ease;
+}
+
+.hydraulic-text:hover {
+  animation-duration: 1s;
+  transform: scale(1.05) rotate(-2deg);
+  filter: drop-shadow(0 0 25px rgba(229, 57, 53, 0.8));
+  cursor: default;
+}
+
+@keyframes hydraulic-flow {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+</style>

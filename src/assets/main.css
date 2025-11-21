@@ -3,9 +3,8 @@
 @theme {
   --color-primary-dark: #050505;
   --color-primary-card: #121212;
-  --color-accent-gold: #d4af37;
-  --color-accent-gold-light: #f3e5ab;
-  --color-accent-red: #c62828;
+  --color-accent-gold: #e4c7aa;
+  --color-accent-red: #e53935;
 
   --font-arimo: 'Arimo', sans-serif;
   --font-anton: 'Anton', sans-serif;
@@ -84,4 +83,8 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #d4af37;
+}
+
+html {
+  scroll-behavior: smooth !important;
 }
