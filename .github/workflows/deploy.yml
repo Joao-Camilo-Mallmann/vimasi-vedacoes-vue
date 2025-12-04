@@ -31,10 +31,24 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm i
+        run: npm ci
+
+      - name: Clear Vite cache
+        run: |
+          rm -rf node_modules/.vite
+          rm -rf dist
 
       - name: Build
         run: npm run build
+        env:
+          NODE_ENV: production
+
+      - name: Add .nojekyll and cache headers
+        run: |
+          touch dist/.nojekyll
+          echo "Cache-Control: no-cache, no-store, must-revalidate" > dist/_headers
+          echo "Pragma: no-cache" >> dist/_headers
+          echo "Expires: 0" >> dist/_headers
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
