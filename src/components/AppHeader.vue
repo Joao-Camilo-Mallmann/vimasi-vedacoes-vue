@@ -114,14 +114,15 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from 'vue';
 
 const mobileMenuOpen = ref(false)
 
 const menuItems = [
-  { label: 'Home', href: '#home' },
-  { label: 'Vedações', href: '#vedacoes' },
-  { label: 'Contato', href: '#contato' },
+  { label: 'Home', href: '/' },
+  { label: 'Gaxetas', href: '/gaxetas' },
+  { label: 'Anéis', href: '/aneis-vedacao' },
+  { label: 'Contato', href: '/#contato' },
 ]
 </script>
 
