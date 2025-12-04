@@ -7,6 +7,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/vimasi-vedacoes-vue/',
   plugins: [vue(), tailwindcss(), vueDevTools({ launchEditor: 'antigravity' })],
   resolve: {
     alias: {
