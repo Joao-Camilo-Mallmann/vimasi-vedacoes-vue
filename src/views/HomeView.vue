@@ -479,7 +479,7 @@
               Fale conosco no WhatsApp
             </span>
             <div
-              class="group-hover:animate-shimmer absolute inset-0 -z-10 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent"
+              class="group-hover:animate-shimmer absolute inset-0 -z-10 -translate-x-full bg-linear-gradient-to-r from-transparent via-white/20 to-transparent"
             ></div>
           </a>
         </div>

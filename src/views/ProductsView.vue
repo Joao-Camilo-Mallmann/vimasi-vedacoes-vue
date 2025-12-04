@@ -11,7 +11,7 @@ const getImageUrl = (i: number) => {
   <div class="products-view bg-primary-dark relative min-h-screen overflow-hidden pt-20">
     <!-- Decorative elements -->
     <div
-      class="from-accent-gold/5 pointer-events-none absolute top-0 left-0 h-1/2 w-full bg-gradient-to-b to-transparent"
+      class="from-accent-gold/5 bg-linear-gradient-to-b pointer-events-none absolute top-0 left-0 h-1/2 w-full to-transparent"
     ></div>
     <div
       class="bg-accent-red/5 pointer-events-none absolute right-0 bottom-0 h-1/3 w-1/3 rounded-full blur-[100px]"
@@ -20,7 +20,7 @@ const getImageUrl = (i: number) => {
     <div class="relative z-10 container mx-auto px-4 py-12">
       <div class="mb-16 text-center">
         <h1
-          class="font-anton animate-fade-in-up mb-6 bg-gradient-to-r from-white via-white to-white/50 bg-clip-text text-5xl text-transparent uppercase italic md:text-7xl"
+          class="font-anton animate-fade-in-up bg-linear-gradient-to-r mb-6 from-white via-white to-white/50 bg-clip-text text-5xl text-transparent uppercase italic md:text-7xl"
         >
           Nossas <span class="text-accent-gold">Vedações</span>
         </h1>

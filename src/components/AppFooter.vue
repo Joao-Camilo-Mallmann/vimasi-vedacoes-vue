@@ -3,7 +3,7 @@
     <!-- Background Image with Overlay -->
     <div class="absolute inset-0 z-0">
       <div
-        class="from-accent-red/5 via-primary-dark/95 to-primary-dark absolute inset-0 bg-gradient-to-b"
+        class="from-accent-red/5 via-primary-dark/95 to-primary-dark absolute inset-0 bg-linear-to-b"
       ></div>
     </div>
 
@@ -12,7 +12,7 @@
 
     <!-- Decorative top border -->
     <div
-      class="via-accent-gold/30 absolute top-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent to-transparent"
+      class="via-accent-gold/30 absolute top-0 left-0 h-px w-full bg-linear-to-r from-transparent to-transparent"
     ></div>
 
     <div class="relative z-10 container mx-auto px-4">
@@ -71,7 +71,7 @@
               class="font-arimo hover:text-accent-gold group flex items-center gap-3 text-sm text-white/70 transition-colors"
             >
               <span
-                class="group-hover:bg-accent-gold h-[1px] w-4 bg-white/20 transition-all group-hover:w-8"
+                class="group-hover:bg-accent-gold h-px w-4 bg-white/20 transition-all group-hover:w-8"
               ></span>
               {{ item }}
             </a>

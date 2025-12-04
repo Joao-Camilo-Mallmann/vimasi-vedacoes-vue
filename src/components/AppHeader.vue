@@ -7,7 +7,7 @@
           <img
             src="@/assets/images/logo.png"
             alt="Vimasi Vedações"
-            class="h-[40px] object-contain transition-all duration-500 group-hover:scale-105 group-hover:drop-shadow-[0_0_15px_rgba(212,175,55,0.4)] md:h-[52px]"
+            class="h-10 object-contain transition-all duration-500 group-hover:scale-105 group-hover:drop-shadow-[0_0_15px_rgba(212,175,55,0.4)] md:h-[52px]"
           />
         </a>
 
@@ -21,7 +21,7 @@
           >
             {{ item.label }}
             <span
-              class="bg-accent-gold absolute -bottom-1 left-0 h-[1px] w-0 transition-all duration-300 group-hover:w-full"
+              class="bg-accent-gold absolute -bottom-1 left-0 h-px w-0 transition-all duration-300 group-hover:w-full"
             ></span>
           </a>
 
@@ -39,7 +39,7 @@
               WhatsApp
             </span>
             <span
-              class="absolute inset-0 -z-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+              class="absolute inset-0 -z-0 bg-linear-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
             ></span>
           </a>
         </nav>

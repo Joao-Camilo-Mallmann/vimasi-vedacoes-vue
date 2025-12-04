@@ -11,7 +11,7 @@
           class="h-full w-full object-cover"
         />
         <div
-          class="to-primary-dark absolute inset-0 bg-gradient-to-b from-black/70 via-black/50"
+          class="to-primary-dark bg-linear-gradient-to-b absolute inset-0 from-black/70 via-black/50"
         ></div>
       </div>
 
