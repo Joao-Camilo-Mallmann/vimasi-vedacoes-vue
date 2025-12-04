@@ -33,6 +33,11 @@ const router = createRouter({
       component: () => import('../views/ContactView.vue'),
       meta: { title: 'Contato' },
     },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'not-found',
+      redirect: '/',
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {

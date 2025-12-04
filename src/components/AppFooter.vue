@@ -61,20 +61,17 @@
         <div class="space-y-6">
           <h3 class="font-anton mb-6 text-sm tracking-widest text-white/40 uppercase">Navegação</h3>
           <nav class="flex flex-col gap-4">
-            <a
-              v-for="item in ['Home', 'Vedações', 'Contato']"
-              :key="item"
-              :href="`#${item
-                .toLowerCase()
-                .normalize('NFD')
-                .replace(/[\u0300-\u036f]/g, '')}`"
+            <router-link
+              v-for="item in navigationItems"
+              :key="item.to"
+              :to="item.to"
               class="font-arimo hover:text-accent-gold group flex items-center gap-3 text-sm text-white/70 transition-colors"
             >
               <span
                 class="group-hover:bg-accent-gold h-px w-4 bg-white/20 transition-all group-hover:w-8"
               ></span>
-              {{ item }}
-            </a>
+              {{ item.label }}
+            </router-link>
           </nav>
         </div>
 
@@ -219,4 +216,11 @@
   </footer>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const navigationItems = [
+  { label: 'Home', to: '/' },
+  { label: 'Gaxetas', to: '/gaxetas' },
+  { label: 'Anéis', to: '/aneis-vedacao' },
+  { label: 'Contato', to: '/contato' },
+]
+</script>

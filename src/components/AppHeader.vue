@@ -3,27 +3,27 @@
     <div class="container mx-auto px-4 md:px-6">
       <div class="flex items-center justify-between py-3 md:py-4">
         <!-- Logo -->
-        <a href="#home" class="group flex items-center">
+        <router-link to="/" class="group flex items-center">
           <img
             src="@/assets/images/logo.png"
             alt="Vimasi Vedações"
             class="h-10 object-contain transition-all duration-500 group-hover:scale-105 group-hover:drop-shadow-[0_0_15px_rgba(212,175,55,0.4)] md:h-[52px]"
           />
-        </a>
+        </router-link>
 
         <!-- Desktop Navigation -->
         <nav class="hidden items-center gap-10 md:flex">
-          <a
+          <router-link
             v-for="item in menuItems"
-            :key="item.href"
-            :href="item.href"
+            :key="item.to"
+            :to="item.to"
             class="font-arimo hover:text-accent-gold group relative text-sm font-medium tracking-widest text-white/80 uppercase transition-all duration-300 hover:scale-105"
           >
             {{ item.label }}
             <span
               class="bg-accent-gold absolute -bottom-1 left-0 h-px w-0 transition-all duration-300 group-hover:w-full"
             ></span>
-          </a>
+          </router-link>
 
           <a
             href="https://wa.me/555196194676"
@@ -39,7 +39,7 @@
               WhatsApp
             </span>
             <span
-              class="absolute inset-0 -z-0 bg-linear-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+              class="bg-linear-gradient-to-r absolute inset-0 -z-0 from-transparent via-white/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
             ></span>
           </a>
         </nav>
@@ -83,16 +83,16 @@
         class="bg-primary-dark/95 fixed inset-0 z-40 flex flex-col items-center justify-center backdrop-blur-xl"
       >
         <nav class="flex flex-col items-center gap-8">
-          <a
+          <router-link
             v-for="(item, index) in menuItems"
-            :key="item.href"
-            :href="item.href"
+            :key="item.to"
+            :to="item.to"
             @click="mobileMenuOpen = false"
             class="font-anton hover:text-accent-gold text-4xl tracking-wider text-white uppercase transition-all duration-300 hover:scale-110"
             :style="{ animation: `fadeInUp 0.5s ease-out forwards ${index * 0.1}s`, opacity: 0 }"
           >
             {{ item.label }}
-          </a>
+          </router-link>
 
           <a
             href="https://wa.me/555196194676"
@@ -114,15 +114,15 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 const mobileMenuOpen = ref(false)
 
 const menuItems = [
-  { label: 'Home', href: '/' },
-  { label: 'Gaxetas', href: '/gaxetas' },
-  { label: 'Anéis', href: '/aneis-vedacao' },
-  { label: 'Contato', href: '/#contato' },
+  { label: 'Home', to: '/' },
+  { label: 'Gaxetas', to: '/gaxetas' },
+  { label: 'Anéis', to: '/aneis-vedacao' },
+  { label: 'Contato', to: '/contato' },
 ]
 </script>
 
