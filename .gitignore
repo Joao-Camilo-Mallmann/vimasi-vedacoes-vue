@@ -28,3 +28,10 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+# Nuxt dev/build outputs
+.nuxt
+.output
+.data
+.nitro
+.cache
