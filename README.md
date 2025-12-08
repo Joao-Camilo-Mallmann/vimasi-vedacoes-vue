@@ -1,75 +1,78 @@
-# Nuxt Minimal Starter
+# Vimasi Vedações
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Site institucional da Vimasi Vedações - Especialista em vedações hidráulicas e industriais em Lajeado/RS.
 
-## Setup
+🌐 **Live**: [https://joao-camilo-mallmann.github.io/vimasi-vedacoes-vue](https://joao-camilo-mallmann.github.io/vimasi-vedacoes-vue)
 
-Make sure to install dependencies:
+## 🛠️ Tecnologias
+
+- **Framework**: [Nuxt 3](https://nuxt.com/)
+- **Estilização**: [Tailwind CSS](https://tailwindcss.com/)
+- **Deploy**: GitHub Pages (Static Generation)
+
+## 🚀 Setup
+
+Instale as dependências:
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
+# ou
 bun install
 ```
 
-## Development Server
+## 💻 Desenvolvimento
 
-Start the development server on `http://localhost:3000`:
+Inicie o servidor de desenvolvimento em `http://localhost:3000`:
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
+# ou
 bun run dev
 ```
 
-## Production
+## 📦 Build para Produção
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
+Gere o site estático otimizado para SEO:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+npm run generate
+# ou
+bun run generate
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+O output será gerado em `.output/public`.
+
+### Preview Local
+
+```bash
+npx serve .output/public
+```
+
+## 🚀 Deploy
+
+O deploy é automático via GitHub Actions. Ao fazer push na branch `main`, o workflow:
+
+1. Instala as dependências
+2. Executa `npm run generate` (pré-renderiza todas as rotas)
+3. Faz deploy no GitHub Pages
+
+### Deploy Manual
+
+```bash
+npx gh-pages --dotfiles -d .output/public
+```
+
+## 📁 Estrutura
+
+```
+├── pages/           # Páginas do site
+├── components/      # Componentes Vue
+├── assets/          # CSS e assets
+├── public/          # Arquivos estáticos
+├── nuxt.config.ts   # Configuração do Nuxt
+└── .github/workflows/deploy.yml  # CI/CD
+```
+
+## 📄 Licença
+
+Todos os direitos reservados © Vimasi Vedações

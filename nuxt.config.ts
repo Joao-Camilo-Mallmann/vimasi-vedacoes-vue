@@ -2,7 +2,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // Site configuration
 const siteUrl = "https://joao-camilo-mallmann.github.io";
-const basePath = "/vimasi-site";
+const basePath = "/vimasi-vedacoes-vue";
 const fullUrl = `${siteUrl}${basePath}`;
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
