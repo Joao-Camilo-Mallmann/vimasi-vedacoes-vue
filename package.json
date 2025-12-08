@@ -1,45 +1,21 @@
 {
-  "name": "vimasi-vedacoes-vue",
-  "version": "0.0.0",
-  "private": true,
+  "name": "site-nuxt",
   "type": "module",
-  "engines": {
-    "node": "^20.19.0 || >=22.12.0"
-  },
+  "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
-    "preview": "vite preview",
-    "build-only": "vite build",
-    "type-check": "vue-tsc --build",
-    "lint": "eslint . --fix",
-    "format": "prettier --write src/"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@unhead/vue": "^2.0.19",
-    "vue": "^3.5.24",
+    "nuxt": "^4.2.1",
+    "vue": "^3.5.25",
     "vue-router": "^4.6.3"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.17",
-    "@tsconfig/node22": "^22.0.5",
-    "@types/node": "^22.19.1",
-    "@vitejs/plugin-vue": "^6.0.2",
-    "@vue/eslint-config-prettier": "^10.2.0",
-    "@vue/eslint-config-typescript": "^14.6.0",
-    "@vue/tsconfig": "^0.7.0",
-    "autoprefixer": "^10.4.22",
-    "eslint": "^9.39.1",
-    "eslint-plugin-vue": "~10.3.0",
-    "jiti": "^2.6.1",
-    "npm-run-all2": "^8.0.4",
-    "postcss": "^8.5.6",
-    "prettier": "3.6.2",
-    "prettier-plugin-tailwindcss": "^0.7.1",
-    "tailwindcss": "^4.1.17",
-    "typescript": "~5.8.3",
-    "vite": "^7.2.2",
-    "vite-plugin-vue-devtools": "^8.0.5",
-    "vue-tsc": "^3.1.4"
+    "tailwindcss": "^4.1.17"
   }
 }

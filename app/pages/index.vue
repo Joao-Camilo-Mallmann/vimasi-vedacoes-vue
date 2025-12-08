@@ -1,14 +1,13 @@
 <template>
   <div class="home">
     <!-- Hero Section -->
-    <!-- Hero Section -->
     <section
       id="home"
       class="relative flex min-h-[100svh] items-center justify-center overflow-hidden text-center text-white"
     >
       <div class="absolute inset-0 z-0">
         <img
-          src="@/assets/images/hero-bg.jpg"
+          src="~/assets/images/hero-bg.jpg"
           alt="Fundo da seção hero mostrando vedações industriais"
           class="animate-float h-full w-full scale-105 object-cover"
           style="animation-duration: 20s"
@@ -24,7 +23,8 @@
           class="font-anton animate-fade-in-up mb-8 text-5xl leading-tight uppercase italic drop-shadow-2xl sm:text-6xl md:text-7xl lg:text-8xl"
         >
           A VEDAÇÃO
-          <span class="hydraulic-text" data-text="HIDRÁULICA">HIDRÁULICA</span><br />
+          <span class="hydraulic-text" data-text="HIDRÁULICA">HIDRÁULICA</span
+          ><br />
           QUE VOCÊ PRECISA
         </h1>
 
@@ -32,7 +32,8 @@
           class="font-arimo animate-fade-in-up mx-auto mb-10 max-w-2xl text-lg text-white/80 md:text-xl"
           style="animation-delay: 0.1s"
         >
-          Soluções de alta performance para garantir a eficiência e durabilidade do seu equipamento.
+          Soluções de alta performance para garantir a eficiência e durabilidade
+          do seu equipamento.
         </p>
 
         <a
@@ -68,7 +69,12 @@
         class="hover:text-accent-red absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-white/50 transition-colors"
         aria-label="Rolar para baixo"
       >
-        <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg
+          class="h-8 w-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -80,7 +86,10 @@
     </section>
 
     <!-- Products Section -->
-    <section id="vedacoes" class="bg-primary-dark relative overflow-hidden py-24">
+    <section
+      id="vedacoes"
+      class="bg-primary-dark relative overflow-hidden py-24"
+    >
       <!-- Decorative elements -->
       <div
         class="bg-accent-gold/5 absolute top-0 right-0 h-full w-1/3 translate-x-1/2 rounded-full blur-[100px]"
@@ -97,8 +106,8 @@
             Nossas <span class="text-accent-red">Soluções</span>
           </h2>
           <p class="font-arimo mx-auto max-w-2xl text-lg text-white/60">
-            Tecnologia de ponta em vedações para garantir a máxima eficiência do seu sistema
-            hidráulico.
+            Tecnologia de ponta em vedações para garantir a máxima eficiência do
+            seu sistema hidráulico.
           </p>
         </div>
 
@@ -109,7 +118,7 @@
           >
             <div class="aspect-[2/3] overflow-hidden">
               <img
-                src="@/assets/images/product-1.png"
+                src="~/assets/images/product-1.png"
                 alt="Gaxetas de vedação hidráulica"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -125,7 +134,9 @@
               <div
                 class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
               >
-                <p class="font-arimo border-accent-gold/30 border-t pt-2 text-sm text-white/80">
+                <p
+                  class="font-arimo border-accent-gold/30 border-t pt-2 text-sm text-white/80"
+                >
                   Vedação essencial para hastes e eixos rotativos.
                 </p>
               </div>
@@ -138,7 +149,7 @@
           >
             <div class="aspect-[2/3] overflow-hidden">
               <img
-                src="@/assets/images/product-2.png"
+                src="~/assets/images/product-2.png"
                 alt="Raspadores industriais"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -154,7 +165,9 @@
               <div
                 class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
               >
-                <p class="font-arimo border-accent-gold/30 border-t pt-2 text-sm text-white/80">
+                <p
+                  class="font-arimo border-accent-gold/30 border-t pt-2 text-sm text-white/80"
+                >
                   Proteção contra impurezas e contaminantes externos.
                 </p>
               </div>
@@ -167,7 +180,7 @@
           >
             <div class="aspect-[2/3] overflow-hidden">
               <img
-                src="@/assets/images/product-3.png"
+                src="~/assets/images/product-3.png"
                 alt="Conjuntos de vedação ZW/ZO"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -183,7 +196,9 @@
               <div
                 class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
               >
-                <p class="font-arimo border-accent-gold/30 border-t pt-2 text-sm text-white/80">
+                <p
+                  class="font-arimo border-accent-gold/30 border-t pt-2 text-sm text-white/80"
+                >
                   Soluções completas para aplicações específicas.
                 </p>
               </div>
@@ -196,7 +211,7 @@
           >
             <div class="aspect-[2/3] overflow-hidden">
               <img
-                src="@/assets/images/product-4.png"
+                src="~/assets/images/product-4.png"
                 alt="Anéis O-ring e vedações circulares"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -212,7 +227,9 @@
               <div
                 class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
               >
-                <p class="font-arimo border-accent-gold/30 border-t pt-2 text-sm text-white/80">
+                <p
+                  class="font-arimo border-accent-gold/30 border-t pt-2 text-sm text-white/80"
+                >
                   O-rings e vedações estáticas de alta precisão.
                 </p>
               </div>
@@ -237,15 +254,18 @@
             >
               Excelência em<br />Cada Detalhe
             </h2>
-            <div class="font-arimo space-y-6 text-lg leading-relaxed text-white/80">
+            <div
+              class="font-arimo space-y-6 text-lg leading-relaxed text-white/80"
+            >
               <p>
-                Oferecemos produtos de alta qualidade, garantindo eficiência e durabilidade,
-                atendendo às mais exigentes necessidades do mercado.
+                Oferecemos produtos de alta qualidade, garantindo eficiência e
+                durabilidade, atendendo às mais exigentes necessidades do
+                mercado.
               </p>
               <p>
-                Com anos de experiência no mercado, a Vimasi se consolidou como referência em
-                vedações hidráulicas, oferecendo soluções completas e personalizadas para cada
-                necessidade.
+                Com anos de experiência no mercado, a Vimasi se consolidou como
+                referência em vedações hidráulicas, oferecendo soluções
+                completas e personalizadas para cada necessidade.
               </p>
             </div>
 
@@ -255,7 +275,12 @@
                 class="text-accent-red inline-flex items-center gap-2 font-bold tracking-wider uppercase transition-all hover:gap-4"
               >
                 Fale com um especialista
-                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  class="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -273,7 +298,7 @@
             >
               <div class="aspect-square overflow-hidden">
                 <img
-                  src="@/assets/images/product-5.png"
+                  src="~/assets/images/product-5.png"
                   alt="Retentores e selos mecânicos em detalhe"
                   class="h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100"
                 />
@@ -281,7 +306,11 @@
               <div
                 class="absolute inset-0 flex items-end bg-gradient-to-t from-black/90 via-transparent to-transparent p-6"
               >
-                <p class="font-anton text-lg tracking-wide text-white uppercase">Retentores</p>
+                <p
+                  class="font-anton text-lg tracking-wide text-white uppercase"
+                >
+                  Retentores
+                </p>
               </div>
             </div>
             <div
@@ -289,7 +318,7 @@
             >
               <div class="aspect-square overflow-hidden">
                 <img
-                  src="@/assets/images/product-6.png"
+                  src="~/assets/images/product-6.png"
                   alt="Guias e buchas de desgaste industrial"
                   class="h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100"
                 />
@@ -297,7 +326,11 @@
               <div
                 class="absolute inset-0 flex items-end bg-gradient-to-t from-black/90 via-transparent to-transparent p-6"
               >
-                <p class="font-anton text-lg tracking-wide text-white uppercase">Guias</p>
+                <p
+                  class="font-anton text-lg tracking-wide text-white uppercase"
+                >
+                  Guias
+                </p>
               </div>
             </div>
             <div
@@ -305,7 +338,7 @@
             >
               <div class="aspect-square overflow-hidden">
                 <img
-                  src="@/assets/images/product-7.png"
+                  src="~/assets/images/product-7.png"
                   alt="Juntas e arruelas de vedação diversas"
                   class="h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100"
                 />
@@ -313,7 +346,11 @@
               <div
                 class="absolute inset-0 flex items-end bg-gradient-to-t from-black/90 via-transparent to-transparent p-6"
               >
-                <p class="font-anton text-lg tracking-wide text-white uppercase">Juntas</p>
+                <p
+                  class="font-anton text-lg tracking-wide text-white uppercase"
+                >
+                  Juntas
+                </p>
               </div>
             </div>
             <div
@@ -321,15 +358,19 @@
             >
               <div class="aspect-square overflow-hidden">
                 <img
-                  src="@/assets/images/product-8.png"
+                  src="~/assets/images/product-8.png"
                   alt="Vedações especiais customizadas sob medida"
-                  class="h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100"
+                  class="h-full w-full object-contain opacity-100 transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
               <div
                 class="absolute inset-0 flex items-end bg-gradient-to-t from-black/90 via-transparent to-transparent p-6"
               >
-                <p class="font-anton text-lg tracking-wide text-white uppercase">Especiais</p>
+                <p
+                  class="font-anton text-lg tracking-wide text-white uppercase"
+                >
+                  Especiais
+                </p>
               </div>
             </div>
           </div>
@@ -338,11 +379,14 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contato" class="bg-primary-dark relative overflow-hidden py-24 text-white">
+    <section
+      id="contato"
+      class="bg-primary-dark relative overflow-hidden py-24 text-white"
+    >
       <!-- Background Image with Filter -->
       <div class="absolute inset-0 z-0">
         <img
-          src="@/assets/images/contact-bg.jpg"
+          src="~/assets/images/contact-bg.jpg"
           alt="Fundo da seção de contato com textura industrial"
           class="h-full w-full object-cover opacity-40"
         />
@@ -360,11 +404,14 @@
             Entre em <span class="text-accent-red">Contato</span>
           </h2>
           <p class="font-arimo mx-auto max-w-2xl text-lg text-white/60">
-            Nossa equipe técnica está pronta para atender você e encontrar a melhor solução.
+            Nossa equipe técnica está pronta para atender você e encontrar a
+            melhor solução.
           </p>
         </div>
 
-        <div class="mx-auto mb-16 grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3">
+        <div
+          class="mx-auto mb-16 grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3"
+        >
           <!-- Phone/WhatsApp -->
           <a
             href="https://wa.me/555196194676"
@@ -384,7 +431,11 @@
                 />
               </svg>
             </div>
-            <h3 class="font-anton mb-2 text-2xl tracking-wide text-white uppercase">WhatsApp</h3>
+            <h3
+              class="font-anton mb-2 text-2xl tracking-wide text-white uppercase"
+            >
+              WhatsApp
+            </h3>
             <p
               class="font-arimo text-lg text-white/60 transition-colors group-hover:text-[#25D366]"
             >
@@ -413,7 +464,11 @@
                 />
               </svg>
             </div>
-            <h3 class="font-anton mb-2 text-2xl tracking-wide text-white uppercase">E-mail</h3>
+            <h3
+              class="font-anton mb-2 text-2xl tracking-wide text-white uppercase"
+            >
+              E-mail
+            </h3>
             <a
               href="mailto:vimasicomerciopecas@gmail.com"
               class="font-arimo text-lg break-all text-white/60 transition-colors group-hover:text-[#3B82F6]"
@@ -451,7 +506,11 @@
                 />
               </svg>
             </div>
-            <h3 class="font-anton mb-2 text-2xl tracking-wide text-white uppercase">Endereço</h3>
+            <h3
+              class="font-anton mb-2 text-2xl tracking-wide text-white uppercase"
+            >
+              Endereço
+            </h3>
             <p class="font-arimo mb-2 text-sm text-white/60">
               R. Eugênia Mello de Oliveira Kirchheim, 151<br />
               Bom Pastor, Lajeado - RS
@@ -489,10 +548,9 @@
 </template>
 
 <script setup lang="ts">
-// Component logic here
-defineOptions({
-  name: 'HomeView',
-})
+useHead({
+  title: "Vimasi Vedações | Vedações Hidráulicas e Industriais",
+});
 </script>
 
 <style scoped>

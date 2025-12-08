@@ -6,26 +6,31 @@
     >
       <div class="absolute inset-0 z-0">
         <img
-          src="@/assets/images/gasket-hero.png"
+          src="~/assets/images/gasket-hero.png"
           alt="Gaxetas hidráulicas de alta qualidade para vedação industrial"
           class="h-full w-full object-cover"
         />
         <div
-          class="to-primary-dark absolute inset-0 bg-linear-gradient-to-b from-black/70 via-black/50"
+          class="to-primary-dark absolute inset-0 bg-linear-to-b from-black/80 via-black/50"
         ></div>
+        <div class="grain absolute inset-0 opacity-30"></div>
       </div>
 
       <div class="relative z-10 mx-auto max-w-5xl px-4 py-20">
-        <!-- Breadcrumb -->
         <nav class="mb-8 flex justify-center" aria-label="Breadcrumb">
           <ol class="font-arimo flex items-center gap-2 text-sm text-white/60">
             <li>
-              <router-link to="/" class="hover:text-accent-gold transition-colors"
-                >Home</router-link
+              <NuxtLink to="/" class="hover:text-accent-gold transition-colors"
+                >Home</NuxtLink
               >
             </li>
             <li class="flex items-center gap-2">
-              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg
+                class="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -48,8 +53,8 @@
           class="font-arimo animate-fade-in-up mx-auto max-w-3xl text-lg text-white/80 md:text-xl"
           style="animation-delay: 0.1s"
         >
-          Guia completo sobre gaxetas hidráulicas: tipos, aplicações industriais e vantagens para
-          seu sistema de vedação.
+          Guia completo sobre gaxetas hidráulicas: tipos, aplicações industriais
+          e vantagens para seu sistema de vedação.
         </p>
       </div>
     </section>
@@ -58,30 +63,38 @@
     <section class="bg-primary-dark py-20">
       <div class="container mx-auto px-4">
         <div class="mx-auto max-w-4xl">
-          <h2 class="font-anton mb-8 text-center text-4xl text-white uppercase italic md:text-5xl">
+          <h2
+            class="font-anton mb-8 text-center text-4xl text-white uppercase italic md:text-5xl"
+          >
             Definição de <span class="text-accent-gold">Gaxeta</span>
           </h2>
 
-          <div class="font-arimo space-y-6 text-lg leading-relaxed text-white/80">
+          <div
+            class="font-arimo space-y-6 text-lg leading-relaxed text-white/80"
+          >
             <p>
-              Uma <strong class="text-accent-gold">gaxeta</strong> é um componente de vedação
-              essencial utilizado em sistemas hidráulicos e pneumáticos. Também conhecida como
-              <em>selo de vedação</em> ou <em>seal</em>, a gaxeta é projetada para impedir
-              vazamentos de fluidos (óleo, água ou ar) entre superfícies móveis ou estáticas em
-              cilindros, válvulas e outros equipamentos industriais.
+              Uma <strong class="text-accent-gold">gaxeta</strong> é um
+              componente de vedação essencial utilizado em sistemas hidráulicos
+              e pneumáticos. Também conhecida como <em>selo de vedação</em> ou
+              <em>seal</em>, a gaxeta é projetada para impedir vazamentos de
+              fluidos (óleo, água ou ar) entre superfícies móveis ou estáticas
+              em cilindros, válvulas e outros equipamentos industriais.
             </p>
 
             <p>
               As gaxetas são fabricadas em materiais de alta performance como
-              <strong>poliuretano</strong>, <strong>borracha nitrílica (NBR)</strong>,
-              <strong>PTFE (Teflon)</strong> e compostos especiais, garantindo resistência a
-              temperaturas extremas, pressões elevadas e diferentes tipos de fluidos hidráulicos.
+              <strong>poliuretano</strong>,
+              <strong>borracha nitrílica (NBR)</strong>,
+              <strong>PTFE (Teflon)</strong> e compostos especiais, garantindo
+              resistência a temperaturas extremas, pressões elevadas e
+              diferentes tipos de fluidos hidráulicos.
             </p>
 
             <p>
               A escolha correta da gaxeta é fundamental para a
-              <strong class="text-accent-red">eficiência e longevidade</strong> do seu equipamento,
-              reduzindo custos de manutenção e evitando paradas não programadas na produção.
+              <strong class="text-accent-red">eficiência e longevidade</strong>
+              do seu equipamento, reduzindo custos de manutenção e evitando
+              paradas não programadas na produção.
             </p>
           </div>
         </div>
@@ -95,10 +108,14 @@
       ></div>
 
       <div class="relative z-10 container mx-auto px-4">
-        <h2 class="font-anton mb-4 text-center text-4xl text-white uppercase italic md:text-5xl">
+        <h2
+          class="font-anton mb-4 text-center text-4xl text-white uppercase italic md:text-5xl"
+        >
           Tipos de <span class="text-accent-red">Gaxetas</span>
         </h2>
-        <p class="font-arimo mx-auto mb-16 max-w-2xl text-center text-lg text-white/60">
+        <p
+          class="font-arimo mx-auto mb-16 max-w-2xl text-center text-lg text-white/60"
+        >
           Conheça os principais tipos de gaxetas e suas aplicações específicas.
         </p>
 
@@ -124,10 +141,12 @@
                 />
               </svg>
             </div>
-            <h3 class="font-anton mb-3 text-2xl text-white uppercase italic">U-Cup</h3>
+            <h3 class="font-anton mb-3 text-2xl text-white uppercase italic">
+              U-Cup
+            </h3>
             <p class="font-arimo text-white/70">
-              Gaxeta em formato U, ideal para vedação de pistões em cilindros hidráulicos de simples
-              ação. Alta resistência à pressão.
+              Gaxeta em formato U, ideal para vedação de pistões em cilindros
+              hidráulicos de simples ação. Alta resistência à pressão.
             </p>
           </div>
 
@@ -152,10 +171,12 @@
                 />
               </svg>
             </div>
-            <h3 class="font-anton mb-3 text-2xl text-white uppercase italic">V-Ring</h3>
+            <h3 class="font-anton mb-3 text-2xl text-white uppercase italic">
+              V-Ring
+            </h3>
             <p class="font-arimo text-white/70">
-              Vedação em formato V para eixos rotativos. Oferece excelente proteção contra
-              contaminantes externos e retenção de lubrificante.
+              Vedação em formato V para eixos rotativos. Oferece excelente
+              proteção contra contaminantes externos e retenção de lubrificante.
             </p>
           </div>
 
@@ -180,10 +201,12 @@
                 />
               </svg>
             </div>
-            <h3 class="font-anton mb-3 text-2xl text-white uppercase italic">Dupla Ação</h3>
+            <h3 class="font-anton mb-3 text-2xl text-white uppercase italic">
+              Dupla Ação
+            </h3>
             <p class="font-arimo text-white/70">
-              Gaxeta que veda em ambas as direções do movimento. Perfeita para cilindros de dupla
-              ação em máquinas industriais.
+              Gaxeta que veda em ambas as direções do movimento. Perfeita para
+              cilindros de dupla ação em máquinas industriais.
             </p>
           </div>
 
@@ -208,10 +231,12 @@
                 />
               </svg>
             </div>
-            <h3 class="font-anton mb-3 text-2xl text-white uppercase italic">Gaxeta de Haste</h3>
+            <h3 class="font-anton mb-3 text-2xl text-white uppercase italic">
+              Gaxeta de Haste
+            </h3>
             <p class="font-arimo text-white/70">
-              Projetada especificamente para vedação de hastes de cilindros. Suporta altas pressões
-              e velocidades de operação.
+              Projetada especificamente para vedação de hastes de cilindros.
+              Suporta altas pressões e velocidades de operação.
             </p>
           </div>
         </div>
@@ -219,7 +244,7 @@
         <!-- Types Image -->
         <div class="mx-auto mt-16 max-w-4xl">
           <img
-            src="@/assets/images/gasket-types.png"
+            src="~/assets/images/gasket-types.png"
             alt="Diferentes tipos de gaxetas hidráulicas: U-Cup, V-Ring, dupla ação e gaxeta de haste"
             class="w-full rounded-2xl shadow-2xl"
           />
@@ -230,65 +255,87 @@
     <!-- Applications Section -->
     <section class="bg-primary-dark py-24">
       <div class="container mx-auto px-4">
-        <h2 class="font-anton mb-4 text-center text-4xl text-white uppercase italic md:text-5xl">
+        <h2
+          class="font-anton mb-4 text-center text-4xl text-white uppercase italic md:text-5xl"
+        >
           Aplicações <span class="text-accent-gold">Industriais</span>
         </h2>
-        <p class="font-arimo mx-auto mb-16 max-w-2xl text-center text-lg text-white/60">
+        <p
+          class="font-arimo mx-auto mb-16 max-w-2xl text-center text-lg text-white/60"
+        >
           Onde as gaxetas são utilizadas para garantir máxima eficiência.
         </p>
 
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <div class="glass rounded-2xl p-8 transition-all duration-500 hover:bg-white/5">
+          <div
+            class="glass rounded-2xl p-8 transition-all duration-500 hover:bg-white/5"
+          >
             <h3 class="font-anton mb-4 text-xl text-white uppercase italic">
               Cilindros Hidráulicos
             </h3>
             <p class="font-arimo text-white/70">
-              Vedação de pistões e hastes em cilindros de simples e dupla ação, garantindo movimento
-              preciso e sem vazamentos.
+              Vedação de pistões e hastes em cilindros de simples e dupla ação,
+              garantindo movimento preciso e sem vazamentos.
             </p>
           </div>
 
-          <div class="glass rounded-2xl p-8 transition-all duration-500 hover:bg-white/5">
-            <h3 class="font-anton mb-4 text-xl text-white uppercase italic">Prensas Industriais</h3>
+          <div
+            class="glass rounded-2xl p-8 transition-all duration-500 hover:bg-white/5"
+          >
+            <h3 class="font-anton mb-4 text-xl text-white uppercase italic">
+              Prensas Industriais
+            </h3>
             <p class="font-arimo text-white/70">
-              Equipamentos de conformação e estampagem que exigem vedações de alta pressão e
-              durabilidade extrema.
+              Equipamentos de conformação e estampagem que exigem vedações de
+              alta pressão e durabilidade extrema.
             </p>
           </div>
 
-          <div class="glass rounded-2xl p-8 transition-all duration-500 hover:bg-white/5">
-            <h3 class="font-anton mb-4 text-xl text-white uppercase italic">Máquinas Agrícolas</h3>
+          <div
+            class="glass rounded-2xl p-8 transition-all duration-500 hover:bg-white/5"
+          >
+            <h3 class="font-anton mb-4 text-xl text-white uppercase italic">
+              Máquinas Agrícolas
+            </h3>
             <p class="font-arimo text-white/70">
-              Tratores, colheitadeiras e implementos agrícolas que operam em condições adversas e
-              precisam de vedações robustas.
+              Tratores, colheitadeiras e implementos agrícolas que operam em
+              condições adversas e precisam de vedações robustas.
             </p>
           </div>
 
-          <div class="glass rounded-2xl p-8 transition-all duration-500 hover:bg-white/5">
+          <div
+            class="glass rounded-2xl p-8 transition-all duration-500 hover:bg-white/5"
+          >
             <h3 class="font-anton mb-4 text-xl text-white uppercase italic">
               Equipamentos de Construção
             </h3>
             <p class="font-arimo text-white/70">
-              Escavadeiras, retroescavadeiras e guindastes que dependem de sistemas hidráulicos
-              confiáveis.
+              Escavadeiras, retroescavadeiras e guindastes que dependem de
+              sistemas hidráulicos confiáveis.
             </p>
           </div>
 
-          <div class="glass rounded-2xl p-8 transition-all duration-500 hover:bg-white/5">
+          <div
+            class="glass rounded-2xl p-8 transition-all duration-500 hover:bg-white/5"
+          >
             <h3 class="font-anton mb-4 text-xl text-white uppercase italic">
               Indústria Metalúrgica
             </h3>
             <p class="font-arimo text-white/70">
-              Fornos, laminadores e máquinas de fundição que operam em altas temperaturas.
+              Fornos, laminadores e máquinas de fundição que operam em altas
+              temperaturas.
             </p>
           </div>
 
-          <div class="glass rounded-2xl p-8 transition-all duration-500 hover:bg-white/5">
+          <div
+            class="glass rounded-2xl p-8 transition-all duration-500 hover:bg-white/5"
+          >
             <h3 class="font-anton mb-4 text-xl text-white uppercase italic">
               Sistemas Pneumáticos
             </h3>
             <p class="font-arimo text-white/70">
-              Atuadores e válvulas pneumáticas em linhas de produção automatizadas.
+              Atuadores e válvulas pneumáticas em linhas de produção
+              automatizadas.
             </p>
           </div>
         </div>
@@ -302,10 +349,15 @@
       ></div>
 
       <div class="relative z-10 container mx-auto px-4">
-        <h2 class="font-anton mb-4 text-center text-4xl text-white uppercase italic md:text-5xl">
-          Vantagens das <span class="text-accent-red">Gaxetas de Qualidade</span>
+        <h2
+          class="font-anton mb-4 text-center text-4xl text-white uppercase italic md:text-5xl"
+        >
+          Vantagens das
+          <span class="text-accent-red">Gaxetas de Qualidade</span>
         </h2>
-        <p class="font-arimo mx-auto mb-16 max-w-2xl text-center text-lg text-white/60">
+        <p
+          class="font-arimo mx-auto mb-16 max-w-2xl text-center text-lg text-white/60"
+        >
           Por que investir em gaxetas de alta performance faz diferença.
         </p>
 
@@ -333,7 +385,8 @@
                 Maior Durabilidade
               </h3>
               <p class="font-arimo text-white/70">
-                Materiais premium que resistem ao desgaste, prolongando a vida útil do equipamento.
+                Materiais premium que resistem ao desgaste, prolongando a vida
+                útil do equipamento.
               </p>
             </div>
           </div>
@@ -357,9 +410,12 @@
               </svg>
             </div>
             <div>
-              <h3 class="font-anton mb-2 text-xl text-white uppercase italic">Vedação Eficiente</h3>
+              <h3 class="font-anton mb-2 text-xl text-white uppercase italic">
+                Vedação Eficiente
+              </h3>
               <p class="font-arimo text-white/70">
-                Zero vazamentos, garantindo desempenho máximo do sistema hidráulico.
+                Zero vazamentos, garantindo desempenho máximo do sistema
+                hidráulico.
               </p>
             </div>
           </div>
@@ -415,7 +471,8 @@
                 Economia de Custos
               </h3>
               <p class="font-arimo text-white/70">
-                Investimento que se paga com a redução de desperdício de óleo e peças.
+                Investimento que se paga com a redução de desperdício de óleo e
+                peças.
               </p>
             </div>
           </div>
@@ -426,10 +483,14 @@
     <!-- FAQ Section -->
     <section class="bg-primary-dark py-24">
       <div class="container mx-auto px-4">
-        <h2 class="font-anton mb-4 text-center text-4xl text-white uppercase italic md:text-5xl">
+        <h2
+          class="font-anton mb-4 text-center text-4xl text-white uppercase italic md:text-5xl"
+        >
           Perguntas <span class="text-accent-gold">Frequentes</span>
         </h2>
-        <p class="font-arimo mx-auto mb-16 max-w-2xl text-center text-lg text-white/60">
+        <p
+          class="font-arimo mx-auto mb-16 max-w-2xl text-center text-lg text-white/60"
+        >
           Tire suas dúvidas sobre gaxetas hidráulicas.
         </p>
 
@@ -439,9 +500,9 @@
               Quando devo trocar uma gaxeta?
             </h3>
             <p class="font-arimo text-white/70">
-              A troca deve ser feita ao identificar vazamentos, perda de pressão no sistema, ruídos
-              anormais ou quando a gaxeta apresentar desgaste visível, como rachaduras ou
-              deformações.
+              A troca deve ser feita ao identificar vazamentos, perda de pressão
+              no sistema, ruídos anormais ou quando a gaxeta apresentar desgaste
+              visível, como rachaduras ou deformações.
             </p>
           </div>
 
@@ -450,8 +511,9 @@
               Como escolher a gaxeta correta?
             </h3>
             <p class="font-arimo text-white/70">
-              Considere as dimensões do alojamento, tipo de fluido, faixa de temperatura e pressão
-              de trabalho. Nossa equipe técnica pode ajudar na especificação correta.
+              Considere as dimensões do alojamento, tipo de fluido, faixa de
+              temperatura e pressão de trabalho. Nossa equipe técnica pode
+              ajudar na especificação correta.
             </p>
           </div>
 
@@ -460,8 +522,9 @@
               Qual a diferença entre gaxeta e retentor?
             </h3>
             <p class="font-arimo text-white/70">
-              A gaxeta é usada principalmente em sistemas hidráulicos para vedação dinâmica de
-              cilindros, enquanto o retentor é aplicado em eixos rotativos para reter lubrificantes.
+              A gaxeta é usada principalmente em sistemas hidráulicos para
+              vedação dinâmica de cilindros, enquanto o retentor é aplicado em
+              eixos rotativos para reter lubrificantes.
             </p>
           </div>
 
@@ -470,8 +533,8 @@
               As gaxetas podem ser fabricadas sob medida?
             </h3>
             <p class="font-arimo text-white/70">
-              Sim! A Vimasi trabalha com gaxetas customizadas para atender especificações técnicas
-              especiais de cada aplicação industrial.
+              Sim! A Vimasi trabalha com gaxetas customizadas para atender
+              especificações técnicas especiais de cada aplicação industrial.
             </p>
           </div>
 
@@ -480,8 +543,9 @@
               Qual material de gaxeta é mais resistente?
             </h3>
             <p class="font-arimo text-white/70">
-              Depende da aplicação. O poliuretano oferece excelente resistência à abrasão, o PTFE é
-              ideal para temperaturas extremas, e a borracha nitrílica é versátil para uso geral.
+              Depende da aplicação. O poliuretano oferece excelente resistência
+              à abrasão, o PTFE é ideal para temperaturas extremas, e a borracha
+              nitrílica é versátil para uso geral.
             </p>
           </div>
         </div>
@@ -492,20 +556,24 @@
     <section class="bg-primary-dark relative overflow-hidden py-24">
       <div class="absolute inset-0 z-0">
         <div
-          class="from-primary-dark via-primary-dark/90 to-primary-dark absolute inset-0 bg-gradient-to-b"
+          class="from-primary-dark via-primary-dark/90 to-primary-dark absolute inset-0 bg-linear-to-b"
         ></div>
       </div>
 
       <div class="relative z-10 container mx-auto px-4 text-center">
-        <h2 class="font-anton mb-6 text-4xl text-white uppercase italic md:text-5xl">
+        <h2
+          class="font-anton mb-6 text-4xl text-white uppercase italic md:text-5xl"
+        >
           Precisa de <span class="text-accent-red">Gaxetas</span>?
         </h2>
         <p class="font-arimo mx-auto mb-10 max-w-2xl text-lg text-white/70">
-          Entre em contato com nossa equipe técnica para um orçamento personalizado. Atendemos
-          Lajeado/RS e região.
+          Entre em contato com nossa equipe técnica para um orçamento
+          personalizado. Atendemos Lajeado/RS e região.
         </p>
 
-        <div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <div
+          class="flex flex-col items-center justify-center gap-4 sm:flex-row"
+        >
           <a
             href="https://wa.me/555196194676?text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento%20de%20gaxetas"
             target="_blank"
@@ -521,7 +589,7 @@
             </span>
           </a>
 
-          <router-link
+          <NuxtLink
             to="/aneis-vedacao"
             class="group hover:border-accent-gold hover:bg-accent-gold/10 inline-flex items-center gap-3 rounded-full border-2 border-white/30 px-8 py-4 font-bold tracking-wider text-white uppercase transition-all duration-300"
           >
@@ -539,7 +607,7 @@
                 d="M17 8l4 4m0 0l-4 4m4-4H3"
               />
             </svg>
-          </router-link>
+          </NuxtLink>
         </div>
       </div>
     </section>
@@ -547,42 +615,34 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
-
-defineOptions({
-  name: 'GasketsView',
-})
+import { onMounted } from "vue";
 
 onMounted(() => {
-  window.scrollTo(0, 0)
+  window.scrollTo(0, 0);
+});
 
-  // Set SEO meta tags dynamically
-  document.title = 'O que é Gaxeta? Tipos, Aplicações e Vantagens | Vimasi Vedações'
-
-  // Update meta description
-  const metaDescription = document.querySelector('meta[name="description"]')
-  if (metaDescription) {
-    metaDescription.setAttribute(
-      'content',
-      'Descubra tudo sobre gaxetas hidráulicas: tipos (U-Cup, V-Ring), aplicações industriais e vantagens. Especialistas em vedações em Lajeado/RS. Solicite seu orçamento!',
-    )
-  }
-
-  // Add structured data for SEO
-  const existingScript = document.querySelector('script[data-page="gaxetas"]')
-  if (!existingScript) {
-    const script = document.createElement('script')
-    script.type = 'application/ld+json'
-    script.setAttribute('data-page', 'gaxetas')
-    script.textContent = JSON.stringify({
-      '@context': 'https://schema.org',
-      '@type': 'Article',
-      headline: 'O que é Gaxeta? Tipos, Aplicações e Vantagens',
-      description: 'Guia completo sobre gaxetas hidráulicas para vedação industrial.',
-      author: { '@type': 'Organization', name: 'Vimasi Vedações' },
-      publisher: { '@type': 'Organization', name: 'Vimasi Vedações' },
-    })
-    document.head.appendChild(script)
-  }
-})
+useHead({
+  title: "O que é Gaxeta? Tipos, Aplicações e Vantagens | Vimasi Vedações",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Descubra tudo sobre gaxetas hidráulicas: tipos (U-Cup, V-Ring), aplicações industriais e vantagens. Especialistas em vedações em Lajeado/RS. Solicite seu orçamento!",
+    },
+  ],
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: "O que é Gaxeta? Tipos, Aplicações e Vantagens",
+        description:
+          "Guia completo sobre gaxetas hidráulicas para vedação industrial.",
+        author: { "@type": "Organization", name: "Vimasi Vedações" },
+        publisher: { "@type": "Organization", name: "Vimasi Vedações" },
+      }),
+    },
+  ],
+});
 </script>

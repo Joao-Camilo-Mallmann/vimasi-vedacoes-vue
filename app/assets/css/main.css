@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
   --color-primary-dark: #050505;
@@ -6,10 +6,10 @@
   --color-accent-gold: #e4c7aa;
   --color-accent-red: #e53935;
 
-  --font-arimo: 'Arimo', sans-serif;
-  --font-anton: 'Anton', sans-serif;
-  --font-staatliches: 'Staatliches', cursive;
-  --font-grotesk: 'Hanken Grotesk', sans-serif;
+  --font-arimo: "Arimo", sans-serif;
+  --font-anton: "Anton", sans-serif;
+  --font-staatliches: "Staatliches", cursive;
+  --font-grotesk: "Hanken Grotesk", sans-serif;
 
   @keyframes fadeInUp {
     from {
@@ -58,7 +58,7 @@
 
 /* Grain texture effect */
 .grain::before {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;

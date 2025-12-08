@@ -1,6 +1,11 @@
-//ignore
+# Robots.txt for Vimasi Vedações
+# https://joao-camilo-mallmann.github.io/vimasi-site
 
-User-agent: *
+User-Agent: *
 Allow: /
 
-Sitemap: https://joao-camilo-mallmann.github.io/vimasi-vedacoes-vue/sitemap.xml
+# Sitemap location
+Sitemap: https://joao-camilo-mallmann.github.io/vimasi-site/sitemap.xml
+
+# Block crawling of specific paths (if any)
+Disallow: /_nuxt/builds/

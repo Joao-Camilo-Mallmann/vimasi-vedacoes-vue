@@ -17,17 +17,21 @@
 
     <div class="relative z-10 container mx-auto px-4">
       <!-- Main Footer Content -->
-      <div class="mb-16 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+      <div
+        class="mb-16 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8"
+      >
         <!-- Company Info -->
         <div class="space-y-6">
           <img
-            src="@/assets/images/logo.png"
+            src="~/assets/images/logo.png"
             alt="Vimasi Vedações"
             class="h-14 object-contain opacity-90"
           />
-          <p class="font-arimo max-w-xs text-base leading-relaxed text-white/60">
-            Especialistas em vedações hidráulicas de alta qualidade. Oferecendo soluções completas e
-            personalizadas para cada necessidade.
+          <p
+            class="font-arimo max-w-xs text-base leading-relaxed text-white/60"
+          >
+            Especialistas em vedações hidráulicas de alta qualidade. Oferecendo
+            soluções completas e personalizadas para cada necessidade.
           </p>
           <div class="flex gap-4 pt-2">
             <a
@@ -59,9 +63,13 @@
 
         <!-- Quick Links -->
         <div class="space-y-6">
-          <h3 class="font-anton mb-6 text-sm tracking-widest text-white/40 uppercase">Navegação</h3>
+          <h3
+            class="font-anton mb-6 text-sm tracking-widest text-white/40 uppercase"
+          >
+            Navegação
+          </h3>
           <nav class="flex flex-col gap-4">
-            <router-link
+            <NuxtLink
               v-for="item in navigationItems"
               :key="item.to"
               :to="item.to"
@@ -71,19 +79,28 @@
                 class="group-hover:bg-accent-gold h-px w-4 bg-white/20 transition-all group-hover:w-8"
               ></span>
               {{ item.label }}
-            </router-link>
+            </NuxtLink>
           </nav>
         </div>
 
         <!-- Contact Info -->
         <div class="space-y-6">
-          <h3 class="font-anton mb-6 text-sm tracking-widest text-white/40 uppercase">Contato</h3>
+          <h3
+            class="font-anton mb-6 text-sm tracking-widest text-white/40 uppercase"
+          >
+            Contato
+          </h3>
           <div class="flex flex-col gap-5">
             <div class="group flex items-start gap-4">
               <div
                 class="text-accent-gold mt-1 flex h-8 w-8 items-center justify-center rounded bg-white/5 transition-colors group-hover:bg-[#25D366] group-hover:text-white"
               >
-                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  class="h-4 w-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -93,7 +110,8 @@
                 </svg>
               </div>
               <div>
-                <span class="mb-1 block text-xs tracking-wider text-white/40 uppercase"
+                <span
+                  class="mb-1 block text-xs tracking-wider text-white/40 uppercase"
                   >Telefone</span
                 >
                 <a
@@ -109,7 +127,12 @@
               <div
                 class="text-accent-gold mt-1 flex h-8 w-8 items-center justify-center rounded bg-white/5 transition-colors group-hover:bg-[#3B82F6] group-hover:text-white"
               >
-                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  class="h-4 w-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -119,7 +142,8 @@
                 </svg>
               </div>
               <div>
-                <span class="mb-1 block text-xs tracking-wider text-white/40 uppercase"
+                <span
+                  class="mb-1 block text-xs tracking-wider text-white/40 uppercase"
                   >E-mail</span
                 >
                 <a
@@ -135,14 +159,21 @@
 
         <!-- Address -->
         <div class="space-y-6">
-          <h3 class="font-anton mb-6 text-sm tracking-widest text-white/40 uppercase">
+          <h3
+            class="font-anton mb-6 text-sm tracking-widest text-white/40 uppercase"
+          >
             Localização
           </h3>
           <div class="group flex items-start gap-4">
             <div
               class="text-accent-gold group-hover:bg-accent-red mt-1 flex h-8 w-8 items-center justify-center rounded bg-white/5 transition-colors group-hover:text-white"
             >
-              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg
+                class="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -169,7 +200,12 @@
                 class="text-accent-gold hover:text-accent-red inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase transition-colors"
               >
                 Ver no mapa
-                <svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  class="h-3 w-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -180,7 +216,9 @@
               </a>
 
               <!-- Dark Mode Map -->
-              <div class="mt-4 h-32 w-full overflow-hidden rounded-lg border border-white/10">
+              <div
+                class="mt-4 h-32 w-full overflow-hidden rounded-lg border border-white/10"
+              >
                 <iframe
                   width="100%"
                   height="100%"
@@ -204,11 +242,13 @@
       <!-- Bottom Footer -->
       <div class="flex flex-col items-center justify-between gap-4 md:flex-row">
         <p class="font-arimo text-center text-xs text-white/40">
-          &copy; {{ new Date().getFullYear() }} Vimasi Vedações. Todos os direitos reservados.
+          &copy; {{ new Date().getFullYear() }} Vimasi Vedações. Todos os
+          direitos reservados.
         </p>
         <div class="flex gap-6">
           <span class="font-arimo text-xs text-white/40"
-            >Desenvolvido com <span class="text-accent-red">♥</span> por Antigravity</span
+            >Desenvolvido com <span class="text-accent-red">♥</span> por
+            Antigravity</span
           >
         </div>
       </div>
@@ -218,9 +258,9 @@
 
 <script setup lang="ts">
 const navigationItems = [
-  { label: 'Home', to: '/' },
-  { label: 'Gaxetas', to: '/gaxetas' },
-  { label: 'Anéis', to: '/aneis-vedacao' },
-  { label: 'Contato', to: '/contato' },
-]
+  { label: "Home", to: "/" },
+  { label: "Gaxetas", to: "/gaxetas" },
+  { label: "Anéis", to: "/aneis-vedacao" },
+  { label: "Contato", to: "/contato" },
+];
 </script>

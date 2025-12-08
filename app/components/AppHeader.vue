@@ -3,17 +3,17 @@
     <div class="container mx-auto px-4 md:px-6">
       <div class="flex items-center justify-between py-3 md:py-4">
         <!-- Logo -->
-        <router-link to="/" class="group flex items-center">
+        <NuxtLink to="/" class="group flex items-center">
           <img
-            src="@/assets/images/logo.png"
+            src="~/assets/images/logo.png"
             alt="Vimasi Vedações"
             class="h-10 object-contain transition-all duration-500 group-hover:scale-105 group-hover:drop-shadow-[0_0_15px_rgba(212,175,55,0.4)] md:h-[52px]"
           />
-        </router-link>
+        </NuxtLink>
 
         <!-- Desktop Navigation -->
         <nav class="hidden items-center gap-10 md:flex">
-          <router-link
+          <NuxtLink
             v-for="item in menuItems"
             :key="item.to"
             :to="item.to"
@@ -23,7 +23,7 @@
             <span
               class="bg-accent-gold absolute -bottom-1 left-0 h-px w-0 transition-all duration-300 group-hover:w-full"
             ></span>
-          </router-link>
+          </NuxtLink>
 
           <a
             href="https://wa.me/555196194676"
@@ -83,22 +83,28 @@
         class="bg-primary-dark/95 fixed inset-0 z-40 flex flex-col items-center justify-center backdrop-blur-xl"
       >
         <nav class="flex flex-col items-center gap-8">
-          <router-link
+          <NuxtLink
             v-for="(item, index) in menuItems"
             :key="item.to"
             :to="item.to"
             @click="mobileMenuOpen = false"
             class="font-anton hover:text-accent-gold text-4xl tracking-wider text-white uppercase transition-all duration-300 hover:scale-110"
-            :style="{ animation: `fadeInUp 0.5s ease-out forwards ${index * 0.1}s`, opacity: 0 }"
+            :style="{
+              animation: `fadeInUp 0.5s ease-out forwards ${index * 0.1}s`,
+              opacity: 0,
+            }"
           >
             {{ item.label }}
-          </router-link>
+          </NuxtLink>
 
           <a
             href="https://wa.me/555196194676"
             target="_blank"
             class="font-arimo mt-8 flex items-center gap-3 rounded-full border border-[#25D366] px-8 py-3 text-lg font-bold tracking-wide text-[#25D366] uppercase transition-all active:scale-95"
-            :style="{ animation: `fadeInUp 0.5s ease-out forwards 0.4s`, opacity: 0 }"
+            :style="{
+              animation: `fadeInUp 0.5s ease-out forwards 0.4s`,
+              opacity: 0,
+            }"
           >
             <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
               <path
@@ -114,20 +120,20 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from "vue";
 
-const mobileMenuOpen = ref(false)
+const mobileMenuOpen = ref(false);
 
 const menuItems = [
-  { label: 'Home', to: '/' },
-  { label: 'Gaxetas', to: '/gaxetas' },
-  { label: 'Anéis', to: '/aneis-vedacao' },
-  { label: 'Contato', to: '/contato' },
-]
+  { label: "Home", to: "/" },
+  { label: "Gaxetas", to: "/gaxetas" },
+  { label: "Anéis", to: "/aneis-vedacao" },
+  { label: "Contato", to: "/contato" },
+];
 </script>
 
 <style scoped>
-a[href^='#'] {
+a[href^="#"] {
   scroll-behavior: smooth;
 }
 </style>

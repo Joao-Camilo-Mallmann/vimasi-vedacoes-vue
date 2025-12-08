@@ -1,14 +1,17 @@
 <script setup lang="ts">
-defineOptions({
-  name: 'ProductsView',
-})
 const getImageUrl = (i: number) => {
-  return new URL(`../assets/images/product-${i}.png`, import.meta.url).href
-}
+  return new URL(`../../assets/images/product-${i}.png`, import.meta.url).href;
+};
+
+useHead({
+  title: "Produtos | Vimasi Vedações",
+});
 </script>
 
 <template>
-  <div class="products-view bg-primary-dark relative min-h-screen overflow-hidden pt-20">
+  <div
+    class="products-view bg-primary-dark relative min-h-screen overflow-hidden pt-20"
+  >
     <!-- Decorative elements -->
     <div
       class="from-accent-gold/5 bg-linear-gradient-to-b pointer-events-none absolute top-0 left-0 h-1/2 w-full to-transparent"
@@ -28,8 +31,8 @@ const getImageUrl = (i: number) => {
           class="font-arimo animate-fade-in-up mx-auto max-w-2xl text-lg text-white/60"
           style="animation-delay: 0.1s"
         >
-          Conheça nossa linha completa de produtos de alta performance para todas as aplicações
-          industriais.
+          Conheça nossa linha completa de produtos de alta performance para
+          todas as aplicações industriais.
         </p>
       </div>
 
@@ -62,7 +65,12 @@ const getImageUrl = (i: number) => {
               <span
                 class="text-accent-gold translate-x-2 transform opacity-0 transition-opacity duration-300 group-hover:translate-x-0 group-hover:opacity-100"
               >
-                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -75,8 +83,8 @@ const getImageUrl = (i: number) => {
             <p
               class="font-arimo line-clamp-2 text-sm text-white/60 transition-colors group-hover:text-white/80"
             >
-              Solução ideal para aplicações que exigem alta resistência e durabilidade. Consulte as
-              especificações técnicas.
+              Solução ideal para aplicações que exigem alta resistência e
+              durabilidade. Consulte as especificações técnicas.
             </p>
           </div>
 
