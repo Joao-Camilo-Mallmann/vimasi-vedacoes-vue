@@ -1,78 +1,88 @@
-# Vimasi Vedações
+# 🚀 Vimasi Vedações - Landing Page
 
-Site institucional da Vimasi Vedações - Especialista em vedações hidráulicas e industriais em Lajeado/RS.
+Bem-vindo ao repositório oficial da Landing Page da **Vimasi Vedações**, desenvolvida com tecnologias modernas para garantir alta performance, SEO otimizado e uma experiência de usuário excepcional.
 
-🌐 **Live**: [https://joao-camilo-mallmann.github.io/vimasi-vedacoes-vue](https://joao-camilo-mallmann.github.io/vimasi-vedacoes-vue)
+🔗 **Acesse o site**: [https://joao-camilo-mallmann.github.io/vimasi-vedacoes-vue/](https://joao-camilo-mallmann.github.io/vimasi-vedacoes-vue/)
 
-## 🛠️ Tecnologias
+## 🎯 Sobre o Projeto
 
-- **Framework**: [Nuxt 3](https://nuxt.com/)
-- **Estilização**: [Tailwind CSS](https://tailwindcss.com/)
-- **Deploy**: GitHub Pages (Static Generation)
+Este projeto é uma Landing Page institucional focada em apresentar as soluções em vedações hidráulicas e industriais da Vimasi. O objetivo é converter visitantes em clientes através de um design responsivo, rápido e informativo.
 
-## 🚀 Setup
+**Destaques:**
 
-Instale as dependências:
+- **⚡ Performance**: Site estático pré-renderizado (SSG) para carregamento instantâneo.
+- **🔍 SEO**: Otimização completa para motores de busca (Google).
+- **🎨 Design**: Interface moderna e responsiva utilizando Tailwind CSS.
 
-```bash
-npm install
-# ou
-bun install
-```
+## 🛠️ Tecnologias Utilizadas
 
-## 💻 Desenvolvimento
+O projeto foi construído sobre uma stack robusta e moderna:
 
-Inicie o servidor de desenvolvimento em `http://localhost:3000`:
+- **[Nuxt 3](https://nuxt.com/)**: Framework Vue.js para aplicações web modernas. Utilizamos o modo de geração estática.
+- **[Vue.js 3](https://vuejs.org/)**: A base reativa da interface com Composition API.
+- **[Tailwind CSS](https://tailwindcss.com/)**: Framework de utilitários CSS para estilização rápida e consistente.
+- **GitHub Pages**: Hospedagem estática gratuita e de alta performance.
+- **GitHub Actions**: Automação de CI/CD para deploy contínuo.
 
-```bash
-npm run dev
-# ou
-bun run dev
-```
+## ⚙️ CI/CD & Deploy Automático
 
-## 📦 Build para Produção
+Utilizamos **GitHub Actions** para automatizar o processo de build e deploy, garantindo que o site esteja sempre atualizado e otimizado.
 
-Gere o site estático otimizado para SEO:
+📂 **Workflow**: `.github/workflows/deploy.yml`
 
-```bash
-npm run generate
-# ou
-bun run generate
-```
+**Como funciona o pipeline:**
 
-O output será gerado em `.output/public`.
+1. **Trigger**: A cada `push` na branch `main`.
+2. **Setup**: Instala Node.js v20 e dependências (`npm install`).
+3. **Build**: Executa `npm run generate` para criar os arquivos estáticos otimizados na pasta `.output/public`.
+   - *Nota: Usamos `generate` ao invés de `build` para Full Static Generation (SSG).*
+4. **Otimização**:
+   - Cria arquivo `.nojekyll` para contornar processamento padrão do GitHub Pages.
+   - Configura headers de Cache-Control para evitar problemas de cache stale no navegador.
+5. **Deploy**: Publica os artefatos diretamente na infraestrutura do GitHub Pages.
 
-### Preview Local
+## 🚀 Como Rodar Localmente
 
-```bash
-npx serve .output/public
-```
+Pré-requisitos: Node.js (v18+ ou v20+ recomendado).
 
-## 🚀 Deploy
+1. **Clone o repositório**
 
-O deploy é automático via GitHub Actions. Ao fazer push na branch `main`, o workflow:
+   ```bash
+   git clone https://github.com/Joao-Camilo-Mallmann/vimasi-vedacoes-vue.git
+   cd vimasi-vedacoes-vue
+   ```
 
-1. Instala as dependências
-2. Executa `npm run generate` (pré-renderiza todas as rotas)
-3. Faz deploy no GitHub Pages
+2. **Instale as dependências**
 
-### Deploy Manual
+   ```bash
+   npm install
+   # ou
+   bun install
+   ```
 
-```bash
-npx gh-pages --dotfiles -d .output/public
-```
+3. **Inicie o servidor de desenvolvimento**
 
-## 📁 Estrutura
+   ```bash
+   npm run dev
+   ```
 
-```
-├── pages/           # Páginas do site
-├── components/      # Componentes Vue
-├── assets/          # CSS e assets
-├── public/          # Arquivos estáticos
-├── nuxt.config.ts   # Configuração do Nuxt
-└── .github/workflows/deploy.yml  # CI/CD
-```
+   O site estará disponível em `http://localhost:3000`.
 
-## 📄 Licença
+4. **Gerar Build de Produção (Local)**
+   Para visualizar exatamente como o site ficará em produção:
 
-Todos os direitos reservados © Vimasi Vedações
+   ```bash
+   npm run generate
+   npx serve .output/public
+   ```
+
+## 📂 Estrutura do Projeto
+
+- `/pages`: Rotas e páginas da aplicação (Roteamento baseado em arquivos).
+- `/components`: Componentes Vue reutilizáveis.
+- `/assets`: Arquivos estáticos processados (CSS, Imagens).
+- `/public`: Arquivos públicos servidos na raiz (favicon, robots.txt).
+- `nuxt.config.ts`: Configurações globais do Nuxt (incluindo `basePath` e Meta Tags de SEO).
+
+---
+© Vimasi Vedações. Todos os direitos reservados.
