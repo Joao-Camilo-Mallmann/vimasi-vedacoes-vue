@@ -7,7 +7,9 @@ const fullUrl = `${siteUrl}${basePath}`;
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: "2024-11-01",
+
+  modules: ["@nuxt/eslint", "@nuxt/icon"],
+
 
   devtools: {
     enabled: true,
@@ -96,6 +98,7 @@ export default defineNuxtConfig({
   },
 
   css: ["~/assets/css/main.css"],
+  compatibilityDate: "2024-11-01",
 
   // Nitro configuration for static generation
   nitro: {
@@ -104,5 +107,11 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [tailwindcss()],
+  },
+  
+  eslint: {
+    config: {
+      stylistic: true // <---
+    }
   },
 });

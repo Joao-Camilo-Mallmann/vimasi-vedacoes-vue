@@ -118,7 +118,7 @@
           >
             <div class="aspect-[2/3] overflow-hidden">
               <img
-                src="~/assets/images/product-1.png"
+                src="~/assets/images/product-7.png"
                 alt="Gaxetas de vedação hidráulica"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -149,7 +149,7 @@
           >
             <div class="aspect-[2/3] overflow-hidden">
               <img
-                src="~/assets/images/product-2.png"
+                src="~/assets/images/product-5.png"
                 alt="Raspadores industriais"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -296,9 +296,9 @@
             <div
               class="group glass relative overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-white/10"
             >
-              <div class="aspect-square overflow-hidden">
+              <div class=" overflow-hidden">
                 <img
-                  src="~/assets/images/product-5.png"
+                  src="~/assets/images/product-2.png"
                   alt="Retentores e selos mecânicos em detalhe"
                   class="h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100"
                 />
@@ -306,19 +306,15 @@
               <div
                 class="absolute inset-0 flex items-end bg-gradient-to-t from-black/90 via-transparent to-transparent p-6"
               >
-                <p
-                  class="font-anton text-lg tracking-wide text-white uppercase"
-                >
-                  Retentores
-                </p>
+               
               </div>
             </div>
             <div
               class="group glass relative mt-12 overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-white/10"
             >
-              <div class="aspect-square overflow-hidden">
+              <div class=" overflow-hidden">
                 <img
-                  src="~/assets/images/product-6.png"
+                  src="~/assets/images/product-8.png"
                   alt="Guias e buchas de desgaste industrial"
                   class="h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100"
                 />
@@ -326,19 +322,15 @@
               <div
                 class="absolute inset-0 flex items-end bg-gradient-to-t from-black/90 via-transparent to-transparent p-6"
               >
-                <p
-                  class="font-anton text-lg tracking-wide text-white uppercase"
-                >
-                  Guias
-                </p>
+             
               </div>
             </div>
             <div
               class="group glass relative overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-white/10"
             >
-              <div class="aspect-square overflow-hidden">
+              <div class=" overflow-hidden">
                 <img
-                  src="~/assets/images/product-7.png"
+                  src="~/assets/images/product-1.png"
                   alt="Juntas e arruelas de vedação diversas"
                   class="h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100"
                 />
@@ -346,19 +338,15 @@
               <div
                 class="absolute inset-0 flex items-end bg-gradient-to-t from-black/90 via-transparent to-transparent p-6"
               >
-                <p
-                  class="font-anton text-lg tracking-wide text-white uppercase"
-                >
-                  Juntas
-                </p>
+             
               </div>
             </div>
             <div
               class="group glass relative mt-12 overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-white/10"
             >
-              <div class="aspect-square overflow-hidden">
+              <div class=" overflow-hidden">
                 <img
-                  src="~/assets/images/product-8.png"
+                  src="~/assets/images/product-6.png"
                   alt="Vedações especiais customizadas sob medida"
                   class="h-full w-full object-contain opacity-100 transition-transform duration-700 group-hover:scale-110"
                 />
@@ -366,11 +354,7 @@
               <div
                 class="absolute inset-0 flex items-end bg-gradient-to-t from-black/90 via-transparent to-transparent p-6"
               >
-                <p
-                  class="font-anton text-lg tracking-wide text-white uppercase"
-                >
-                  Especiais
-                </p>
+              
               </div>
             </div>
           </div>

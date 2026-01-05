@@ -238,9 +238,9 @@
             class="group glass flex flex-col gap-6 rounded-2xl p-8 transition-all hover:bg-white/5 md:flex-row md:items-center"
           >
             <div
-              class="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-[#333] text-2xl font-bold text-white shadow-lg"
+              class="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-[#333] text-white shadow-lg"
             >
-              NBR
+              <Icon name="lucide:droplets" class="text-4xl" />
             </div>
             <div>
               <h3 class="font-anton mb-2 text-2xl text-white uppercase italic">
@@ -260,9 +260,9 @@
             class="group glass flex flex-col gap-6 rounded-2xl p-8 transition-all hover:bg-white/5 md:flex-row md:items-center"
           >
             <div
-              class="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-[#5D4037] text-2xl font-bold text-white shadow-lg"
+              class="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-[#5D4037] text-white shadow-lg"
             >
-              FKM
+              <Icon name="lucide:flask-conical" class="text-4xl" />
             </div>
             <div>
               <h3 class="font-anton mb-2 text-2xl text-white uppercase italic">
@@ -283,9 +283,9 @@
             class="group glass flex flex-col gap-6 rounded-2xl p-8 transition-all hover:bg-white/5 md:flex-row md:items-center"
           >
             <div
-              class="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-[#D32F2F] text-2xl font-bold text-white shadow-lg"
+              class="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-[#D32F2F] text-white shadow-lg"
             >
-              VMQ
+              <Icon name="lucide:thermometer" class="text-4xl" />
             </div>
             <div>
               <h3 class="font-anton mb-2 text-2xl text-white uppercase italic">
@@ -305,9 +305,9 @@
             class="group glass flex flex-col gap-6 rounded-2xl p-8 transition-all hover:bg-white/5 md:flex-row md:items-center"
           >
             <div
-              class="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-[#1976D2] text-2xl font-bold text-white shadow-lg"
+              class="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-[#1976D2] text-white shadow-lg"
             >
-              EPDM
+              <Icon name="lucide:waves" class="text-4xl" />
             </div>
             <div>
               <h3 class="font-anton mb-2 text-2xl text-white uppercase italic">

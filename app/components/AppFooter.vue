@@ -220,9 +220,9 @@
                 class="mt-4 h-32 w-full overflow-hidden rounded-lg border border-white/10"
               >
                 <iframe
+                  id="gmap_canvas"
                   width="100%"
                   height="100%"
-                  id="gmap_canvas"
                   src="https://maps.google.com/maps?q=R.+Eugênia+Mello+de+Oliveira+Kirchheim,+151,+Lajeado+-+RS&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   frameborder="0"
                   scrolling="no"
