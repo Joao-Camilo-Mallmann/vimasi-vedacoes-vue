@@ -81,7 +81,7 @@ export default defineNuxtConfig({
         { name: "geo.placename", content: "Lajeado" },
       ],
       link: [
-        { rel: "icon", type: "image/x-icon", href: `${basePath}/favicon.ico` },
+        { rel: "icon", type: "image/png", href: `${basePath}/favicon.png` },
         { rel: "canonical", href: fullUrl },
         { rel: "preconnect", href: "https://fonts.googleapis.com" },
         {
