@@ -59,8 +59,8 @@ export default defineNuxtConfig({
             "Soluções completas em vedações hidráulicas de alta performance. Qualidade e durabilidade para sua indústria em Lajeado/RS.",
         },
         { property: "og:image", content: `${fullUrl}/og-image.png` },
-        { property: "og:image:width", content: "1200" },
-        { property: "og:image:height", content: "630" },
+        { property: "og:image:width", content: "1024" },
+        { property: "og:image:height", content: "1024" },
         { property: "og:locale", content: "pt_BR" },
 
         // Twitter Card

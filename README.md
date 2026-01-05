@@ -18,9 +18,10 @@ Este projeto é uma Landing Page institucional focada em apresentar as soluçõe
 
 O projeto foi construído sobre uma stack robusta e moderna:
 
-- **[Nuxt 3](https://nuxt.com/)**: Framework Vue.js para aplicações web modernas. Utilizamos o modo de geração estática.
+- **[Nuxt 4](https://nuxt.com/)**: Framework para aplicações web modernas. Utilizamos o modo de geração estática.
 - **[Vue.js 3](https://vuejs.org/)**: A base reativa da interface com Composition API.
 - **[Tailwind CSS](https://tailwindcss.com/)**: Framework de utilitários CSS para estilização rápida e consistente.
+- **[Nuxt Icon](https://nuxt.com/modules/icon)**: Biblioteca de ícones integrada e otimizada.
 - **GitHub Pages**: Hospedagem estática gratuita e de alta performance.
 - **GitHub Actions**: Automação de CI/CD para deploy contínuo.
 
@@ -33,8 +34,8 @@ Utilizamos **GitHub Actions** para automatizar o processo de build e deploy, gar
 **Como funciona o pipeline:**
 
 1. **Trigger**: A cada `push` na branch `main`.
-2. **Setup**: Instala Node.js v20 e dependências (`npm install`).
-3. **Build**: Executa `npm run generate` para criar os arquivos estáticos otimizados na pasta `.output/public`.
+2. **Setup**: Instala dependências usando `bun install`.
+3. **Build**: Executa `bun run generate` para criar os arquivos estáticos otimizados na pasta `.output/public`.
    - *Nota: Usamos `generate` ao invés de `build` para Full Static Generation (SSG).*
 4. **Otimização**:
    - Cria arquivo `.nojekyll` para contornar processamento padrão do GitHub Pages.
@@ -43,7 +44,7 @@ Utilizamos **GitHub Actions** para automatizar o processo de build e deploy, gar
 
 ## 🚀 Como Rodar Localmente
 
-Pré-requisitos: Node.js (v18+ ou v20+ recomendado).
+Pré-requisitos: Node.js (v18+ ou v20+) e Bun (opcional, mas recomendado).
 
 1. **Clone o repositório**
 
@@ -55,34 +56,39 @@ Pré-requisitos: Node.js (v18+ ou v20+ recomendado).
 2. **Instale as dependências**
 
    ```bash
-   npm install
-   # ou
    bun install
+   # ou
+   npm install
    ```
 
 3. **Inicie o servidor de desenvolvimento**
 
    ```bash
-   npm run dev
+   bun dev
    ```
 
-   O site estará disponível em `http://localhost:3000`.
+   O site estará disponível em `http://localhost:3001` (ou na porta configurada adequadamente).
 
 4. **Gerar Build de Produção (Local)**
    Para visualizar exatamente como o site ficará em produção:
 
    ```bash
-   npm run generate
+   bun run generate
    npx serve .output/public
    ```
 
-## 📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto (Nuxt 4)
 
-- `/pages`: Rotas e páginas da aplicação (Roteamento baseado em arquivos).
-- `/components`: Componentes Vue reutilizáveis.
-- `/assets`: Arquivos estáticos processados (CSS, Imagens).
-- `/public`: Arquivos públicos servidos na raiz (favicon, robots.txt).
+O projeto segue a estrutura de diretórios do Nuxt 4, onde o código principal da aplicação reside na pasta `/app`:
+
+- `/app`: Pasta raiz da aplicação Nuxt.
+  - `/pages`: Rotas e páginas da aplicação (Roteamento baseado em arquivos).
+  - `/components`: Componentes Vue reutilizáveis.
+  - `/assets`: Arquivos estáticos processados (CSS, Imagens).
+  - `/layouts`: Templates de layout da aplicação.
+- `/public`: Arquivos públicos servidos na raiz (favicon.png, robots.txt).
 - `nuxt.config.ts`: Configurações globais do Nuxt (incluindo `basePath` e Meta Tags de SEO).
+- `agents.md`: Arquivo de contexto para agentes de IA e desenvolvedores.
 
 ---
 © Vimasi Vedações. Todos os direitos reservados.
