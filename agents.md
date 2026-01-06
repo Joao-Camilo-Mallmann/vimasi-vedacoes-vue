@@ -21,8 +21,8 @@ Este arquivo serve como guia de contexto para Agentes de IA (e desenvolvedores h
 
 ### 2. Configurações Específicas (Nuxt)
 
-- **Base Path**: `/vimasi-vedacoes-vue`
-  - *Crucial*: O site não roda na raiz do domínio (`/`). Todos os assets e links devem respeitar esse base path.
+- **Base Path**: `/`
+  - *Atualização*: Com o domínio customizado `vimasi-vedacoes.com`, o site roda na raiz.
 - **SEO**: Meta tags globais estão em `nuxt.config.ts`.
 
 ### 3. Estilização

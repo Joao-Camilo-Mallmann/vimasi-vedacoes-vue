@@ -1,22 +1,22 @@
 import tailwindcss from "@tailwindcss/vite";
 
 // Site configuration
-const siteUrl = "https://joao-camilo-mallmann.github.io";
-const basePath = "/vimasi-vedacoes-vue";
-const fullUrl = `${siteUrl}${basePath}`;
+const siteUrl = "https://vimasi-vedacoes.com";
+const basePath = "/";
+const fullUrl = `${siteUrl}`;
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 
   modules: ["@nuxt/eslint", "@nuxt/icon"],
 
+  // Static site generation for GitHub Pages
+  ssr: true,
+
 
   devtools: {
     enabled: true,
   },
-
-  // Static site generation for GitHub Pages
-  ssr: true,
 
   // Required for GitHub Pages (project site, not user site)
   app: {

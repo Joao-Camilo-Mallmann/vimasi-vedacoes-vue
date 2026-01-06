@@ -1,9 +1,9 @@
 {
-  "date": "2025-12-08T20:42:09.660Z",
+  "date": "2026-01-06T13:37:28.633Z",
   "preset": "github-pages",
   "framework": {
     "name": "nuxt",
-    "version": "4.2.1"
+    "version": "4.2.2"
   },
   "versions": {
     "nitro": "2.12.8"
