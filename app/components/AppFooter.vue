@@ -248,7 +248,7 @@
         <div class="flex gap-6">
           <span class="font-arimo text-xs text-white/40"
             >Desenvolvido com <span class="text-accent-red">♥</span> por
-            Antigravity</span
+            João Camilo Mallmann</span
           >
         </div>
       </div>
