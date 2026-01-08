@@ -2,7 +2,7 @@
 
 Bem-vindo ao repositório oficial da Landing Page da **Vimasi Vedações**, desenvolvida com tecnologias modernas para garantir alta performance, SEO otimizado e uma experiência de usuário excepcional.
 
-🔗 **Acesse o site**: [https://joao-camilo-mallmann.github.io/vimasi-vedacoes-vue/](https://joao-camilo-mallmann.github.io/vimasi-vedacoes-vue/)
+🔗 **Acesse o site**: [https://vimasi-vedacoes.com](https://vimasi-vedacoes.com)
 
 ## 🎯 Sobre o Projeto
 

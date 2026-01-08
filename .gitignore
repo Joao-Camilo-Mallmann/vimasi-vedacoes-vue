@@ -32,6 +32,8 @@ coverage
 # Nuxt dev/build outputs
 .nuxt
 .output
+.output/*
 .data
 .nitro
 .cache
+
