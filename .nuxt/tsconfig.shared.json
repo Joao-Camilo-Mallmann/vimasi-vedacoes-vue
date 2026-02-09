@@ -25,9 +25,6 @@
       "@unhead/vue": [
         "../node_modules/@unhead/vue"
       ],
-      "@nuxt/devtools": [
-        "../node_modules/@nuxt/devtools"
-      ],
       "@vue/runtime-core": [
         "../node_modules/@vue/runtime-core"
       ],
@@ -95,7 +92,7 @@
         "./imports"
       ],
       "#app-manifest": [
-        "./manifest/meta/5dac11a4-b9cb-4a89-a02b-7e7bde44bf30.json"
+        "./manifest/meta/dev"
       ],
       "#build": [
         "."

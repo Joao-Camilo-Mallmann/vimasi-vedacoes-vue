@@ -36,4 +36,5 @@ coverage
 .data
 .nitro
 .cache
+.output
 
