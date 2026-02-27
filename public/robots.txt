@@ -6,6 +6,3 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://vimasi-vedacoes.com/sitemap.xml
-
-# Block crawling of specific paths (if any)
-Disallow: /_nuxt/builds/
