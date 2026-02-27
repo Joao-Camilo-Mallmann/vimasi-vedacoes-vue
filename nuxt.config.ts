@@ -10,8 +10,9 @@ export default defineNuxtConfig({
 
   modules: ["@nuxt/eslint", "@nuxt/icon"],
 
-  // Static site generation for GitHub Pages
-  ssr: false,
+  // SSR must be true for SSG - generates full HTML content.
+  // With ssr: false, the body is empty and Google classifies as "soft 404".
+  ssr: true,
 
 
   devtools: {
