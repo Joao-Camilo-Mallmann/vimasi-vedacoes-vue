@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   modules: ["@nuxt/eslint", "@nuxt/icon"],
 
   // Static site generation for GitHub Pages
-  ssr: true,
+  ssr: false,
 
 
   devtools: {
@@ -92,6 +92,49 @@ export default defineNuxtConfig({
         {
           rel: "stylesheet",
           href: "https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@0,400..700;1,400..700&family=Staatliches&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap",
+        },
+      ],
+      script: [
+        {
+          type: "application/ld+json",
+          innerHTML: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Vimasi Vedações",
+            "description": "Especialista em vedações hidráulicas e industriais em Lajeado/RS. Gaxetas, raspadores, anéis O-ring e kits de vedação de alta performance.",
+            "url": "https://vimasi-vedacoes.com",
+            "logo": "https://vimasi-vedacoes.com/og-image.png",
+            "image": "https://vimasi-vedacoes.com/og-image.png",
+            "telephone": "+55-51-99619-4676",
+            "email": "vimasicomerciopecas@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "R. Eugênia Mello de Oliveira Kirchheim, 151",
+              "addressLocality": "Lajeado",
+              "addressRegion": "RS",
+              "postalCode": "95905-699",
+              "addressCountry": "BR",
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": -29.4678,
+              "longitude": -51.9614,
+            },
+            "areaServed": {
+              "@type": "State",
+              "name": "Rio Grande do Sul",
+            },
+            "priceRange": "$$",
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "08:00",
+              "closes": "18:00",
+            },
+            "sameAs": [
+              "https://wa.me/555196194676",
+            ],
+          }),
         },
       ],
     },
