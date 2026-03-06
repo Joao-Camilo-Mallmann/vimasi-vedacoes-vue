@@ -119,7 +119,7 @@
           >
             <div class="aspect-square overflow-hidden">
               <img
-                src="~/assets/images/product-7.png"
+                src="~/assets/images/product-7.webp"
                 alt="Gaxetas de vedação hidráulica"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -146,7 +146,7 @@
           >
             <div class="aspect-square overflow-hidden">
               <img
-                src="~/assets/images/product-5.png"
+                src="~/assets/images/product-5.webp"
                 alt="Raspadores industriais"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -173,7 +173,7 @@
           >
             <div class="aspect-square overflow-hidden">
               <img
-                src="~/assets/images/product-3.png"
+                src="~/assets/images/product-3.webp"
                 alt="Conjuntos de vedação ZW/ZO"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -200,7 +200,7 @@
           >
             <div class="aspect-square overflow-hidden">
               <img
-                src="~/assets/images/product-4.png"
+                src="~/assets/images/product-4.webp"
                 alt="Anéis O-ring e vedações circulares"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -282,7 +282,7 @@
             >
               <div class=" overflow-hidden">
                 <img
-                  src="~/assets/images/product-2.png"
+                  src="~/assets/images/product-2.webp"
                   alt="Retentores e selos mecânicos em detalhe"
                   class="h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100"
                 />
@@ -298,7 +298,7 @@
             >
               <div class=" overflow-hidden">
                 <img
-                  src="~/assets/images/product-8.png"
+                  src="~/assets/images/product-8.webp"
                   alt="Guias e buchas de desgaste industrial"
                   class="h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100"
                 />
@@ -314,7 +314,7 @@
             >
               <div class=" overflow-hidden">
                 <img
-                  src="~/assets/images/product-1.png"
+                  src="~/assets/images/product-1.webp"
                   alt="Juntas e arruelas de vedação diversas"
                   class="h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100"
                 />
@@ -330,7 +330,7 @@
             >
               <div class=" overflow-hidden">
                 <img
-                  src="~/assets/images/product-6.png"
+                  src="~/assets/images/product-6.webp"
                   alt="Vedações especiais customizadas sob medida"
                   class="h-full w-full object-contain opacity-100 transition-transform duration-700 group-hover:scale-110"
                 />

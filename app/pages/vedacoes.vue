@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const getImageUrl = (i: number) => {
-  return new URL(`../../assets/images/product-${i}.png`, import.meta.url).href;
+  return new URL(`../../assets/images/product-${i}.webp`, import.meta.url).href;
 };
 
 useHead({
