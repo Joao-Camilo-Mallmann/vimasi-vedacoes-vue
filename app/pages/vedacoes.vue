@@ -23,7 +23,7 @@ useHead({
     <div class="relative z-10 container mx-auto px-4 py-12">
       <div class="mb-16 text-center">
         <h1
-          class="font-anton animate-fade-in-up bg-linear-gradient-to-r mb-6 from-white via-white to-white/50 bg-clip-text text-5xl text-transparent uppercase italic md:text-7xl"
+          class="font-anton animate-fade-in-up bg-linear-gradient-to-r mb-6 from-white via-white to-white/50 bg-clip-text text-5xl text-accent-red uppercase italic md:text-7xl"
         >
           Nossas <span class="text-accent-gold">Vedações</span>
         </h1>

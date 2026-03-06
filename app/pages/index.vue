@@ -113,10 +113,11 @@
 
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <!-- Product 1: Gaxetas -->
-          <div
+          <nuxt-link
+            to="/gaxetas"
             class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:-translate-y-2 hover:bg-white/5"
           >
-            <div class="aspect-[2/3] overflow-hidden">
+            <div class="aspect-square overflow-hidden">
               <img
                 src="~/assets/images/product-7.png"
                 alt="Gaxetas de vedação hidráulica"
@@ -126,11 +127,6 @@
             <div
               class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/40 to-transparent p-6"
             >
-              <h3
-                class="font-anton mb-2 translate-y-4 text-3xl text-white uppercase italic transition-transform duration-300 group-hover:translate-y-0"
-              >
-                Gaxetas
-              </h3>
               <div
                 class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
               >
@@ -141,13 +137,14 @@
                 </p>
               </div>
             </div>
-          </div>
+          </nuxt-link>
 
           <!-- Product 2: Raspadores -->
-          <div
+          <nuxt-link
+            to="/contato"
             class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:-translate-y-2 hover:bg-white/5"
           >
-            <div class="aspect-[2/3] overflow-hidden">
+            <div class="aspect-square overflow-hidden">
               <img
                 src="~/assets/images/product-5.png"
                 alt="Raspadores industriais"
@@ -157,11 +154,6 @@
             <div
               class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/40 to-transparent p-6"
             >
-              <h3
-                class="font-anton mb-2 translate-y-4 text-3xl text-white uppercase italic transition-transform duration-300 group-hover:translate-y-0"
-              >
-                Raspadores
-              </h3>
               <div
                 class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
               >
@@ -172,13 +164,14 @@
                 </p>
               </div>
             </div>
-          </div>
+          </nuxt-link>
 
           <!-- Product 3: Conjuntos ZW/ZO -->
-          <div
+          <nuxt-link
+            to="/contato"
             class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:-translate-y-2 hover:bg-white/5"
           >
-            <div class="aspect-[2/3] overflow-hidden">
+            <div class="aspect-square overflow-hidden">
               <img
                 src="~/assets/images/product-3.png"
                 alt="Conjuntos de vedação ZW/ZO"
@@ -188,11 +181,6 @@
             <div
               class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/40 to-transparent p-6"
             >
-              <h3
-                class="font-anton mb-2 translate-y-4 text-3xl text-white uppercase italic transition-transform duration-300 group-hover:translate-y-0"
-              >
-                Kits ZW/ZO
-              </h3>
               <div
                 class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
               >
@@ -203,13 +191,14 @@
                 </p>
               </div>
             </div>
-          </div>
+          </nuxt-link>
 
           <!-- Product 4: Anéis -->
-          <div
+          <nuxt-link
+            to="/aneis-vedacao"
             class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:-translate-y-2 hover:bg-white/5"
           >
-            <div class="aspect-[2/3] overflow-hidden">
+            <div class="aspect-square overflow-hidden">
               <img
                 src="~/assets/images/product-4.png"
                 alt="Anéis O-ring e vedações circulares"
@@ -219,11 +208,6 @@
             <div
               class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/40 to-transparent p-6"
             >
-              <h3
-                class="font-anton mb-2 translate-y-4 text-3xl text-white uppercase italic transition-transform duration-300 group-hover:translate-y-0"
-              >
-                Anéis
-              </h3>
               <div
                 class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
               >
@@ -234,7 +218,7 @@
                 </p>
               </div>
             </div>
-          </div>
+          </nuxt-link>
         </div>
       </div>
     </section>

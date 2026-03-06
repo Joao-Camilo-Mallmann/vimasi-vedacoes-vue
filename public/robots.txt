@@ -1,8 +1,19 @@
 # Robots.txt for Vimasi Vedações
 # https://vimasi-vedacoes.com
 
-User-Agent: *
+User-agent: Googlebot
 Allow: /
+Allow: /aneis-vedacao
+Allow: /contato
+Allow: /gaxetas
+Allow: /vedacoes
+
+User-agent: *
+Allow: /
+Allow: /aneis-vedacao
+Allow: /contato
+Allow: /gaxetas
+Allow: /vedacoes
 
 # Sitemap location
 Sitemap: https://vimasi-vedacoes.com/sitemap.xml
