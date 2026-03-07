@@ -128,14 +128,13 @@ const mobileMenuOpen = ref(false);
 
 const menuItems = [
   { label: "Home", to: "/" },
-  { label: "Gaxetas", to: "/gaxetas" },
-  { label: "Anéis", to: "/aneis-vedacao" },
+  { label: "Soluções", to: "/#vedacoes" },
   { label: "Contato", to: "/contato" },
 ];
 </script>
 
-<style scoped>
-a[href^="#"] {
+<style>
+html {
   scroll-behavior: smooth;
 }
 </style>

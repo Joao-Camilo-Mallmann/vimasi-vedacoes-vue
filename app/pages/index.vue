@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section
       id="home"
-      class="relative flex min-h-[100svh] items-center justify-center overflow-hidden text-center text-white"
+      class="relative flex min-h-svh items-center justify-center overflow-hidden text-center text-white"
     >
       <div class="absolute inset-0 z-0">
         <img
@@ -13,59 +13,65 @@
           style="animation-duration: 20s"
         />
         <div
-          class="to-primary-dark absolute inset-0 bg-gradient-to-b from-black/80 via-black/50"
+          class="to-primary-dark absolute inset-0 bg-linear-to-b from-black/80 via-black/50"
         ></div>
         <div class="grain absolute inset-0 opacity-30"></div>
       </div>
 
-      <div class="relative z-10 mx-auto max-w-5xl px-4">
-        <h1
-          class="font-anton animate-fade-in-up mb-8 text-5xl leading-tight uppercase italic drop-shadow-2xl sm:text-6xl md:text-7xl lg:text-8xl"
-        >
-          A VEDAÇÃO
-          <span class="hydraulic-text" data-text="HIDRÁULICA">HIDRÁULICA</span
-          ><br />
-          QUE VOCÊ PRECISA
-        </h1>
-
-        <p
-          class="font-arimo animate-fade-in-up mx-auto mb-10 max-w-2xl text-lg text-white/80 md:text-xl"
-          style="animation-delay: 0.1s"
-        >
-          Soluções de alta performance para garantir a eficiência e durabilidade
-          do seu equipamento.
-        </p>
-
-        <a
-          href="#contato"
-          class="group bg-accent-red animate-fade-in-up relative inline-flex items-center gap-4 overflow-hidden rounded-full px-10 py-4 text-lg font-bold tracking-wider text-white uppercase shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-red-600 hover:shadow-red-600/40"
-          style="animation-delay: 0.2s"
-        >
-          <span class="relative z-10 flex items-center gap-3">
-            Faça seu orçamento
-            <svg
-              class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+      <div class="relative z-10 mx-auto max-w-7xl px-4 py-20 lg:py-0">
+        <div class="grid grid-cols-1 items-center gap-12">
+          <!-- Text/Titles -->
+          <div class="mx-auto max-w-4xl text-center">
+            <h1
+              class="font-anton animate-fade-in-up mb-8 text-5xl leading-tight uppercase italic drop-shadow-2xl sm:text-6xl md:text-7xl"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-          </span>
-          <div
-            class="group-hover:animate-shimmer absolute inset-0 -z-10 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent"
-          ></div>
-        </a>
+              A VEDAÇÃO
+              <br class="hidden lg:block" />
+              <span class="hydraulic-text" data-text="HIDRÁULICA">HIDRÁULICA</span
+              ><br />
+              QUE VOCÊ PRECISA
+            </h1>
+
+            <p
+              class="font-arimo animate-fade-in-up mx-auto mb-10 max-w-xl text-lg text-white/80 md:text-xl"
+              style="animation-delay: 0.1s"
+            >
+              Soluções de alta performance para garantir a eficiência e durabilidade
+              do seu equipamento.
+            </p>
+
+            <a
+              href="#orcamento"
+              class="group bg-accent-red animate-fade-in-up relative inline-flex items-center gap-4 overflow-hidden rounded-full px-10 py-4 text-lg font-bold tracking-wider text-white uppercase shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-red-600 hover:shadow-red-600/40"
+              style="animation-delay: 0.2s"
+            >
+              <span class="relative z-10 flex items-center gap-3">
+                Fale Conosco
+                <svg
+                  class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </span>
+              <div
+                class="group-hover:animate-shimmer absolute inset-0 -z-10 -translate-x-full bg-linear-to-r from-transparent via-white/20 to-transparent"
+              ></div>
+            </a>
+          </div>
+        </div>
       </div>
 
       <!-- Scroll Indicator -->
       <a
-        href="#vedacoes"
+        href="#orcamento"
         class="hover:text-accent-red absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-white/50 transition-colors"
         aria-label="Rolar para baixo"
       >
@@ -85,6 +91,13 @@
       </a>
     </section>
 
+    <!-- Orcamento Section -->
+    <section id="orcamento" class="bg-primary-dark relative overflow-hidden py-24">
+      <div class="relative z-10 mx-auto container px-4">
+        <QuoteForm />
+      </div>
+    </section>
+
     <!-- Products Section -->
     <section
       id="vedacoes"
@@ -101,7 +114,7 @@
       <div class="relative z-10 container mx-auto px-4">
         <div class="mb-16 text-center">
           <h2
-            class="font-anton mb-4 bg-gradient-to-r from-white via-white to-white/50 bg-clip-text text-5xl text-transparent uppercase italic md:text-6xl"
+            class="font-anton mb-4 bg-linear-to-r from-white via-white to-white/50 bg-clip-text text-5xl text-transparent uppercase italic md:text-6xl"
           >
             Nossas <span class="text-accent-red">Soluções</span>
           </h2>
@@ -125,7 +138,7 @@
               />
             </div>
             <div
-              class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/40 to-transparent p-6"
+              class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black/90 via-black/40 to-transparent p-6"
             >
               <div
                 class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
@@ -152,7 +165,7 @@
               />
             </div>
             <div
-              class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/40 to-transparent p-6"
+              class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black/90 via-black/40 to-transparent p-6"
             >
               <div
                 class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
@@ -179,7 +192,7 @@
               />
             </div>
             <div
-              class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/40 to-transparent p-6"
+              class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black/90 via-black/40 to-transparent p-6"
             >
               <div
                 class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
@@ -206,7 +219,7 @@
               />
             </div>
             <div
-              class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/40 to-transparent p-6"
+              class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black/90 via-black/40 to-transparent p-6"
             >
               <div
                 class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
@@ -227,14 +240,14 @@
     <section class="bg-primary-dark relative overflow-hidden py-32 text-white">
       <!-- Background decoration -->
       <div
-        class="absolute top-0 right-0 h-full w-1/2 bg-gradient-to-l from-white/5 to-transparent opacity-50"
+        class="absolute top-0 right-0 h-full w-1/2 bg-linear-to-l from-white/5 to-transparent opacity-50"
       ></div>
 
       <div class="relative z-10 container mx-auto px-4">
         <div class="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           <div class="space-y-8">
             <h2
-              class="font-anton from-accent-gold via-accent-gold to-accent-gold mb-6 bg-gradient-to-r bg-clip-text text-5xl leading-tight text-transparent uppercase italic md:text-6xl"
+              class="font-anton from-accent-gold via-accent-gold to-accent-gold mb-6 bg-linear-to-r bg-clip-text text-5xl leading-tight text-transparent uppercase italic md:text-6xl"
             >
               Excelência em<br />Cada Detalhe
             </h2>
@@ -288,7 +301,7 @@
                 />
               </div>
               <div
-                class="absolute inset-0 flex items-end bg-gradient-to-t from-black/90 via-transparent to-transparent p-6"
+                class="absolute inset-0 flex items-end bg-linear-to-t from-black/90 via-transparent to-transparent p-6"
               >
                
               </div>
@@ -304,7 +317,7 @@
                 />
               </div>
               <div
-                class="absolute inset-0 flex items-end bg-gradient-to-t from-black/90 via-transparent to-transparent p-6"
+                class="absolute inset-0 flex items-end bg-linear-to-t from-black/90 via-transparent to-transparent p-6"
               >
              
               </div>
@@ -320,7 +333,7 @@
                 />
               </div>
               <div
-                class="absolute inset-0 flex items-end bg-gradient-to-t from-black/90 via-transparent to-transparent p-6"
+                class="absolute inset-0 flex items-end bg-linear-to-t from-black/90 via-transparent to-transparent p-6"
               >
              
               </div>
@@ -336,7 +349,7 @@
                 />
               </div>
               <div
-                class="absolute inset-0 flex items-end bg-gradient-to-t from-black/90 via-transparent to-transparent p-6"
+                class="absolute inset-0 flex items-end bg-linear-to-t from-black/90 via-transparent to-transparent p-6"
               >
               
               </div>
@@ -360,14 +373,14 @@
         />
         <!-- Gradient overlay -->
         <div
-          class="from-primary-dark via-primary-dark/90 to-primary-dark absolute inset-0 bg-gradient-to-b"
+          class="from-primary-dark via-primary-dark/90 to-primary-dark absolute inset-0 bg-linear-to-b"
         ></div>
       </div>
 
       <div class="relative z-10 container mx-auto px-4">
         <div class="mb-16 text-center">
           <h2
-            class="font-anton mb-4 bg-gradient-to-r from-white via-white to-white/50 bg-clip-text text-5xl text-transparent uppercase italic md:text-6xl"
+            class="font-anton mb-4 bg-linear-to-r from-white via-white to-white/50 bg-clip-text text-5xl text-transparent uppercase italic md:text-6xl"
           >
             Entre em <span class="text-accent-red">Contato</span>
           </h2>
@@ -506,7 +519,7 @@
               Fale conosco no WhatsApp
             </span>
             <div
-              class="group-hover:animate-shimmer absolute inset-0 -z-10 -translate-x-full bg-linear-gradient-to-r from-transparent via-white/20 to-transparent"
+              class="group-hover:animate-shimmer absolute inset-0 -z-10 -translate-x-full bg-linear-to-r from-transparent via-white/20 to-transparent"
             ></div>
           </a>
         </div>
