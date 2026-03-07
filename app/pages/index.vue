@@ -130,9 +130,9 @@
             to="/gaxetas"
             class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:-translate-y-2 hover:bg-white/5"
           >
-            <div class="aspect-square overflow-hidden">
+            <div class="aspect-video overflow-hidden">
               <img
-                src="~/assets/images/product-7.webp"
+                src="~/assets/images/gaxetas.png"
                 alt="Gaxetas de vedação hidráulica"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -157,9 +157,9 @@
             to="/contato"
             class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:-translate-y-2 hover:bg-white/5"
           >
-            <div class="aspect-square overflow-hidden">
+            <div class="aspect-video overflow-hidden">
               <img
-                src="~/assets/images/product-5.webp"
+                src="~/assets/images/raspadores.png"
                 alt="Raspadores industriais"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -184,9 +184,9 @@
             to="/contato"
             class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:-translate-y-2 hover:bg-white/5"
           >
-            <div class="aspect-square overflow-hidden">
+            <div class="aspect-video overflow-hidden">
               <img
-                src="~/assets/images/product-3.webp"
+                src="~/assets/images/kit-reparo.png"
                 alt="Conjuntos de vedação ZW/ZO"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -211,9 +211,9 @@
             to="/aneis-vedacao"
             class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:-translate-y-2 hover:bg-white/5"
           >
-            <div class="aspect-square overflow-hidden">
+            <div class="aspect-video overflow-hidden">
               <img
-                src="~/assets/images/product-4.webp"
+                src="~/assets/images/aneisoring.png"
                 alt="Anéis O-ring e vedações circulares"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -289,69 +289,52 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-2 gap-6">
+          <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+            <!-- Image 1 -->
             <div
-              class="group glass relative overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-white/10"
+              class="group relative overflow-hidden rounded-3xl p-1 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent-red/20 sm:col-span-2"
             >
-              <div class=" overflow-hidden">
-                <img
-                  src="~/assets/images/product-2.webp"
-                  alt="Retentores e selos mecânicos em detalhe"
-                  class="h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100"
-                />
-              </div>
-              <div
-                class="absolute inset-0 flex items-end bg-linear-to-t from-black/90 via-transparent to-transparent p-6"
-              >
-               
+              <div class="absolute inset-0 bg-linear-to-br from-white/10 to-white/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+              <div class="relative flex h-full w-full flex-col overflow-hidden rounded-2xl border border-white/5 bg-[#111]">
+                <div class="relative aspect-video overflow-hidden">
+                  <img
+                    src="~/assets/images/aneis-guia.png"
+                    alt="Anéis Guia"
+                    class="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                  />
+                </div>
               </div>
             </div>
+
+            <!-- Image 2 -->
             <div
-              class="group glass relative mt-12 overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-white/10"
+              class="group relative overflow-hidden rounded-3xl p-1 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent-gold/20"
             >
-              <div class=" overflow-hidden">
-                <img
-                  src="~/assets/images/product-8.webp"
-                  alt="Guias e buchas de desgaste industrial"
-                  class="h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100"
-                />
-              </div>
-              <div
-                class="absolute inset-0 flex items-end bg-linear-to-t from-black/90 via-transparent to-transparent p-6"
-              >
-             
+              <div class="absolute inset-0 bg-linear-to-br from-white/10 to-white/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+              <div class="relative flex h-full w-full flex-col overflow-hidden rounded-2xl border border-white/5 bg-[#111]">
+                <div class="relative aspect-video overflow-hidden">
+                  <img
+                    src="~/assets/images/conjunto-capped-seal.png"
+                    alt="Conjunto Capped Seal"
+                    class="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                  />
+                </div>
               </div>
             </div>
+
+            <!-- Image 3 -->
             <div
-              class="group glass relative overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-white/10"
+              class="group relative overflow-hidden rounded-3xl p-1 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-white/10"
             >
-              <div class=" overflow-hidden">
-                <img
-                  src="~/assets/images/product-1.webp"
-                  alt="Juntas e arruelas de vedação diversas"
-                  class="h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100"
-                />
-              </div>
-              <div
-                class="absolute inset-0 flex items-end bg-linear-to-t from-black/90 via-transparent to-transparent p-6"
-              >
-             
-              </div>
-            </div>
-            <div
-              class="group glass relative mt-12 overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-white/10"
-            >
-              <div class=" overflow-hidden">
-                <img
-                  src="~/assets/images/product-6.webp"
-                  alt="Vedações especiais customizadas sob medida"
-                  class="h-full w-full object-contain opacity-100 transition-transform duration-700 group-hover:scale-110"
-                />
-              </div>
-              <div
-                class="absolute inset-0 flex items-end bg-linear-to-t from-black/90 via-transparent to-transparent p-6"
-              >
-              
+              <div class="absolute inset-0 bg-linear-to-br from-white/10 to-white/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+              <div class="relative flex h-full w-full flex-col overflow-hidden rounded-2xl border border-white/5 bg-[#111]">
+                <div class="relative aspect-video overflow-hidden">
+                  <img
+                    src="~/assets/images/conjunto-oeod.png"
+                    alt="Conjunto OEOD"
+                    class="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                  />
+                </div>
               </div>
             </div>
           </div>
