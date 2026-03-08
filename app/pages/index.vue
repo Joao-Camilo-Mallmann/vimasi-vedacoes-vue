@@ -140,6 +140,7 @@
             <div
               class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black/90 via-black/40 to-transparent p-6"
             >
+              <h3 class="font-anton mb-2 text-2xl tracking-wide text-white uppercase drop-shadow-md transition-transform duration-500 group-hover:-translate-y-1">Gaxetas</h3>
               <div
                 class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
               >
@@ -167,6 +168,7 @@
             <div
               class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black/90 via-black/40 to-transparent p-6"
             >
+              <h3 class="font-anton mb-2 text-2xl tracking-wide text-white uppercase drop-shadow-md transition-transform duration-500 group-hover:-translate-y-1">Raspadores</h3>
               <div
                 class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
               >
@@ -179,7 +181,7 @@
             </div>
           </nuxt-link>
 
-          <!-- Product 3: Conjuntos ZW/ZO -->
+          <!-- Product 3: Kit de Reparo -->
           <nuxt-link
             to="/contato"
             class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:-translate-y-2 hover:bg-white/5"
@@ -194,6 +196,7 @@
             <div
               class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black/90 via-black/40 to-transparent p-6"
             >
+              <h3 class="font-anton mb-2 text-2xl tracking-wide text-white uppercase drop-shadow-md transition-transform duration-500 group-hover:-translate-y-1">Kit de Reparo</h3>
               <div
                 class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
               >
@@ -221,6 +224,7 @@
             <div
               class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black/90 via-black/40 to-transparent p-6"
             >
+              <h3 class="font-anton mb-2 text-2xl tracking-wide text-white uppercase drop-shadow-md transition-transform duration-500 group-hover:-translate-y-1">Anéis O-ring</h3>
               <div
                 class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
               >
