@@ -27,19 +27,19 @@ export default defineNuxtConfig({
         lang: "pt-BR",
       },
       title:
-        "Vimasi Vedações | Vedações Hidráulicas e Industriais em Lajeado/RS",
+        "Vimasi Vedações | Vedações Hidráulicas em Lajeado, Vale do Taquari e RS",
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
           name: "description",
           content:
-            "Vimasi Vedações - Especialista em vedações hidráulicas e industriais em Lajeado/RS. Gaxetas, raspadores, anéis O-ring e kits de vedação de alta performance. Atendimento rápido e qualidade garantida.",
+            "Vimasi Vedações - Especialista em vedações hidráulicas e industriais em Lajeado, Vale do Taquari e todo Rio Grande do Sul. Gaxetas, raspadores, anéis O-ring e kits de vedação de alta performance. Atendimento rápido e qualidade.",
         },
         {
           name: "keywords",
           content:
-            "vedações hidráulicas, gaxetas, raspadores, anéis o-ring, retentores, selos mecânicos, vimasi, lajeado, vedações industriais, manutenção hidráulica, vedações RS, cilindros hidráulicos",
+            "vedações hidráulicas, gaxetas, raspadores, anéis o-ring, retentores, selos mecânicos, vimasi, lajeado, vale do taquari, rio grande do sul, rs, vedações industriais, manutenção hidráulica, vedações RS, cilindros hidráulicos",
         },
         { name: "author", content: "Vimasi Vedações" },
         { name: "theme-color", content: "#050505" },
@@ -57,7 +57,7 @@ export default defineNuxtConfig({
         {
           property: "og:description",
           content:
-            "Soluções completas em vedações hidráulicas de alta performance. Qualidade e durabilidade para sua indústria em Lajeado/RS.",
+            "Soluções completas em vedações hidráulicas de alta performance. Qualidade e durabilidade para sua indústria em Lajeado, Vale do Taquari e Rio Grande do Sul.",
         },
         { property: "og:image", content: `${fullUrl}/og-image.png` },
         { property: "og:image:width", content: "1024" },
@@ -73,7 +73,7 @@ export default defineNuxtConfig({
         {
           name: "twitter:description",
           content:
-            "Soluções completas em vedações hidráulicas de alta performance em Lajeado/RS.",
+            "Soluções completas em vedações hidráulicas de alta performance em Lajeado, Vale do Taquari e Rio Grande do Sul.",
         },
         { name: "twitter:image", content: `${fullUrl}/og-image.png` },
 
@@ -102,7 +102,7 @@ export default defineNuxtConfig({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "Vimasi Vedações",
-            "description": "Especialista em vedações hidráulicas e industriais em Lajeado/RS. Gaxetas, raspadores, anéis O-ring e kits de vedação de alta performance.",
+            "description": "Especialista em vedações hidráulicas e industriais em Lajeado, Vale do Taquari e todo Rio Grande do Sul. Gaxetas, raspadores, anéis O-ring e kits de vedação de alta performance.",
             "url": "https://vimasi-vedacoes.com",
             "logo": "https://vimasi-vedacoes.com/og-image.png",
             "image": "https://vimasi-vedacoes.com/og-image.png",

@@ -568,7 +568,7 @@
         </h2>
         <p class="font-arimo mx-auto mb-10 max-w-2xl text-lg text-white/70">
           Entre em contato com nossa equipe técnica para um orçamento
-          personalizado. Atendemos Lajeado/RS e região.
+          personalizado. Atendemos Lajeado, Vale do Taquari e todo o Rio Grande do Sul.
         </p>
 
         <div
@@ -622,12 +622,12 @@ onMounted(() => {
 });
 
 useHead({
-  title: "O que é Gaxeta? Tipos, Aplicações e Vantagens | Vimasi Vedações",
+  title: "Gaxetas e Vedações Industriais no Vale do Taquari e RS | Vimasi",
   meta: [
     {
       name: "description",
       content:
-        "Descubra tudo sobre gaxetas hidráulicas: tipos (U-Cup, V-Ring), aplicações industriais e vantagens. Especialistas em vedações em Lajeado/RS. Solicite seu orçamento!",
+        "Descubra tudo sobre gaxetas hidráulicas: tipos (U-Cup, V-Ring), aplicações industriais e vantagens. Especialistas em vedações em Lajeado, Vale do Taquari e RS. Solicite seu orçamento!",
     },
   ],
   script: [

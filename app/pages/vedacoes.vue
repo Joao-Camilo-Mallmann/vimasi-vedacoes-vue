@@ -4,7 +4,7 @@ const getImageUrl = (i: number) => {
 };
 
 useHead({
-  title: "Produtos | Vimasi Vedações",
+  title: "Vedações Industriais no Vale do Taquari e RS | Vimasi",
 });
 </script>
 

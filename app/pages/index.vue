@@ -373,7 +373,7 @@
           </h2>
           <p class="font-arimo mx-auto max-w-2xl text-lg text-white/60">
             Nossa equipe técnica está pronta para atender você e encontrar a
-            melhor solução.
+            melhor solução em vedações para Lajeado, Vale do Taquari e todo o RS.
           </p>
         </div>
 
@@ -517,7 +517,7 @@
 
 <script setup lang="ts">
 useHead({
-  title: "Vimasi Vedações | Vedações Hidráulicas e Industriais",
+  title: "Vimasi Vedações | Vedações Hidráulicas no Vale do Taquari e RS",
 });
 </script>
 

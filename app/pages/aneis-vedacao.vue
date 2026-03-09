@@ -433,8 +433,7 @@
           Encontre o <span class="text-accent-gold">Anel Ideal</span>
         </h2>
         <p class="font-arimo mx-auto mb-10 max-w-2xl text-lg text-white/70">
-          Temos o maior estoque de O-Rings da região. Consulte disponibilidade
-          imediata.
+          Temos o maior estoque de O-Rings da região. Atendemos Lajeado, Vale do Taquari e Rio Grande do Sul com pronta entrega.
         </p>
 
         <div
@@ -488,12 +487,12 @@ onMounted(() => {
 });
 
 useHead({
-  title: "Anéis O-Ring e Vedações Industriais | Vimasi Vedações",
+  title: "Anéis O-Ring e Vedações Industriais no Vale do Taquari e RS | Vimasi",
   meta: [
     {
       name: "description",
       content:
-        "Catálogo completo de Anéis O-Ring, X-Ring e V-Ring. Diversos materiais (NBR, Viton, Silicone) para todas as aplicações industriais. Entrega em Lajeado/RS.",
+        "Catálogo completo de Anéis O-Ring, X-Ring e V-Ring. Diversos materiais (NBR, Viton, Silicone) para todas as aplicações industriais. Entrega em Lajeado, Vale do Taquari e todo o RS.",
     },
   ],
   script: [
