@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded-3xl bg-neutral-950/95 backdrop-blur-xl border border-white/5 p-6 sm:p-8 text-left text-white shadow-2xl relative overflow-hidden">
+  <div class="rounded-3xl bg-neutral-800/30 backdrop-blur-xl border border-white/5 p-6 sm:p-8 text-left text-white shadow-2xl relative overflow-hidden">
     <!-- Subtle background glow (reduced intensity) -->
     <div class="absolute -top-24 -right-24 h-48 w-48 rounded-full bg-accent-red/10 blur-[100px] pointer-events-none"></div>
     <div class="absolute -bottom-24 -left-24 h-48 w-48 rounded-full bg-blue-500/5 blur-[100px] pointer-events-none"></div>
