@@ -7,7 +7,7 @@
     >
       <div class="absolute inset-0 z-0">
         <img
-          src="~/assets/images/hero-bg.jpg"
+          src="~/assets/images/home/hero-bg.webp"
           alt="Fundo da seção hero mostrando vedações industriais"
           class="animate-float h-full w-full scale-105 object-cover"
           style="animation-duration: 20s"
@@ -132,7 +132,7 @@
           >
             <div class="aspect-video overflow-hidden">
               <img
-                src="~/assets/images/gaxetas.png"
+                src="~/assets/images/catalog/gaxetas.webp"
                 alt="Gaxetas de vedação hidráulica"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -160,7 +160,7 @@
           >
             <div class="aspect-video overflow-hidden">
               <img
-                src="~/assets/images/raspadores.png"
+                src="~/assets/images/catalog/raspadores.webp"
                 alt="Raspadores industriais"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -188,7 +188,7 @@
           >
             <div class="aspect-video overflow-hidden">
               <img
-                src="~/assets/images/kit-reparo.png"
+                src="~/assets/images/catalog/kit-reparo.webp"
                 alt="Conjuntos de vedação ZW/ZO"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -216,7 +216,7 @@
           >
             <div class="aspect-video overflow-hidden">
               <img
-                src="~/assets/images/aneisoring.png"
+                src="~/assets/images/catalog/aneisoring.webp"
                 alt="Anéis O-ring e vedações circulares"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -302,7 +302,7 @@
               <div class="relative flex h-full w-full flex-col overflow-hidden rounded-2xl border border-white/5 bg-[#111]">
                 <div class="relative aspect-video overflow-hidden">
                   <img
-                    src="~/assets/images/aneis-guia.png"
+                    src="~/assets/images/catalog/aneis-guia.webp"
                     alt="Anéis Guia"
                     class="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
                   />
@@ -318,7 +318,7 @@
               <div class="relative flex h-full w-full flex-col overflow-hidden rounded-2xl border border-white/5 bg-[#111]">
                 <div class="relative aspect-video overflow-hidden">
                   <img
-                    src="~/assets/images/conjunto-capped-seal.png"
+                    src="~/assets/images/catalog/conjunto-capped-seal.webp"
                     alt="Conjunto Capped Seal"
                     class="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
                   />
@@ -334,7 +334,7 @@
               <div class="relative flex h-full w-full flex-col overflow-hidden rounded-2xl border border-white/5 bg-[#111]">
                 <div class="relative aspect-video overflow-hidden">
                   <img
-                    src="~/assets/images/conjunto-oeod.png"
+                    src="~/assets/images/catalog/conjunto-oeod.webp"
                     alt="Conjunto OEOD"
                     class="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
                   />
@@ -354,7 +354,7 @@
       <!-- Background Image with Filter -->
       <div class="absolute inset-0 z-0">
         <img
-          src="~/assets/images/contact-bg.jpg"
+          src="~/assets/images/home/contact-bg.webp"
           alt="Fundo da seção de contato com textura industrial"
           class="h-full w-full object-cover opacity-40"
         />

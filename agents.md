@@ -36,6 +36,12 @@ Ao fazer alterações, verifique:
 
 - [ ] Se alterou rotas ou estrutura, rode `npm run generate` localmente para validar.
 - [ ] Se adicionou imagens, garanta que caminhos relativos ou uso de `basePath` estão corretos.
+  - **Estrutura de Imagens**:
+    - `assets/images/home/`: Fundos e hero da home.
+    - `assets/images/catalog/`: Miniaturas de produtos e iconografia técnica.
+    - `assets/images/gaskets/`: Imagens específicas da página de gaxetas.
+    - `assets/images/sealing-rings/`: Imagens específicas da página de anéis.
+    - `assets/images/shared/`: Logo e elementos comuns a todas as páginas.
 - [ ] Não sugira comandos de deploy manual (`gh-pages -d dist`) a menos que explicitamente solicitado; confie no GitHub Actions.
 
 ## 📄 Arquivos Importantes

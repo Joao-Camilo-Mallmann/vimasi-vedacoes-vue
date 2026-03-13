@@ -6,7 +6,7 @@
     >
       <div class="absolute inset-0 z-0">
         <img
-          src="~/assets/images/sealing-ring-hero.png"
+          src="~/assets/images/sealing-rings/sealing-ring-hero.webp"
           alt="Anéis de vedação O-ring e vedações especiais"
           class="h-full w-full object-cover"
         />

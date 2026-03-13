@@ -6,7 +6,7 @@
     >
       <div class="absolute inset-0 z-0">
         <img
-          src="~/assets/images/contact-bg.jpg"
+          src="~/assets/images/home/contact-bg.webp"
           alt="Entre em contato com a Vimasi Vedações"
           class="h-full w-full object-cover"
         />
@@ -47,7 +47,7 @@
       <!-- Background Image with Filter -->
       <div class="absolute inset-0 z-0">
         <img
-          src="~/assets/images/contact-bg.jpg"
+          src="~/assets/images/home/contact-bg.webp"
           alt="Fundo da seção de contato com textura industrial"
           class="h-full w-full object-cover opacity-40"
         />

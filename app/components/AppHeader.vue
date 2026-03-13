@@ -5,9 +5,9 @@
         <!-- Logo -->
         <NuxtLink to="/" class="group flex items-center">
           <img
-            src="~/assets/images/logo.png"
+            src="~/assets/images/shared/logo.png"
             alt="Vimasi Vedações"
-            class="h-10 object-contain transition-all duration-500 group-hover:scale-105 group-hover:drop-shadow-[0_0_15px_rgba(212,175,55,0.4)] md:h-[52px]"
+            class="h-10 object-contain transition-all duration-500 group-hover:scale-105 group-hover:drop-shadow-[0_0_15px_rgba(212,175,55,0.4)] md:h-13"
           />
         </NuxtLink>
 
@@ -39,7 +39,7 @@
               WhatsApp
             </span>
             <span
-              class="bg-linear-gradient-to-r absolute inset-0 -z-0 from-transparent via-white/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+              class="absolute inset-0 z-0 bg-linear-to-r from-transparent via-white/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
             ></span>
           </a>
         </nav>

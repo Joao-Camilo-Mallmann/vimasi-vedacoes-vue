@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const getImageUrl = (i: number) => {
-  return new URL(`../../assets/images/product-${i}.webp`, import.meta.url).href;
+  return new URL(`../../assets/images/catalog/old/product-${i}.webp`, import.meta.url).href;
 };
 
 useHead({
@@ -44,9 +44,9 @@ useHead({
           class="group glass animate-fade-in-up relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-white/5"
           :style="`animation-delay: ${0.1 * i}s`"
         >
-          <div class="relative aspect-[4/3] overflow-hidden">
+          <div class="relative aspect-4/3 overflow-hidden">
             <div
-              class="from-primary-dark/80 absolute inset-0 z-10 bg-gradient-to-t to-transparent opacity-60 transition-opacity duration-500 group-hover:opacity-40"
+              class="from-primary-dark/80 absolute inset-0 z-10 bg-linear-to-t to-transparent opacity-60 transition-opacity duration-500 group-hover:opacity-40"
             ></div>
             <img
               :src="getImageUrl(i)"

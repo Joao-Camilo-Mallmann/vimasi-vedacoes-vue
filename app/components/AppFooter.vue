@@ -23,7 +23,7 @@
         <!-- Company Info -->
         <div class="space-y-6">
           <img
-            src="~/assets/images/logo.png"
+            src="~/assets/images/shared/logo.png"
             alt="Vimasi Vedações"
             class="h-14 object-contain opacity-90"
           />

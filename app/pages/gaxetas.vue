@@ -6,7 +6,7 @@
     >
       <div class="absolute inset-0 z-0">
         <img
-          src="~/assets/images/gasket-hero.png"
+          src="~/assets/images/gaskets/gasket-hero.webp"
           alt="Gaxetas hidráulicas de alta qualidade para vedação industrial"
           class="h-full w-full object-cover"
         />
@@ -244,7 +244,7 @@
         <!-- Types Image -->
         <div class="mx-auto mt-16 max-w-4xl">
           <img
-            src="~/assets/images/gasket-types.png"
+            src="~/assets/images/gaskets/gasket-types.webp"
             alt="Diferentes tipos de gaxetas hidráulicas: U-Cup, V-Ring, dupla ação e gaxeta de haste"
             class="w-full rounded-2xl shadow-2xl"
           />
