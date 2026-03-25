@@ -6,11 +6,11 @@
       class="relative flex min-h-svh items-center justify-center overflow-hidden text-center text-white"
     >
       <div class="absolute inset-0 z-0">
-        <img
-          src="~/assets/images/home/hero-bg.webp"
+        <NuxtImg
+          src="/home/hero-bg.webp"
           alt="Fundo da seção hero mostrando vedações industriais"
           fetchpriority="high"
-          class="animate-float h-full w-full scale-105 object-cover"
+          class="animate-float h-full w-full scale-105 object-cover blur-sm"
           style="animation-duration: 20s"
         />
         <div
@@ -132,10 +132,11 @@
             class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:-translate-y-2 hover:bg-white/5"
           >
             <div class="aspect-video overflow-hidden">
-              <img
-                src="~/assets/images/catalog/gaxetas.webp"
+              <NuxtImg
+                src="/catalog/gaxetas.webp"
                 alt="Gaxetas de vedação hidráulica"
                 loading="lazy"
+                sizes="100vw sm:50vw lg:400px"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
             </div>
@@ -161,10 +162,11 @@
             class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:-translate-y-2 hover:bg-white/5"
           >
             <div class="aspect-video overflow-hidden">
-              <img
-                src="~/assets/images/catalog/raspadores.webp"
+              <NuxtImg
+                src="/catalog/raspadores.webp"
                 alt="Raspadores industriais"
                 loading="lazy"
+                sizes="100vw sm:50vw lg:400px"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
             </div>
@@ -190,10 +192,11 @@
             class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:-translate-y-2 hover:bg-white/5"
           >
             <div class="aspect-video overflow-hidden">
-              <img
-                src="~/assets/images/catalog/kit-reparo.webp"
+              <NuxtImg
+                src="/catalog/kit-reparo.webp"
                 alt="Conjuntos de vedação ZW/ZO"
                 loading="lazy"
+                sizes="100vw sm:50vw lg:400px"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
             </div>
@@ -219,10 +222,11 @@
             class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:-translate-y-2 hover:bg-white/5"
           >
             <div class="aspect-video overflow-hidden">
-              <img
-                src="~/assets/images/catalog/aneisoring.webp"
+              <NuxtImg
+                src="/catalog/aneisoring.webp"
                 alt="Anéis O-ring e vedações circulares"
                 loading="lazy"
+                sizes="100vw sm:50vw lg:400px"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
             </div>
@@ -306,10 +310,11 @@
               <div class="absolute inset-0 bg-linear-to-br from-white/10 to-white/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
               <div class="relative flex h-full w-full flex-col overflow-hidden rounded-2xl border border-white/5 bg-[#111]">
                 <div class="relative aspect-video overflow-hidden">
-                  <img
-                    src="~/assets/images/catalog/aneis-guia.webp"
+                  <NuxtImg
+                    src="/catalog/aneis-guia.webp"
                     alt="Anéis Guia"
                     loading="lazy"
+                    sizes="100vw sm:50vw lg:600px"
                     class="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
                   />
                 </div>
@@ -323,10 +328,11 @@
               <div class="absolute inset-0 bg-linear-to-br from-white/10 to-white/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
               <div class="relative flex h-full w-full flex-col overflow-hidden rounded-2xl border border-white/5 bg-[#111]">
                 <div class="relative aspect-video overflow-hidden">
-                  <img
-                    src="~/assets/images/catalog/conjunto-capped-seal.webp"
+                  <NuxtImg
+                    src="/catalog/conjunto-capped-seal.webp"
                     alt="Conjunto Capped Seal"
                     loading="lazy"
+                    sizes="100vw sm:50vw lg:400px"
                     class="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
                   />
                 </div>
@@ -340,10 +346,11 @@
               <div class="absolute inset-0 bg-linear-to-br from-white/10 to-white/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
               <div class="relative flex h-full w-full flex-col overflow-hidden rounded-2xl border border-white/5 bg-[#111]">
                 <div class="relative aspect-video overflow-hidden">
-                  <img
-                    src="~/assets/images/catalog/conjunto-oeod.webp"
+                  <NuxtImg
+                    src="/catalog/conjunto-oeod.webp"
                     alt="Conjunto OEOD"
                     loading="lazy"
+                    sizes="100vw sm:50vw lg:400px"
                     class="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
                   />
                 </div>
@@ -361,10 +368,11 @@
     >
       <!-- Background Image with Filter -->
       <div class="absolute inset-0 z-0">
-        <img
-          src="~/assets/images/home/contact-bg.webp"
+        <NuxtImg
+          src="/home/contact-bg.webp"
           alt="Fundo da seção de contato com textura industrial"
           loading="lazy"
+          sizes="100vw"
           class="h-full w-full object-cover opacity-40"
         />
         <!-- Gradient overlay -->

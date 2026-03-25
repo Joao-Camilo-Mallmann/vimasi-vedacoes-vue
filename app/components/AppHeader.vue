@@ -4,9 +4,10 @@
       <div class="flex items-center justify-between py-3 md:py-4">
         <!-- Logo -->
         <NuxtLink to="/" class="group flex items-center">
-          <img
-            src="~/assets/images/shared/logo.png"
+          <NuxtImg
+            src="/shared/logo.png"
             alt="Vimasi Vedações"
+            sizes="170px"
             class="h-10 object-contain transition-all duration-500 group-hover:scale-105 group-hover:drop-shadow-[0_0_15px_rgba(212,175,55,0.4)] md:h-13"
           />
         </NuxtLink>

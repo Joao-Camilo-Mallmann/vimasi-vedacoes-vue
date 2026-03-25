@@ -30,6 +30,12 @@ Este arquivo serve como guia de contexto para Agentes de IA (e desenvolvedores h
 - Use classes utilitárias do Tailwind CSS sempre que possível.
 - CSS Customizado deve ir para `assets/css/main.css`.
 
+### 4. Otimização de Performance (NuxtImg)
+
+- Utilize o componente `<NuxtImg>` para todas as imagens em vez da tag padrão.
+- Defina o atributo `sizes` para imagens responsivas (Exemplo: `sizes="100vw sm:50vw lg:400px"`).
+- O módulo `@nuxt/image` já cuida dos formates modernos. Combine com `loading="lazy"` para abaixo da dobra e `fetchpriority="high"` para destaques.
+
 ## ⚠️ Checklist para Agentes
 
 Ao fazer alterações, verifique:

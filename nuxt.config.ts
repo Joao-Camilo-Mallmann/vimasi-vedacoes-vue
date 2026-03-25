@@ -8,7 +8,7 @@ const fullUrl = `${siteUrl}`;
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 
-  modules: ["@nuxt/eslint", "@nuxt/icon"],
+  modules: ["@nuxt/eslint", "@nuxt/icon", "@nuxt/image"],
 
   // SSR must be true for SSG - generates full HTML content.
   // With ssr: false, the body is empty and Google classifies as "soft 404".
@@ -147,6 +147,10 @@ export default defineNuxtConfig({
   // Nitro configuration for static generation
   nitro: {
     preset: "github-pages",
+    routeRules: {
+      '/_nuxt/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
+      '/assets/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
+    }
   },
 
   vite: {
@@ -157,5 +161,11 @@ export default defineNuxtConfig({
     config: {
       stylistic: true // <---
     }
+  },
+
+  image: {
+    format: ['webp', 'avif'],
+    quality: 85,
+    dir: 'assets/images',
   },
 });

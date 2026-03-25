@@ -22,9 +22,11 @@
       >
         <!-- Company Info -->
         <div class="space-y-6">
-          <img
-            src="~/assets/images/shared/logo.png"
+          <NuxtImg
+            src="/shared/logo.png"
             alt="Vimasi Vedações"
+            sizes="170px"
+            loading="lazy"
             class="h-14 object-contain opacity-90"
           />
           <p
