@@ -44,6 +44,10 @@ Ao fazer alterações, verifique:
     - `assets/images/shared/`: Logo e elementos comuns a todas as páginas.
 - [ ] Não sugira comandos de deploy manual (`gh-pages -d dist`) a menos que explicitamente solicitado; confie no GitHub Actions.
 
+## 📱 Componentes Globais e CTAs Relevantes
+
+- **Botão Flutuante WhatsApp**: Componente global `FloatingWhatsApp.vue` inserido no layout padrão (`default.vue`), posicionado na seção inferior direita. Inclui lógica de exibição de balão com delay de 5 segundos para aumento de conversão.
+
 ## 📄 Arquivos Importantes
 
 - `nuxt.config.ts`: Configuração central (Head, Modules, CSS, Vite).
