@@ -9,6 +9,7 @@
         <img
           src="~/assets/images/home/hero-bg.webp"
           alt="Fundo da seção hero mostrando vedações industriais"
+          fetchpriority="high"
           class="animate-float h-full w-full scale-105 object-cover"
           style="animation-duration: 20s"
         />
@@ -134,6 +135,7 @@
               <img
                 src="~/assets/images/catalog/gaxetas.webp"
                 alt="Gaxetas de vedação hidráulica"
+                loading="lazy"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
             </div>
@@ -162,6 +164,7 @@
               <img
                 src="~/assets/images/catalog/raspadores.webp"
                 alt="Raspadores industriais"
+                loading="lazy"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
             </div>
@@ -190,6 +193,7 @@
               <img
                 src="~/assets/images/catalog/kit-reparo.webp"
                 alt="Conjuntos de vedação ZW/ZO"
+                loading="lazy"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
             </div>
@@ -218,6 +222,7 @@
               <img
                 src="~/assets/images/catalog/aneisoring.webp"
                 alt="Anéis O-ring e vedações circulares"
+                loading="lazy"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
             </div>
@@ -304,6 +309,7 @@
                   <img
                     src="~/assets/images/catalog/aneis-guia.webp"
                     alt="Anéis Guia"
+                    loading="lazy"
                     class="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
                   />
                 </div>
@@ -320,6 +326,7 @@
                   <img
                     src="~/assets/images/catalog/conjunto-capped-seal.webp"
                     alt="Conjunto Capped Seal"
+                    loading="lazy"
                     class="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
                   />
                 </div>
@@ -336,6 +343,7 @@
                   <img
                     src="~/assets/images/catalog/conjunto-oeod.webp"
                     alt="Conjunto OEOD"
+                    loading="lazy"
                     class="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
                   />
                 </div>
@@ -356,6 +364,7 @@
         <img
           src="~/assets/images/home/contact-bg.webp"
           alt="Fundo da seção de contato com textura industrial"
+          loading="lazy"
           class="h-full w-full object-cover opacity-40"
         />
         <!-- Gradient overlay -->
