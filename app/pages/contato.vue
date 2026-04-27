@@ -173,8 +173,8 @@
               Endereço
             </h3>
             <p class="font-arimo mb-2 text-sm text-white/60">
-              R. Eugênia Mello de Oliveira Kirchheim, 151<br />
-              Bom Pastor, Lajeado - RS
+              Av. Cristiano Dexheimer, 83 - Campestre<br />
+              Lajeado - RS
             </p>
             <span
               class="text-accent-red text-xs font-bold tracking-wider uppercase group-hover:underline"

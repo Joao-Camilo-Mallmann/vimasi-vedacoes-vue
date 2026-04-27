@@ -110,10 +110,10 @@ export default defineNuxtConfig({
             "email": "vimasicomerciopecas@gmail.com",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "R. Eugênia Mello de Oliveira Kirchheim, 151",
+              "streetAddress": "Av. Cristiano Dexheimer, 83 - Campestre",
               "addressLocality": "Lajeado",
               "addressRegion": "RS",
-              "postalCode": "95905-699",
+              "postalCode": "95912-192",
               "addressCountry": "BR",
             },
             "geo": {
@@ -156,7 +156,7 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  
+
   eslint: {
     config: {
       stylistic: true // <---

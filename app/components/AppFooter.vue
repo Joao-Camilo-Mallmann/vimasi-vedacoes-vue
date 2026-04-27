@@ -192,9 +192,9 @@
             </div>
             <div>
               <p class="font-arimo mb-3 text-sm leading-relaxed text-white/70">
-                R. Eugênia Mello de Oliveira Kirchheim, 151<br />
-                Bom Pastor, Lajeado - RS<br />
-                CEP: 95905-699
+                Av. Cristiano Dexheimer, 83 - Campestre<br />
+                Lajeado - RS<br />
+                CEP: 95912-192
               </p>
               <a
                 href="https://maps.app.goo.gl/VQzXHJzPMdCavSP56"
@@ -225,7 +225,7 @@
                   id="gmap_canvas"
                   width="100%"
                   height="100%"
-                  src="https://maps.google.com/maps?q=R.+Eugênia+Mello+de+Oliveira+Kirchheim,+151,+Lajeado+-+RS&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=Av.+Cristiano+Dexheimer,+83,+Lajeado+-+RS&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   frameborder="0"
                   scrolling="no"
                   marginheight="0"
