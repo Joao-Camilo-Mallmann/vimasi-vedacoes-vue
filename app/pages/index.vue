@@ -92,12 +92,7 @@
       </a>
     </section>
 
-    <!-- Orcamento Section -->
-    <section id="orcamento" class="bg-primary-dark relative overflow-hidden py-24">
-      <div class="relative z-10 mx-auto container px-4">
-        <QuoteForm />
-      </div>
-    </section>
+
 
     <!-- Products Section -->
     <section
@@ -260,7 +255,7 @@
         <div class="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           <div class="space-y-8">
             <h2
-              class="font-anton from-accent-gold via-accent-gold to-accent-gold mb-6 bg-linear-to-r bg-clip-text text-5xl leading-tight text-transparent uppercase italic md:text-6xl"
+              class="font-anton from-accent-gold via-accent-gold to-accent-gold mb-6 bg-linear-to-r bg-clip-text text-5xl leading-tight text-transparent uppercase italic md:text-6xl pt-3"
             >
               Excelência em<br />Cada Detalhe
             </h2>
@@ -358,6 +353,13 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Orcamento Section -->
+    <section id="orcamento" class="bg-primary-dark relative overflow-hidden py-24">
+      <div class="relative z-10 mx-auto container px-4">
+        <QuoteForm />
       </div>
     </section>
 

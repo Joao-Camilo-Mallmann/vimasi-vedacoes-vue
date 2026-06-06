@@ -9,14 +9,14 @@
       leave-from-class="transform scale-100 opacity-100 translate-y-0"
       leave-to-class="transform scale-95 opacity-0 translate-y-2"
     >
-      <div 
-        v-if="showBubble" 
+      <div
+        v-if="showBubble"
         class="bg-white text-primary-dark shadow-2xl rounded-2xl p-4 max-w-xs relative border border-gray-100 animate-bounce-slow"
       >
-        <button 
+        <button
           class="absolute top-1 right-2 text-gray-400 hover:text-gray-600 focus:outline-none"
           aria-label="Fechar mensagem"
-          @click="showBubble = false" 
+          @click="showBubble = false"
         >
           &times;
         </button>
@@ -38,7 +38,7 @@
       <!-- Pulse rings behind the button -->
       <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#25D366] opacity-30"></span>
       <span class="absolute inline-flex h-full w-full animate-pulse rounded-full bg-[#25D366] opacity-40" style="animation-duration: 2s;"></span>
-      
+
       <!-- Icon -->
       <svg
         class="relative z-10 h-8 w-8 transition-transform duration-300 group-hover:rotate-12"
@@ -54,16 +54,10 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref } from 'vue';
 
 const showBubble = ref(false);
 
-onMounted(() => {
-  // Show the bubble after 5 seconds
-  setTimeout(() => {
-    showBubble.value = true;
-  }, 5000);
-});
 </script>
 
 <style scoped>

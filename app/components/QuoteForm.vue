@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded-3xl bg-neutral-800/30 backdrop-blur-xl border border-white/5 p-6 sm:p-8 text-left text-white shadow-2xl relative overflow-hidden">
+  <div class="mx-auto max-w-2xl rounded-3xl bg-neutral-800/30 backdrop-blur-xl border border-white/5 p-6 sm:p-8 text-left text-white shadow-2xl relative overflow-hidden">
     <!-- Subtle background glow (reduced intensity) -->
     <div class="absolute -top-24 -right-24 h-48 w-48 rounded-full bg-accent-red/10 blur-[100px] pointer-events-none"></div>
     <div class="absolute -bottom-24 -left-24 h-48 w-48 rounded-full bg-blue-500/5 blur-[100px] pointer-events-none"></div>
@@ -11,7 +11,7 @@
       <hr class="my-5 border-white/10 w-1/2 mx-auto" />
       <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-accent-red/30 bg-accent-red/10 px-4 py-1.5 text-sm font-bold tracking-wide text-accent-red">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-        Apenas 3 perguntas rápidas
+        Apenas 2 perguntas rápidas
       </div>
       <p class="font-arimo text-base sm:text-lg text-white/70">Preencha os detalhes abaixo para agilizarmos seu atendimento via WhatsApp.</p>
     </div>
@@ -31,74 +31,70 @@
       <div class="space-y-3">
         <label class="block text-sm font-bold text-white/90">Qual tipo de vedação você busca? *</label>
         <div class="grid grid-cols-2 gap-3 sm:grid-cols-4">
-          <label v-for="type in ['Gaxeta', 'Anel', 'Raspador', 'Outros']" :key="type" class="cursor-pointer">
-            <input v-model="form.sealType" class="peer sr-only" type="radio" :value="type" name="sealType" required />
-            <div class="flex h-full items-center justify-center rounded-xl border border-white/10 bg-white/5 px-2 py-4 text-center text-sm font-bold text-white/70 shadow-sm transition-all peer-checked:border-accent-red peer-checked:bg-accent-red peer-checked:text-white peer-checked:shadow-lg peer-checked:shadow-accent-red/20 peer-checked:scale-[1.02]">
-              {{ type }}
+          <!-- Gaxeta: corte transversal U-cup -->
+          <label class="cursor-pointer">
+            <input v-model="form.sealType" class="peer sr-only" type="radio" value="Gaxeta" name="sealType" required />
+            <div class="flex flex-col gap-2 h-full items-center justify-center rounded-xl border border-white/10 bg-white/5 px-2 py-4 text-center text-sm font-bold text-white/70 shadow-sm transition-all peer-checked:border-accent-red peer-checked:bg-accent-red peer-checked:text-white peer-checked:shadow-lg peer-checked:shadow-accent-red/20 peer-checked:scale-[1.02]">
+              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Perfil externo do U-cup -->
+                <path d="M4 3h4v13c0 2.5 2 4.5 4 4.5s4-2 4-4.5V3h4" />
+                <!-- Preenchimento do material da gaxeta -->
+                <path d="M8 3v13c0 2.5 2 4.5 4 4.5s4-2 4-4.5V3" fill="currentColor" fill-opacity="0.12" stroke="none"/>
+              </svg>
+              <span>Gaxeta</span>
+            </div>
+          </label>
+
+          <!-- Anel: O-ring vista superior (rosquinha) -->
+          <label class="cursor-pointer">
+            <input v-model="form.sealType" class="peer sr-only" type="radio" value="Anel" name="sealType" required />
+            <div class="flex flex-col gap-2 h-full items-center justify-center rounded-xl border border-white/10 bg-white/5 px-2 py-4 text-center text-sm font-bold text-white/70 shadow-sm transition-all peer-checked:border-accent-red peer-checked:bg-accent-red peer-checked:text-white peer-checked:shadow-lg peer-checked:shadow-accent-red/20 peer-checked:scale-[1.02]">
+              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <!-- Material do O-ring (donut preenchido) -->
+                <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 5.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9z" fill="currentColor" fill-opacity="0.12" fill-rule="evenodd" stroke="none"/>
+                <!-- Circunferência externa -->
+                <circle cx="12" cy="12" r="10"/>
+                <!-- Furo interno -->
+                <circle cx="12" cy="12" r="4.5"/>
+              </svg>
+              <span>Anel</span>
+            </div>
+          </label>
+
+          <!-- Raspador: corte transversal com haste e lábio raspador -->
+          <label class="cursor-pointer">
+            <input v-model="form.sealType" class="peer sr-only" type="radio" value="Raspador" name="sealType" required />
+            <div class="flex flex-col gap-2 h-full items-center justify-center rounded-xl border border-white/10 bg-white/5 px-2 py-4 text-center text-sm font-bold text-white/70 shadow-sm transition-all peer-checked:border-accent-red peer-checked:bg-accent-red peer-checked:text-white peer-checked:shadow-lg peer-checked:shadow-accent-red/20 peer-checked:scale-[1.02]">
+              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Haste/eixo do pistão -->
+                <line x1="12" y1="1" x2="12" y2="23" stroke-width="2.5" opacity="0.25"/>
+                <!-- Corpo do raspador -->
+                <rect x="6" y="8" width="12" height="8" rx="1" fill="currentColor" fill-opacity="0.12" stroke-width="1.5"/>
+                <!-- Lábios raspadores superiores (angulados para fora) -->
+                <path d="M6 8L3 5M18 8L21 5" stroke-width="2"/>
+                <!-- Partículas de sujeira sendo bloqueadas -->
+                <circle cx="3" cy="3" r="0.8" fill="currentColor" stroke="none" opacity="0.5"/>
+                <circle cx="21" cy="3" r="0.6" fill="currentColor" stroke="none" opacity="0.5"/>
+                <circle cx="1" cy="6" r="0.6" fill="currentColor" stroke="none" opacity="0.4"/>
+              </svg>
+              <span>Raspador</span>
+            </div>
+          </label>
+
+          <!-- Outros -->
+          <label class="cursor-pointer">
+            <input v-model="form.sealType" class="peer sr-only" type="radio" value="Outros" name="sealType" required />
+            <div class="flex flex-col gap-2 h-full items-center justify-center rounded-xl border border-white/10 bg-white/5 px-2 py-4 text-center text-sm font-bold text-white/70 shadow-sm transition-all peer-checked:border-accent-red peer-checked:bg-accent-red peer-checked:text-white peer-checked:shadow-lg peer-checked:shadow-accent-red/20 peer-checked:scale-[1.02]">
+              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+                <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" fill="currentColor" fill-opacity="0.1"/>
+              </svg>
+              <span>Outros</span>
             </div>
           </label>
         </div>
       </div>
 
-      <!-- Medidas Toggle -->
-      <div class="space-y-3 bg-white/[0.03] p-5 rounded-2xl border border-white/5 transition-all focus-within:bg-white/[0.05] focus-within:border-white/10">
-        <label class="block text-sm font-bold text-white/90">Você tem as medidas da peça? *</label>
-        <div class="flex flex-col sm:flex-row gap-3">
-          <label class="cursor-pointer flex-1">
-            <input v-model="form.hasMeasurements" class="peer sr-only" type="radio" value="Sim" name="hasMeasurements" required />
-            <div class="rounded-xl border border-white/10 bg-white/5 px-4 py-3.5 flex items-center justify-center gap-2 text-sm font-bold text-white/70 transition-all peer-checked:border-[#25D366] peer-checked:bg-[#25D366] peer-checked:text-white peer-checked:shadow-lg peer-checked:shadow-[#25D366]/20">
-              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              Sim, eu tenho
-            </div>
-          </label>
-          <label class="cursor-pointer flex-1">
-            <input v-model="form.hasMeasurements" class="peer sr-only" type="radio" value="Não" name="hasMeasurements" required />
-            <div class="rounded-xl border border-white/10 bg-white/5 px-4 py-3.5 flex items-center justify-center gap-2 text-sm font-bold text-white/70 transition-all peer-checked:border-white/30 peer-checked:bg-white/20 peer-checked:text-white peer-checked:shadow-lg">
-              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-              Não sei informar
-            </div>
-          </label>
-        </div>
 
-        <!-- Medidas Inputs Collapse -->
-        <div v-if="form.hasMeasurements === 'Sim'" class="mt-4 grid grid-cols-2 gap-4 pt-2">
-          <div class="space-y-2">
-            <label class="block text-xs font-bold text-white/60 uppercase tracking-wider">Externa (mm/pol)</label>
-            <input v-model="form.measureOuter" class="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3.5 text-white placeholder-white/30 shadow-inner outline-none transition-all hover:bg-black/60 focus:border-[#25D366] focus:bg-black/60 focus:ring-1 focus:ring-[#25D366]" type="text" placeholder="Ex: 50" />
-          </div>
-          <div class="space-y-2">
-            <label class="block text-xs font-bold text-white/60 uppercase tracking-wider">Interna (mm/pol)</label>
-            <input v-model="form.measureInner" class="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3.5 text-white placeholder-white/30 shadow-inner outline-none transition-all hover:bg-black/60 focus:border-[#25D366] focus:bg-black/60 focus:ring-1 focus:ring-[#25D366]" type="text" placeholder="Ex: 30" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Máquina Toggle -->
-      <div class="space-y-3 bg-white/[0.03] p-5 rounded-2xl border border-white/5 transition-all focus-within:bg-white/[0.05] focus-within:border-white/10">
-        <label class="block text-sm font-bold text-white/90">Sabe em qual máquina ou lugar ela trabalha? *</label>
-        <div class="flex flex-col sm:flex-row gap-3">
-          <label class="cursor-pointer flex-1">
-            <input v-model="form.hasMachine" class="peer sr-only" type="radio" value="Sim" name="hasMachine" required />
-            <div class="rounded-xl border border-white/10 bg-white/5 px-4 py-3.5 flex items-center justify-center gap-2 text-sm font-bold text-white/70 transition-all peer-checked:border-[#25D366] peer-checked:bg-[#25D366] peer-checked:text-white peer-checked:shadow-lg peer-checked:shadow-[#25D366]/20">
-              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              Sim, eu sei
-            </div>
-          </label>
-          <label class="cursor-pointer flex-1">
-            <input v-model="form.hasMachine" class="peer sr-only" type="radio" value="Não" name="hasMachine" required />
-            <div class="rounded-xl border border-white/10 bg-white/5 px-4 py-3.5 flex items-center justify-center gap-2 text-sm font-bold text-white/70 transition-all peer-checked:border-white/30 peer-checked:bg-white/20 peer-checked:text-white peer-checked:shadow-lg">
-              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-              Não tenho certeza
-            </div>
-          </label>
-        </div>
-
-        <!-- Máquina Input Collapse -->
-        <div v-if="form.hasMachine === 'Sim'" class="mt-4 space-y-2 pt-2">
-          <label class="block text-xs font-bold text-white/60 uppercase tracking-wider">Qual máquina ou equipamento?</label>
-          <input v-model="form.machine" class="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3.5 text-white placeholder-white/30 shadow-inner outline-none transition-all hover:bg-black/60 focus:border-[#25D366] focus:bg-black/60 focus:ring-1 focus:ring-[#25D366]" type="text" placeholder="Ex: Trator, Pistão Hidráulico, Bomba D'água..." />
-        </div>
-      </div>
 
       <div class="pt-2">
         <button type="submit" class="group relative flex w-full items-center justify-center gap-3 overflow-hidden rounded-2xl bg-[#25D366] px-8 py-4 font-bold text-white shadow-xl shadow-[#25D366]/20 transition-all duration-300 hover:bg-[#20bd5a] hover:shadow-[#25D366]/40">
@@ -122,32 +118,13 @@ import { ref } from 'vue';
 
 const form = ref({
   name: '',
-  sealType: '',
-  hasMeasurements: '',
-  measureOuter: '',
-  measureInner: '',
-  hasMachine: '',
-  machine: ''
+  sealType: ''
 });
 
 const submitQuote = () => {
   let text = `Olá, gostaria de fazer um orçamento.\n\n`;
   if (form.value.name) text += `*Nome:* ${form.value.name}\n`;
   if (form.value.sealType) text += `*Tipo de Vedação:* ${form.value.sealType}\n`;
-  if (form.value.hasMeasurements) text += `*Tem as medidas?* ${form.value.hasMeasurements}\n`;
-
-  if (form.value.hasMeasurements === 'Sim') {
-    if (form.value.measureOuter || form.value.measureInner) {
-      text += `*Medidas:*\n`;
-      if (form.value.measureOuter) text += `- Externa: ${form.value.measureOuter}\n`;
-      if (form.value.measureInner) text += `- Interna: ${form.value.measureInner}\n`;
-    }
-  }
-
-  if (form.value.hasMachine) text += `*Sabe onde/qual máquina?* ${form.value.hasMachine}\n`;
-  if (form.value.hasMachine === 'Sim' && form.value.machine) {
-    text += `*Máquina:* ${form.value.machine}\n`;
-  }
 
   const encodedText = encodeURIComponent(text);
   window.open(`https://wa.me/555196194676?text=${encodedText}`, '_blank');

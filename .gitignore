@@ -38,3 +38,8 @@ coverage
 .cache
 .output/*
 
+# Local env files
+.env
+.env.*
+
+
