@@ -3,7 +3,7 @@
     <div class="container mx-auto px-4 md:px-6">
       <div class="flex items-center justify-between py-3 md:py-4">
         <!-- Logo -->
-        <NuxtLink to="/" class="group flex items-center">
+        <NuxtLink to="/" class="group flex items-center" aria-label="Vimasi Vedações - página inicial">
           <NuxtImg
             src="/shared/logo.png"
             alt="Vimasi Vedações"
@@ -27,7 +27,7 @@
           </NuxtLink>
 
           <a
-            href="https://wa.me/555196194676"
+            :href="business.whatsappUrl"
             target="_blank"
             class="group relative overflow-hidden rounded-full bg-[#25D366] px-6 py-2.5 text-xs font-bold tracking-wide text-white uppercase shadow-lg transition-all duration-300 hover:scale-105 hover:bg-[#20bd5a] hover:shadow-[#25D366]/30"
           >
@@ -100,7 +100,7 @@
             </NuxtLink>
 
             <a
-              href="https://wa.me/555196194676"
+              :href="business.whatsappUrl"
               target="_blank"
               class="font-arimo mt-8 flex items-center gap-3 rounded-full border border-[#25D366] px-8 py-3 text-lg font-bold tracking-wide text-[#25D366] uppercase transition-all active:scale-95"
               :style="{
@@ -125,12 +125,15 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
+import { business } from "~/data/business";
+
 const mobileMenuOpen = ref(false);
 
 const menuItems = [
   { label: "Home", to: "/" },
-  { label: "Soluções", to: "/#vedacoes" },
-  { label: "Contato", to: "/contato" },
+  { label: "Produtos", to: "/vedacoes/" },
+  { label: "Vale do Taquari", to: "/vedacoes-vale-do-taquari/" },
+  { label: "Contato", to: "/contato/" },
 ];
 </script>
 

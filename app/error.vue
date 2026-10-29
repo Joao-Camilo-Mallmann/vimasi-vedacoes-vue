@@ -6,7 +6,7 @@ defineProps({
 })
 
 useHead({
-  title: 'Vimasi Vedações | Vedações Hidráulicas e Industriais em Lajeado/RS',
+  title: 'Página não encontrada',
   meta: [
     {
       name: 'description',
@@ -18,12 +18,6 @@ useHead({
 
 const handleError = () => clearError({ redirect: '/' })
 
-// Auto-redirect after 5 seconds
-onMounted(() => {
-  setTimeout(() => {
-    handleError()
-  }, 5000)
-})
 </script>
 
 <template>
@@ -34,7 +28,7 @@ onMounted(() => {
         {{ error?.statusCode === 404 ? 'Página não encontrada' : 'Ocorreu um erro' }}
       </p>
       <p class="error-description">
-        Desculpe, algo deu errado. Você será redirecionado para a página inicial em instantes.
+        A página que você procura não existe ou foi movida. Veja nossos produtos ou fale conosco pelo WhatsApp.
       </p>
       <button class="error-button" @click="handleError">
         Voltar para a Home
@@ -51,7 +45,7 @@ onMounted(() => {
   justify-content: center;
   background-color: #050505;
   color: #ffffff;
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: 'Arimo', sans-serif;
 }
 
 .error-container {
@@ -97,7 +91,7 @@ onMounted(() => {
   border-radius: 0.5rem;
   cursor: pointer;
   transition: opacity 0.2s ease, transform 0.2s ease;
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: 'Arimo', sans-serif;
 }
 
 .error-button:hover {

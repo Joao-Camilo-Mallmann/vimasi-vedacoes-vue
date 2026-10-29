@@ -6,24 +6,27 @@ Este arquivo serve como guia de contexto para Agentes de IA (e desenvolvedores h
 
 - **Nome**: Vimasi Vedações Landing Page
 - **Objetivo**: Site institucional estático para apresentação de produtos de vedação.
-- **Stack Principal**: Nuxt 3, Vue 3, Tailwind CSS.
+- **Stack Principal**: Nuxt 4, Vue 3, Tailwind CSS v4, @nuxtjs/seo, @nuxt/image, @nuxt/fonts.
 - **Deploy**: GitHub Pages (Static Site Generation).
 
 ## 🏗️ Padrões de Arquitetura
 
 ### 1. Build & Deploy
 
-- **Comando de Build**: `npm run generate` (Não use `npm run build`).
-  - *Motivo*: O projeto é hospedado estaticamente no GitHub Pages. `generate` cria HTML estático para todas as rotas (SSG), melhorando SEO.
-- **Output Directory**: `.output/public` (Padrão do Nuxt 3 para generate).
-- **CI/CD**: Gerenciado por `.github/workflows/deploy.yml`.
-  - O workflow lida automaticamente com cache invalidation (`.nojekyll`, `_headers`).
+- **Node 24 + npm** (`.nvmrc`, apenas `package-lock.json`; não use bun).
+- **Comando de Build**: `npx nuxt build --preset github_pages` (é o que o CI roda; gera SSG em `.output/public`).
+- O build **falha** com link interno quebrado (link-checker) ou rota que não pré-renderiza. Rode-o localmente antes de abrir PR.
+- **CI/CD**: `.github/workflows/deploy.yml`. Nunca commite `.output/`.
 
 ### 2. Configurações Específicas (Nuxt)
 
 - **Base Path**: `/`
   - *Atualização*: Com o domínio customizado `vimasi-vedacoes.com`, o site roda na raiz.
-- **SEO**: Meta tags globais estão em `nuxt.config.ts`.
+- **SEO**: módulo `@nuxtjs/seo` configurado em `nuxt.config.ts` (site, schemaOrg.identity, robots, sitemap, aiReady). Não adicione JSON-LD manual nem `rel=canonical` em páginas: use `useSeoMeta` + `useSchemaOrg`.
+- **Dados da empresa (NAP)**: somente em `app/data/business.ts`. Endereço, telefone, horário, cidades e catálogo são importados de lá.
+- **URLs sempre com barra final** (`to="/gaxetas/"`), por causa de `site.trailingSlash: true`.
+- **Páginas de produto/guia**: `PageHero` (breadcrumb + "Última atualização"), `FaqSection` (array `faqs` → HTML + schema), `RelatedLinks`, `CtaSection`. Ao editar conteúdo, atualize `dateModified`.
+- **Imagens OG**: JPEG 1200×630 em `public/og/<slug>.jpg`; `ogImage` está desligado.
 
 ### 3. Estilização
 
@@ -40,7 +43,8 @@ Este arquivo serve como guia de contexto para Agentes de IA (e desenvolvedores h
 
 Ao fazer alterações, verifique:
 
-- [ ] Se alterou rotas ou estrutura, rode `npm run generate` localmente para validar.
+- [ ] Se alterou rotas ou conteúdo, rode `npx nuxt build --preset github_pages` localmente: link-checker e prerender precisam passar.
+- [ ] Nova página: adicione em `siteRoutes` (rodapé) em `app/data/business.ts` para o crawler do prerender encontrá-la.
 - [ ] Se adicionou imagens, garanta que caminhos relativos ou uso de `basePath` estão corretos.
   - **Estrutura de Imagens**:
     - `assets/images/home/`: Fundos e hero da home.
@@ -52,7 +56,7 @@ Ao fazer alterações, verifique:
 
 ## 📱 Componentes Globais e CTAs Relevantes
 
-- **Botão Flutuante WhatsApp**: Componente global `FloatingWhatsApp.vue` inserido no layout padrão (`default.vue`), posicionado na seção inferior direita. Inclui lógica de exibição de balão com delay de 5 segundos para aumento de conversão.
+- **Botão Flutuante WhatsApp**: Componente global `FloatingWhatsApp.vue` inserido no layout padrão (`default.vue`), posicionado na seção inferior direita. O balão de mensagem existe no template mas começa oculto (`showBubble = false`).
 
 ## 📄 Arquivos Importantes
 

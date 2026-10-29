@@ -26,19 +26,18 @@
             <h1
               class="font-anton animate-fade-in-up mb-8 text-5xl leading-tight uppercase italic drop-shadow-2xl sm:text-6xl md:text-7xl"
             >
-              A VEDAÇÃO
+              Gaxetas e Vedações
               <br class="hidden lg:block" />
-              <span class="hydraulic-text" data-text="HIDRÁULICA">HIDRÁULICA</span
-              ><br />
-              QUE VOCÊ PRECISA
+              <span class="hydraulic-text" data-text="HIDRÁULICAS">Hidráulicas</span>
+              <br />
+              em Lajeado e no <span class="text-accent-gold">Vale do Taquari</span>
             </h1>
 
             <p
               class="font-arimo animate-fade-in-up mx-auto mb-10 max-w-xl text-lg text-white/80 md:text-xl"
               style="animation-delay: 0.1s"
             >
-              Soluções de alta performance para garantir a eficiência e durabilidade
-              do seu equipamento.
+              A vedação hidráulica que você precisa. A Vimasi Vedações (Lajeado, RS) fornece gaxetas, anéis O-ring, raspadores e kits de reparo para cilindros hidráulicos, com retirada em loja e envio para todo o Vale do Taquari.
             </p>
 
             <a
@@ -121,125 +120,23 @@
         </div>
 
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-          <!-- Product 1: Gaxetas -->
-          <nuxt-link
-            to="/gaxetas"
-            class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:-translate-y-2 hover:bg-white/5"
-          >
-            <div class="aspect-video overflow-hidden">
-              <NuxtImg
-                src="/catalog/gaxetas.webp"
-                alt="Gaxetas de vedação hidráulica"
-                loading="lazy"
-                sizes="100vw sm:50vw lg:400px"
-                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-            </div>
-            <div
-              class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black/90 via-black/40 to-transparent p-6"
-            >
-              <h3 class="font-anton mb-2 text-2xl tracking-wide text-white uppercase drop-shadow-md transition-transform duration-500 group-hover:-translate-y-1">Gaxetas</h3>
-              <div
-                class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
-              >
-                <p
-                  class="font-arimo border-accent-gold/30 border-t pt-2 text-sm text-white/80"
-                >
-                  Vedação essencial para hastes e eixos rotativos.
-                </p>
-              </div>
-            </div>
-          </nuxt-link>
+          <ProductCard
+            v-for="item in featured"
+            :key="item.id"
+            :item="item"
+          />
+        </div>
 
-          <!-- Product 2: Raspadores -->
-          <nuxt-link
-            to="/contato"
-            class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:-translate-y-2 hover:bg-white/5"
+        <div class="mt-12 text-center">
+          <NuxtLink
+            to="/vedacoes/"
+            class="group hover:border-accent-gold hover:bg-accent-gold/10 inline-flex items-center gap-3 rounded-full border-2 border-white/30 px-8 py-4 font-bold tracking-wider text-white uppercase transition-all duration-300"
           >
-            <div class="aspect-video overflow-hidden">
-              <NuxtImg
-                src="/catalog/raspadores.webp"
-                alt="Raspadores industriais"
-                loading="lazy"
-                sizes="100vw sm:50vw lg:400px"
-                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-            </div>
-            <div
-              class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black/90 via-black/40 to-transparent p-6"
-            >
-              <h3 class="font-anton mb-2 text-2xl tracking-wide text-white uppercase drop-shadow-md transition-transform duration-500 group-hover:-translate-y-1">Raspadores</h3>
-              <div
-                class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
-              >
-                <p
-                  class="font-arimo border-accent-gold/30 border-t pt-2 text-sm text-white/80"
-                >
-                  Proteção contra impurezas e contaminantes externos.
-                </p>
-              </div>
-            </div>
-          </nuxt-link>
-
-          <!-- Product 3: Kit de Reparo -->
-          <nuxt-link
-            to="/contato"
-            class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:-translate-y-2 hover:bg-white/5"
-          >
-            <div class="aspect-video overflow-hidden">
-              <NuxtImg
-                src="/catalog/kit-reparo.webp"
-                alt="Conjuntos de vedação ZW/ZO"
-                loading="lazy"
-                sizes="100vw sm:50vw lg:400px"
-                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-            </div>
-            <div
-              class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black/90 via-black/40 to-transparent p-6"
-            >
-              <h3 class="font-anton mb-2 text-2xl tracking-wide text-white uppercase drop-shadow-md transition-transform duration-500 group-hover:-translate-y-1">Kit de Reparo</h3>
-              <div
-                class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
-              >
-                <p
-                  class="font-arimo border-accent-gold/30 border-t pt-2 text-sm text-white/80"
-                >
-                  Soluções completas para aplicações específicas.
-                </p>
-              </div>
-            </div>
-          </nuxt-link>
-
-          <!-- Product 4: Anéis -->
-          <nuxt-link
-            to="/aneis-vedacao"
-            class="group glass relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:-translate-y-2 hover:bg-white/5"
-          >
-            <div class="aspect-video overflow-hidden">
-              <NuxtImg
-                src="/catalog/aneisoring.webp"
-                alt="Anéis O-ring e vedações circulares"
-                loading="lazy"
-                sizes="100vw sm:50vw lg:400px"
-                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-            </div>
-            <div
-              class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black/90 via-black/40 to-transparent p-6"
-            >
-              <h3 class="font-anton mb-2 text-2xl tracking-wide text-white uppercase drop-shadow-md transition-transform duration-500 group-hover:-translate-y-1">Anéis O-ring</h3>
-              <div
-                class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-out group-hover:max-h-32 group-hover:opacity-100"
-              >
-                <p
-                  class="font-arimo border-accent-gold/30 border-t pt-2 text-sm text-white/80"
-                >
-                  O-rings e vedações estáticas de alta precisão.
-                </p>
-              </div>
-            </div>
-          </nuxt-link>
+            Ver catálogo completo
+            <svg class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </NuxtLink>
         </div>
       </div>
     </section>
@@ -263,14 +160,10 @@
               class="font-arimo space-y-6 text-lg leading-relaxed text-white/80"
             >
               <p>
-                Oferecemos produtos de alta qualidade, garantindo eficiência e
-                durabilidade, atendendo às mais exigentes necessidades do
-                mercado.
+                A Vimasi Vedações é uma loja especializada em vedações hidráulicas e industriais em Lajeado/RS. Trabalhamos com gaxetas, anéis O-ring, raspadores, anéis guia e kits de reparo para cilindros de máquinas agrícolas, prensas, escavadeiras e caminhões.
               </p>
               <p>
-                Com anos de experiência no mercado, a Vimasi se consolidou como
-                referência em vedações hidráulicas, oferecendo soluções
-                completas e personalizadas para cada necessidade.
+                Identificamos a vedação pela peça antiga ou pelas medidas do alojamento e montamos kits sob medida. Atendemos indústrias, oficinas e produtores rurais de todo o Vale do Taquari, com retirada em loja e envio por transportadora.
               </p>
             </div>
 
@@ -307,7 +200,7 @@
                 <div class="relative aspect-video overflow-hidden">
                   <NuxtImg
                     src="/catalog/aneis-guia.webp"
-                    alt="Anéis Guia"
+                    alt="Anéis guia em PTFE e poliamida para pistão e haste de cilindro hidráulico"
                     loading="lazy"
                     sizes="100vw sm:50vw lg:600px"
                     class="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
@@ -325,7 +218,7 @@
                 <div class="relative aspect-video overflow-hidden">
                   <NuxtImg
                     src="/catalog/conjunto-capped-seal.webp"
-                    alt="Conjunto Capped Seal"
+                    alt="Conjunto de vedação capped seal para pistão de cilindro hidráulico"
                     loading="lazy"
                     sizes="100vw sm:50vw lg:400px"
                     class="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
@@ -343,7 +236,7 @@
                 <div class="relative aspect-video overflow-hidden">
                   <NuxtImg
                     src="/catalog/conjunto-oeod.webp"
-                    alt="Conjunto OEOD"
+                    alt="Conjunto de vedação OEOD para pistão de dupla ação"
                     loading="lazy"
                     sizes="100vw sm:50vw lg:400px"
                     class="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
@@ -352,6 +245,31 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Região Section -->
+    <section id="vale-do-taquari" class="bg-primary-dark relative overflow-hidden py-24 text-white">
+      <div class="bg-accent-gold/5 absolute top-0 left-0 h-full w-1/3 -translate-x-1/2 rounded-full blur-[100px]"></div>
+      <div class="relative z-10 container mx-auto px-4">
+        <div class="mx-auto max-w-4xl text-center">
+          <h2 class="font-anton mb-6 bg-linear-to-r from-white via-white to-white/50 bg-clip-text text-5xl text-transparent uppercase italic md:text-6xl">
+            Atendemos o <span class="text-accent-gold">Vale do Taquari</span>
+          </h2>
+          <p class="font-arimo mb-8 text-lg leading-relaxed text-white/80">
+            Nossa loja fica em Lajeado, na {{ business.address.streetAddress }} ({{ business.address.neighborhood }}), e atende
+            {{ citiesSentence }}. Para outras cidades do Rio Grande do Sul enviamos por transportadora.
+          </p>
+          <NuxtLink
+            to="/vedacoes-vale-do-taquari/"
+            class="text-accent-red inline-flex items-center gap-2 font-bold tracking-wider uppercase transition-all hover:gap-4"
+          >
+            Vedações no Vale do Taquari
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </NuxtLink>
         </div>
       </div>
     </section>
@@ -401,7 +319,7 @@
         >
           <!-- Phone/WhatsApp -->
           <a
-            href="https://wa.me/555196194676"
+            :href="business.whatsappUrl"
             target="_blank"
             class="group glass relative block overflow-hidden rounded-2xl p-8 text-center transition-all duration-500 hover:-translate-y-2 hover:border-[#25D366]/50 hover:bg-white/5"
           >
@@ -425,9 +343,7 @@
             </h3>
             <p
               class="font-arimo text-lg text-white/60 transition-colors group-hover:text-[#25D366]"
-            >
-              (51) 99619-4676
-            </p>
+            >{{ business.phoneDisplay }}</p>
           </a>
 
           <!-- Email -->
@@ -457,16 +373,14 @@
               E-mail
             </h3>
             <a
-              href="mailto:vimasicomerciopecas@gmail.com"
+              :href="`mailto:${business.email}`"
               class="font-arimo text-lg break-all text-white/60 transition-colors group-hover:text-[#3B82F6]"
-            >
-              vimasicomerciopecas@gmail.com
-            </a>
+            >{{ business.email }}</a>
           </div>
 
           <!-- Address -->
           <a
-            href="https://maps.app.goo.gl/VQzXHJzPMdCavSP56"
+            :href="business.mapsUrl"
             target="_blank"
             class="group glass hover:border-accent-red/50 relative block overflow-hidden rounded-2xl p-8 text-center transition-all duration-500 hover:-translate-y-2 hover:bg-white/5"
           >
@@ -499,8 +413,8 @@
               Endereço
             </h3>
             <p class="font-arimo mb-2 text-sm text-white/60">
-              R. Eugênia Mello de Oliveira Kirchheim, 151<br />
-              Bom Pastor, Lajeado - RS
+              {{ business.address.streetAddress }} - {{ business.address.neighborhood }}<br />
+              {{ business.address.addressLocality }} - {{ business.address.addressRegion }}, CEP {{ business.address.postalCode }}
             </p>
             <span
               class="text-accent-red text-xs font-bold tracking-wider uppercase group-hover:underline"
@@ -512,7 +426,7 @@
         <!-- CTA Button -->
         <div class="text-center">
           <a
-            href="https://wa.me/555196194676?text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20or%C3%A7amento"
+            :href="business.whatsappQuoteUrl"
             target="_blank"
             class="group relative inline-flex items-center gap-4 overflow-hidden rounded-full bg-[#25D366] px-10 py-4 text-lg font-bold tracking-wider text-white uppercase shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-[#20bd5a] hover:shadow-[#25D366]/40"
           >
@@ -535,9 +449,28 @@
 </template>
 
 <script setup lang="ts">
-useHead({
-  title: "Vimasi Vedações | Vedações Hidráulicas no Vale do Taquari e RS",
+import { business, catalog } from "~/data/business";
+
+const featured = catalog.filter((item) => item.hasPage);
+const citiesSentence = `${business.cities.slice(0, 8).join(", ")} e demais cidades do Vale do Taquari`;
+
+useSeoMeta({
+  title: "Gaxetas e Vedações Hidráulicas em Lajeado e Vale do Taquari",
+  description:
+    "Vimasi Vedações em Lajeado/RS: gaxetas, anéis O-ring, raspadores e kits de reparo para cilindros hidráulicos. Pronta entrega e atendimento a todo o Vale do Taquari. Orçamento pelo WhatsApp.",
+  ogTitle: "Vimasi Vedações | Gaxetas e Vedações Hidráulicas em Lajeado e Vale do Taquari",
+  ogDescription:
+    "Gaxetas, anéis O-ring, raspadores e kits de reparo para cilindros hidráulicos. Loja em Lajeado/RS, atendimento a todo o Vale do Taquari.",
+  ogImage: `${business.url}/og/home.jpg`,
+  ogType: "website",
+  twitterCard: "summary_large_image",
 });
+
+useSchemaOrg([
+  defineWebPage({
+    name: "Gaxetas e Vedações Hidráulicas em Lajeado e Vale do Taquari",
+  }),
+]);
 </script>
 
 <style scoped>

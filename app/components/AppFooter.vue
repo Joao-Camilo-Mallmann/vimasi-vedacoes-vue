@@ -32,12 +32,11 @@
           <p
             class="font-arimo max-w-xs text-base leading-relaxed text-white/60"
           >
-            Especialistas em vedações hidráulicas de alta qualidade. Oferecendo
-            soluções completas e personalizadas para cada necessidade.
+            Vimasi Vedações (Lajeado, RS): gaxetas, anéis O-ring, raspadores e kits de reparo para cilindros hidráulicos. Atendemos todo o Vale do Taquari.
           </p>
           <div class="flex gap-4 pt-2">
             <a
-              href="https://www.instagram.com/vimasi_pecas/"
+              :href="business.instagramUrl"
               target="_blank"
               class="hover:bg-accent-gold hover:text-primary-dark group hover:border-accent-gold flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all duration-300 hover:scale-110"
               aria-label="Instagram"
@@ -49,7 +48,7 @@
               </svg>
             </a>
             <a
-              href="https://wa.me/555196194676"
+              :href="business.whatsappUrl"
               target="_blank"
               class="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all duration-300 hover:scale-110 hover:border-[#25D366] hover:bg-[#25D366] hover:text-white"
               aria-label="WhatsApp"
@@ -117,11 +116,9 @@
                   >Telefone</span
                 >
                 <a
-                  href="tel:+555196194676"
+                  :href="`tel:${business.phoneE164}`"
                   class="font-arimo text-sm text-white/90 transition-colors hover:text-[#25D366]"
-                >
-                  (51) 99619-4676
-                </a>
+                >{{ business.phoneDisplay }}</a>
               </div>
             </div>
 
@@ -149,11 +146,9 @@
                   >E-mail</span
                 >
                 <a
-                  href="mailto:vimasicomerciopecas@gmail.com"
+                  :href="`mailto:${business.email}`"
                   class="font-arimo text-sm break-all text-white/90 transition-colors hover:text-[#3B82F6]"
-                >
-                  vimasicomerciopecas@gmail.com
-                </a>
+                >{{ business.email }}</a>
               </div>
             </div>
           </div>
@@ -192,12 +187,13 @@
             </div>
             <div>
               <p class="font-arimo mb-3 text-sm leading-relaxed text-white/70">
-                Av. Cristiano Dexheimer, 83 - Campestre<br />
-                Lajeado - RS<br />
-                CEP: 95912-192
+                {{ business.address.streetAddress }} - {{ business.address.neighborhood }}<br />
+                {{ business.address.addressLocality }} - {{ business.address.addressRegion }}<br />
+                CEP: {{ business.address.postalCode }}<br />
+                <span class="text-white/50">{{ business.hours.display }}</span>
               </p>
               <a
-                href="https://maps.app.goo.gl/VQzXHJzPMdCavSP56"
+                :href="business.mapsUrl"
                 target="_blank"
                 class="text-accent-gold hover:text-accent-red inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase transition-colors"
               >
@@ -225,7 +221,9 @@
                   id="gmap_canvas"
                   width="100%"
                   height="100%"
-                  src="https://maps.google.com/maps?q=Av.+Cristiano+Dexheimer,+83,+Lajeado+-+RS&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  :src="business.mapsEmbedUrl"
+                  title="Mapa: Vimasi Vedações em Lajeado/RS"
+                  loading="lazy"
                   frameborder="0"
                   scrolling="no"
                   marginheight="0"
@@ -259,10 +257,7 @@
 </template>
 
 <script setup lang="ts">
-const navigationItems = [
-  { label: "Home", to: "/" },
-  { label: "Gaxetas", to: "/gaxetas" },
-  { label: "Anéis", to: "/aneis-vedacao" },
-  { label: "Contato", to: "/contato" },
-];
+import { business, siteRoutes } from "~/data/business";
+
+const navigationItems = siteRoutes;
 </script>

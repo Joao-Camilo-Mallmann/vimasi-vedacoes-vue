@@ -30,7 +30,7 @@
 
     <!-- WhatsApp Button -->
     <a
-      href="https://wa.me/555196194676?text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20e%20preciso%20de%20ajuda!"
+      :href="business.whatsappQuoteUrl"
       target="_blank"
       class="group relative flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-all duration-300 hover:scale-110 hover:bg-[#20bd5a] hover:shadow-[#25D366]/50 focus:outline-none focus:ring-4 focus:ring-[#25D366]/50"
       aria-label="Fale conosco no WhatsApp"
@@ -55,6 +55,8 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+
+import { business } from '~/data/business';
 
 const showBubble = ref(false);
 

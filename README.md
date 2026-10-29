@@ -18,7 +18,8 @@ Este projeto é uma Landing Page institucional focada em apresentar as soluçõe
 
 O projeto foi construído sobre uma stack robusta e moderna:
 
-- **[Nuxt 4](https://nuxt.com/)**: Framework para aplicações web modernas. Utilizamos o modo de geração estática.
+- **[Nuxt 4](https://nuxt.com/)**: Framework para aplicações web modernas, em modo de geração estática (preset `github_pages`).
+- **[Nuxt SEO](https://nuxtseo.com/)**: sitemap, robots, schema.org, link-checker e `llms.txt`.
 - **[Vue.js 3](https://vuejs.org/)**: A base reativa da interface com Composition API.
 - **[Tailwind CSS](https://tailwindcss.com/)**: Framework de utilitários CSS para estilização rápida e consistente.
 - **[Nuxt Icon](https://nuxt.com/modules/icon)**: Biblioteca de ícones integrada e otimizada.
@@ -27,24 +28,28 @@ O projeto foi construído sobre uma stack robusta e moderna:
 
 ## ⚙️ CI/CD & Deploy Automático
 
-Utilizamos **GitHub Actions** para automatizar o processo de build e deploy, garantindo que o site esteja sempre atualizado e otimizado.
+Utilizamos **GitHub Actions** para automatizar o build e o deploy.
 
 📂 **Workflow**: `.github/workflows/deploy.yml`
 
 **Como funciona o pipeline:**
 
-1. **Trigger**: A cada `push` na branch `main`.
-2. **Setup**: Instala dependências usando `bun install`.
-3. **Build**: Executa `bun run generate` para criar os arquivos estáticos otimizados na pasta `.output/public`.
-   - *Nota: Usamos `generate` ao invés de `build` para Full Static Generation (SSG).*
-4. **Otimização**:
-   - Cria arquivo `.nojekyll` para contornar processamento padrão do GitHub Pages.
-   - Configura headers de Cache-Control para evitar problemas de cache stale no navegador.
-5. **Deploy**: Publica os artefatos diretamente na infraestrutura do GitHub Pages.
+1. **Trigger**: a cada `push` na branch `main` (ou manualmente).
+2. **Setup**: Node 24 + `npm ci` (o projeto usa apenas `package-lock.json`).
+3. **Build**: `npx nuxt build --preset github_pages` pré-renderiza todas as rotas (SSG) em `.output/public`, junto com `sitemap.xml`, `robots.txt`, `llms.txt` e as fontes auto-hospedadas.
+4. **Qualidade**: o build falha se houver link interno quebrado (`nuxt-link-checker`) ou rota que não pré-renderiza (`nitro.prerender.failOnError`).
+5. **Deploy**: publica `.output/public` no GitHub Pages (domínio `vimasi-vedacoes.com` via `public/CNAME`).
+
+## 🔍 SEO, GEO e dados da empresa
+
+- **Módulo**: [`@nuxtjs/seo`](https://nuxtseo.com) (sitemap, robots, schema.org, link-checker, `llms.txt`). Imagens OG são JPEGs estáticos 1200×630 em `public/og/`.
+- **Fonte única de NAP** (nome, endereço, telefone, horário, cidades atendidas, catálogo): `app/data/business.ts`. Nunca escreva endereço ou telefone direto em templates.
+- **URLs com barra final** (`/gaxetas/`): `site.trailingSlash: true` casa com o `/rota/index.html` servido pelo GitHub Pages sem redirect. Escreva sempre `to="/rota/"`.
+- **Por página**: `useSeoMeta` (title sem marca, o template adiciona `| Vimasi Vedações`), `useSchemaOrg` e `AppBreadcrumb`. FAQs usam o componente `FaqSection` (HTML e schema vêm do mesmo array).
 
 ## 🚀 Como Rodar Localmente
 
-Pré-requisitos: Node.js (v18+ ou v20+) e Bun (opcional, mas recomendado).
+Pré-requisitos: Node.js 24 (veja `.nvmrc`) e npm.
 
 1. **Clone o repositório**
 
@@ -56,15 +61,13 @@ Pré-requisitos: Node.js (v18+ ou v20+) e Bun (opcional, mas recomendado).
 2. **Instale as dependências**
 
    ```bash
-   bun install
-   # ou
    npm install
    ```
 
 3. **Inicie o servidor de desenvolvimento**
 
    ```bash
-   bun dev
+   npm run dev
    ```
 
    O site estará disponível em `http://localhost:3001` (ou na porta configurada adequadamente).
@@ -73,7 +76,7 @@ Pré-requisitos: Node.js (v18+ ou v20+) e Bun (opcional, mas recomendado).
    Para visualizar exatamente como o site ficará em produção:
 
    ```bash
-   bun run generate
+   npx nuxt build --preset github_pages
    npx serve .output/public
    ```
 
@@ -86,7 +89,8 @@ O projeto segue a estrutura de diretórios do Nuxt 4, onde o código principal d
   - `/components`: Componentes Vue reutilizáveis.
   - `/assets`: Arquivos estáticos processados (CSS, Imagens).
   - `/layouts`: Templates de layout da aplicação.
-- `/public`: Arquivos públicos servidos na raiz (favicon.png, robots.txt).
+- `/app/data/business.ts`: dados da empresa (NAP, cidades, catálogo).
+- `/public`: arquivos públicos servidos na raiz (favicon, `CNAME`, `og/`). `robots.txt` e `sitemap.xml` são gerados no build.
 - `nuxt.config.ts`: Configurações globais do Nuxt (incluindo `basePath` e Meta Tags de SEO).
 - `agents.md`: Arquivo de contexto para agentes de IA e desenvolvedores.
 

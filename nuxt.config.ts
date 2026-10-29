@@ -1,171 +1,216 @@
 import tailwindcss from "@tailwindcss/vite";
 
-// Site configuration
-const siteUrl = "https://vimasi-vedacoes.com";
-const basePath = "/";
-const fullUrl = `${siteUrl}`;
+import { business, catalog, sameAs, SITE_URL } from "./app/data/business";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  modules: [
+    "@nuxt/eslint",
+    "@nuxt/icon",
+    "@nuxt/image",
+    "@nuxt/fonts",
+    "@nuxtjs/seo",
+  ],
 
-  modules: ["@nuxt/eslint", "@nuxt/icon", "@nuxt/image"],
-
-  // SSR must be true for SSG - generates full HTML content.
-  // With ssr: false, the body is empty and Google classifies as "soft 404".
+  // SSR + preset github-pages = SSG: todas as rotas viram HTML estático.
   ssr: true,
 
+  devtools: { enabled: true },
 
-  devtools: {
-    enabled: true,
-  },
-
-  // Required for GitHub Pages (project site, not user site)
   app: {
-    baseURL: basePath,
+    baseURL: "/",
     head: {
-      htmlAttrs: {
-        lang: "pt-BR",
-      },
-      title:
-        "Vimasi Vedações | Vedações Hidráulicas em Lajeado, Vale do Taquari e RS",
+      htmlAttrs: { lang: "pt-BR" },
+      titleTemplate: "%s | Vimasi Vedações",
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-        {
-          name: "description",
-          content:
-            "Vimasi Vedações - Especialista em vedações hidráulicas e industriais em Lajeado, Vale do Taquari e todo Rio Grande do Sul. Gaxetas, raspadores, anéis O-ring e kits de vedação de alta performance. Atendimento rápido e qualidade.",
-        },
-        {
-          name: "keywords",
-          content:
-            "vedações hidráulicas, gaxetas, raspadores, anéis o-ring, retentores, selos mecânicos, vimasi, lajeado, vale do taquari, rio grande do sul, rs, vedações industriais, manutenção hidráulica, vedações RS, cilindros hidráulicos",
-        },
-        { name: "author", content: "Vimasi Vedações" },
+        { name: "author", content: business.name },
         { name: "theme-color", content: "#050505" },
-        { name: "robots", content: "index, follow, max-image-preview:large" },
-        { name: "googlebot", content: "index, follow" },
-
-        // Open Graph / Facebook
-        { property: "og:type", content: "website" },
-        { property: "og:url", content: fullUrl },
-        { property: "og:site_name", content: "Vimasi Vedações" },
-        {
-          property: "og:title",
-          content: "Vimasi Vedações | Vedações Hidráulicas e Industriais",
-        },
-        {
-          property: "og:description",
-          content:
-            "Soluções completas em vedações hidráulicas de alta performance. Qualidade e durabilidade para sua indústria em Lajeado, Vale do Taquari e Rio Grande do Sul.",
-        },
-        { property: "og:image", content: `${fullUrl}/og-image.png` },
-        { property: "og:image:width", content: "1024" },
-        { property: "og:image:height", content: "1024" },
-        { property: "og:locale", content: "pt_BR" },
-
-        // Twitter Card
-        { name: "twitter:card", content: "summary_large_image" },
-        {
-          name: "twitter:title",
-          content: "Vimasi Vedações | Vedações Hidráulicas e Industriais",
-        },
-        {
-          name: "twitter:description",
-          content:
-            "Soluções completas em vedações hidráulicas de alta performance em Lajeado, Vale do Taquari e Rio Grande do Sul.",
-        },
-        { name: "twitter:image", content: `${fullUrl}/og-image.png` },
-
-        // Geo tags for local SEO
+        // Geo tags para SEO local
         { name: "geo.region", content: "BR-RS" },
         { name: "geo.placename", content: "Lajeado" },
-      ],
-      link: [
-        { rel: "icon", type: "image/png", href: `${basePath}favicon.png` },
-        { rel: "canonical", href: fullUrl },
-        { rel: "preconnect", href: "https://fonts.googleapis.com" },
         {
-          rel: "preconnect",
-          href: "https://fonts.gstatic.com",
-          crossorigin: "",
+          name: "geo.position",
+          content: `${business.geo.latitude};${business.geo.longitude}`,
         },
         {
-          rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@0,400..700;1,400..700&family=Staatliches&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap",
+          name: "ICBM",
+          content: `${business.geo.latitude}, ${business.geo.longitude}`,
         },
       ],
-      script: [
-        {
-          type: "application/ld+json",
-          innerHTML: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Vimasi Vedações",
-            "description": "Especialista em vedações hidráulicas e industriais em Lajeado, Vale do Taquari e todo Rio Grande do Sul. Gaxetas, raspadores, anéis O-ring e kits de vedação de alta performance.",
-            "url": "https://vimasi-vedacoes.com",
-            "logo": "https://vimasi-vedacoes.com/og-image.png",
-            "image": "https://vimasi-vedacoes.com/og-image.png",
-            "telephone": "+55-51-99619-4676",
-            "email": "vimasicomerciopecas@gmail.com",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Av. Cristiano Dexheimer, 83 - Campestre",
-              "addressLocality": "Lajeado",
-              "addressRegion": "RS",
-              "postalCode": "95912-192",
-              "addressCountry": "BR",
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": -29.4678,
-              "longitude": -51.9614,
-            },
-            "areaServed": {
-              "@type": "State",
-              "name": "Rio Grande do Sul",
-            },
-            "priceRange": "$$",
-            "openingHoursSpecification": {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-              "opens": "08:00",
-              "closes": "18:00",
-            },
-            "sameAs": [
-              "https://wa.me/555196194676",
-            ],
-          }),
-        },
-      ],
+      link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
     },
   },
 
   css: ["~/assets/css/main.css"],
-  compatibilityDate: "2024-11-01",
 
-  // Nitro configuration for static generation
+  // Identidade do site usada por sitemap, robots, canonical, og:url e schema.org.
+  // Convenção: barra final em todas as URLs (casa com /rota/index.html do GitHub Pages).
+  site: {
+    url: SITE_URL,
+    name: business.name,
+    description: business.description,
+    defaultLocale: "pt-BR",
+    trailingSlash: true,
+  },
+
+  experimental: {
+    defaults: {
+      nuxtLink: { trailingSlash: "append" },
+    },
+  },
+  compatibilityDate: "2026-10-01",
+
   nitro: {
     preset: "github-pages",
-    routeRules: {
-      '/_nuxt/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
-      '/assets/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
-    }
+    prerender: {
+      crawlLinks: true,
+      routes: ["/", "/sitemap.xml", "/robots.txt", "/llms.txt", "/llms-full.txt"],
+      failOnError: true,
+    },
   },
 
   vite: {
     plugins: [tailwindcss()],
   },
 
+  // Gera /llms.txt, /llms-full.txt e versões .md das páginas para motores de IA.
+  aiReady: {
+    llmsTxt: {
+      notes: [
+        "Vimasi Vedações (Lajeado, RS) é uma loja especializada em vedações hidráulicas e industriais: gaxetas, anéis O-ring, raspadores, anéis guia e kits de reparo para cilindros hidráulicos.",
+        `Endereço: ${business.addressLine}. Telefone/WhatsApp: ${business.phoneDisplay}. E-mail: ${business.email}. Horário: ${business.hours.display}.`,
+        `Área de atendimento: todo o Vale do Taquari (${business.cities.join(", ")}) e demais regiões do Rio Grande do Sul, com retirada em loja e envio por transportadora.`,
+        "Orçamentos são feitos pelo WhatsApp; não há preços publicados no site. Vedações sob medida mediante informação das dimensões do alojamento.",
+      ],
+    },
+    contentSignal: { search: true, aiInput: true, aiTrain: true },
+  },
+
   eslint: {
     config: {
-      stylistic: true // <---
-    }
+      stylistic: true,
+    },
+  },
+
+  // Fontes auto-hospedadas no build (substitui o <link> do Google Fonts).
+  fonts: {
+    families: [
+      { name: "Anton", provider: "google", weights: [400] },
+      {
+        name: "Arimo",
+        provider: "google",
+        weights: ["400 700"],
+        styles: ["normal", "italic"],
+      },
+    ],
   },
 
   image: {
-    format: ['webp', 'avif'],
+    format: ["webp", "avif"],
     quality: 85,
-    dir: 'assets/images',
+    dir: "assets/images",
   },
+
+  linkChecker: {
+    failOnError: true,
+    report: { html: true, markdown: true },
+  },
+
+  // Imagens OG são JPEGs estáticos 1200x630 em public/og/ (sem renderização no CI).
+  ogImage: { enabled: false },
+
+  robots: {
+    groups: [
+      { userAgent: ["*"], allow: ["/"] },
+      {
+        comment: ["Crawlers de IA permitidos: conteúdo citável por motores de resposta"],
+        userAgent: [
+          "GPTBot",
+          "OAI-SearchBot",
+          "ChatGPT-User",
+          "ClaudeBot",
+          "Claude-SearchBot",
+          "anthropic-ai",
+          "PerplexityBot",
+          "Perplexity-User",
+          "Google-Extended",
+          "Bingbot",
+          "Applebot",
+          "Amazonbot",
+          "CCBot",
+          "DuckAssistBot",
+        ],
+        allow: ["/"],
+      },
+    ],
+  },
+
+  // Entidade principal: aparece em todas as páginas como LocalBusiness + Organization.
+  schemaOrg: {
+    identity: {
+      type: "LocalBusiness",
+      name: business.name,
+      url: SITE_URL,
+      logo: `${SITE_URL}/og/logo-square.png`,
+      image: `${SITE_URL}/og/home.jpg`,
+      description: business.description,
+      telephone: business.phoneE164,
+      email: business.email,
+      priceRange: "$$",
+      currenciesAccepted: "BRL",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: `${business.address.streetAddress} - ${business.address.neighborhood}`,
+        addressLocality: business.address.addressLocality,
+        addressRegion: business.address.addressRegion,
+        postalCode: business.address.postalCode,
+        addressCountry: business.address.addressCountry,
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: business.geo.latitude,
+        longitude: business.geo.longitude,
+      },
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: [...business.hours.days],
+          opens: business.hours.opens,
+          closes: business.hours.closes,
+        },
+      ],
+      areaServed: business.cities.map((city) => ({
+        "@type": "City",
+        name: city,
+        containedInPlace: { "@type": "State", name: "Rio Grande do Sul" },
+      })),
+      knowsAbout: [...business.knowsAbout],
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Vedações hidráulicas e industriais",
+        itemListElement: catalog.map((item) => ({
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Product",
+            name: item.name,
+            description: item.short,
+            url: `${SITE_URL}${item.path}`,
+          },
+        })),
+      },
+      sameAs,
+    },
+  },
+
+  sitemap: {
+    xsl: false,
+    credits: false,
+    // Evita listar placeholders _ipx de 2px como imagens do sitemap
+    discoverImages: false,
+  },
+
+  // Site estático: sem proteção de skew de deploy.
+  skewProtection: false,
 });

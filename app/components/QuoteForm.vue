@@ -116,6 +116,8 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
+import { business } from "~/data/business";
+
 const form = ref({
   name: '',
   sealType: ''
@@ -127,6 +129,6 @@ const submitQuote = () => {
   if (form.value.sealType) text += `*Tipo de Vedação:* ${form.value.sealType}\n`;
 
   const encodedText = encodeURIComponent(text);
-  window.open(`https://wa.me/555196194676?text=${encodedText}`, '_blank');
+  window.open(`${business.whatsappUrl}?text=${encodedText}`, '_blank');
 };
 </script>
