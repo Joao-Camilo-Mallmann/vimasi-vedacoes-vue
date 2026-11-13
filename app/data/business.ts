@@ -24,7 +24,7 @@ export const business = {
   name: "Vimasi Vedações",
   url: SITE_URL,
   description:
-    "Loja especializada em vedações hidráulicas e industriais em Lajeado/RS: gaxetas, anéis O-ring, raspadores, anéis guia e kits de reparo para cilindros hidráulicos. Atende todo o Vale do Taquari e o Rio Grande do Sul.",
+    "Loja especializada em vedações hidráulicas e industriais em Lajeado/RS: gaxetas, anéis O-ring, raspadores, anéis guia e kits de reparo para cilindros hidráulicos. Atende todo o Vale do Taquari e envia para todo o Brasil.",
   phoneDisplay: "(51) 99619-4676",
   phoneE164: "+5551996194676",
   whatsappNumber: "555196194676",
@@ -169,4 +169,19 @@ export const siteRoutes = [
   { label: "Kits de Reparo", to: "/kits-reparo/" },
   { label: "Vale do Taquari", to: "/vedacoes-vale-do-taquari/" },
   { label: "Contato", to: "/contato/" },
+] as const;
+
+/** Passo a passo do atendimento (home e página regional). É uma sequência real: a ordem importa. */
+export const serviceSteps = [
+  { title: "Identificação", description: "Envie pelo WhatsApp a foto da vedação antiga, as medidas do alojamento ou o modelo da máquina. Se preferir, traga a peça à loja." },
+  { title: "Orçamento", description: "Respondemos com perfil, material, disponibilidade e prazo. Vedações de linha costumam ter pronta entrega." },
+  { title: "Retirada ou envio", description: "Retire em Lajeado ou receba por motoboy nas cidades próximas e por transportadora no restante do Vale do Taquari e em todo o Brasil." },
+] as const;
+
+/** Setores atendidos e as vedações que cada um mais consome. */
+export const sectors = [
+  { name: "Agroindústria e agricultura", equipment: "Tratores, colheitadeiras, plantadeiras, pulverizadores, carregadores e implementos.", seals: "gaxetas em poliuretano, raspadores de lábio duplo, kits de reparo por modelo de máquina." },
+  { name: "Metalmecânica", equipment: "Prensas hidráulicas, dobradeiras, injetoras, guilhotinas e máquinas de usinagem.", seals: "capped seal, gaxetas de alta pressão, anéis guia em PTFE, O-rings em Viton." },
+  { name: "Alimentos", equipment: "Prensas, lavadoras, atuadores e dosadores de frigoríficos, laticínios e agroindústrias.", seals: "O-rings em silicone e EPDM, gaxetas em PTFE, retentores em Viton." },
+  { name: "Transporte e construção", equipment: "Caminhões basculantes, guindautos, plataformas, empilhadeiras, escavadeiras e retroescavadeiras.", seals: "conjuntos OEOD, raspadores metálicos, gaxetas de haste, kits telescópicos." },
 ] as const;

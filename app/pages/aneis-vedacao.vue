@@ -198,7 +198,7 @@
     >
       <template #title>Encontre o <span class="text-accent-gold">Anel Ideal</span></template>
       Amplo estoque de O-rings em medidas milimétricas e em polegadas. Atendemos Lajeado,
-      Vale do Taquari e Rio Grande do Sul com pronta entrega.
+      todo o Vale do Taquari e enviamos para todo o Brasil.
     </CtaSection>
   </div>
 </template>
@@ -207,7 +207,7 @@
 import { business } from "~/data/business";
 
 const datePublished = "2025-12-08";
-const dateModified = "2026-10-29";
+const dateModified = "2026-11-13";
 
 const breadcrumb = [
   { label: "Produtos", to: "/vedacoes/" },

@@ -81,7 +81,7 @@ export default defineNuxtConfig({
       notes: [
         "Vimasi Vedações (Lajeado, RS) é uma loja especializada em vedações hidráulicas e industriais: gaxetas, anéis O-ring, raspadores, anéis guia e kits de reparo para cilindros hidráulicos.",
         `Endereço: ${business.addressLine}. Telefone/WhatsApp: ${business.phoneDisplay}. E-mail: ${business.email}. Horário: ${business.hours.display}.`,
-        `Área de atendimento: todo o Vale do Taquari (${business.cities.join(", ")}) e demais regiões do Rio Grande do Sul, com retirada em loja e envio por transportadora.`,
+        `Área de atendimento: todo o Vale do Taquari (${business.cities.join(", ")}) e todo o Brasil, com retirada em loja e envio por transportadora.`,
         "Orçamentos são feitos pelo WhatsApp; não há preços publicados no site. Vedações sob medida mediante informação das dimensões do alojamento.",
       ],
     },
@@ -181,11 +181,15 @@ export default defineNuxtConfig({
           closes: business.hours.closes,
         },
       ],
-      areaServed: business.cities.map((city) => ({
-        "@type": "City",
-        name: city,
-        containedInPlace: { "@type": "State", name: "Rio Grande do Sul" },
-      })),
+      areaServed: [
+        ...business.cities.map((city) => ({
+          "@type": "City",
+          name: city,
+          containedInPlace: { "@type": "State", name: "Rio Grande do Sul" },
+        })),
+        // Envio por transportadora para todo o país
+        { "@type": "Country", name: "Brasil" },
+      ],
       knowsAbout: [...business.knowsAbout],
       hasOfferCatalog: {
         "@type": "OfferCatalog",

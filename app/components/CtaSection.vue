@@ -11,7 +11,7 @@
       <p class="font-arimo mx-auto mb-10 max-w-2xl text-lg text-white/70">
         <slot>
           Entre em contato com nossa equipe técnica para um orçamento personalizado.
-          Atendemos Lajeado, Vale do Taquari e todo o Rio Grande do Sul.
+          Atendemos Lajeado, todo o Vale do Taquari e enviamos para todo o Brasil.
         </slot>
       </p>
 

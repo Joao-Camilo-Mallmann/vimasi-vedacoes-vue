@@ -36,11 +36,12 @@
       aria-label="Fale conosco no WhatsApp"
     >
       <!-- Pulse rings behind the button -->
-      <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#25D366] opacity-30"></span>
-      <span class="absolute inline-flex h-full w-full animate-pulse rounded-full bg-[#25D366] opacity-40" style="animation-duration: 2s;"></span>
+      <span class="absolute inline-flex h-full w-full motion-safe:animate-ping rounded-full bg-[#25D366] opacity-30"></span>
+      <span class="absolute inline-flex h-full w-full motion-safe:animate-pulse rounded-full bg-[#25D366] opacity-40" style="animation-duration: 2s;"></span>
 
       <!-- Icon -->
       <svg
+aria-hidden="true"
         class="relative z-10 h-8 w-8 transition-transform duration-300 group-hover:rotate-12"
         fill="currentColor"
         viewBox="0 0 24 24"
@@ -71,7 +72,9 @@ const showBubble = ref(false);
     transform: translateY(-8px);
   }
 }
-.animate-bounce-slow {
-  animation: bounce-slow 3s ease-in-out infinite;
+@media (prefers-reduced-motion: no-preference) {
+  .animate-bounce-slow {
+    animation: bounce-slow 3s ease-in-out infinite;
+  }
 }
 </style>

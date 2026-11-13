@@ -198,7 +198,7 @@
     >
       <template #title>Precisa de <span class="text-accent-red">Gaxetas</span>?</template>
       Entre em contato com nossa equipe técnica para um orçamento personalizado.
-      Atendemos Lajeado, Vale do Taquari e todo o Rio Grande do Sul.
+      Atendemos Lajeado, todo o Vale do Taquari e enviamos para todo o Brasil.
     </CtaSection>
   </div>
 </template>
@@ -207,7 +207,7 @@
 import { business } from "~/data/business";
 
 const datePublished = "2025-12-08";
-const dateModified = "2026-10-29";
+const dateModified = "2026-11-13";
 
 const breadcrumb = [
   { label: "Produtos", to: "/vedacoes/" },

@@ -42,14 +42,14 @@
               Atendemos todas as cidades do Vale do Taquari, com retirada na loja em Lajeado ou envio
               por transportadora e motoboy, conforme a distância:
             </p>
-            <ul class="grid grid-cols-2 gap-x-6 gap-y-2 sm:grid-cols-3">
+            <ul role="list" class="grid grid-cols-2 gap-x-6 gap-y-2 sm:grid-cols-3">
               <li v-for="city in business.cities" :key="city" class="flex items-center gap-2">
                 <span class="bg-accent-gold h-px w-3"></span>{{ city }}
               </li>
             </ul>
             <p>
-              Também enviamos para regiões vizinhas, como {{ business.nearbyRegions.join(", ") }}, e
-              para todo o Rio Grande do Sul.
+              Também enviamos para regiões vizinhas, como {{ business.nearbyRegions.join(", ") }}, para
+              todo o Rio Grande do Sul e para os demais estados do Brasil.
             </p>
           </div>
 
@@ -91,13 +91,7 @@
           <h2 class="font-anton mb-12 text-center text-4xl text-white uppercase italic md:text-5xl">
             Como funciona o <span class="text-accent-gold">atendimento</span>
           </h2>
-          <ol class="grid grid-cols-1 gap-6 md:grid-cols-3">
-            <li v-for="(step, index) in steps" :key="step.title" class="glass rounded-2xl p-8">
-              <span class="font-anton text-accent-red mb-4 block text-5xl italic">0{{ index + 1 }}</span>
-              <h3 class="font-anton mb-3 text-xl text-white uppercase italic">{{ step.title }}</h3>
-              <p class="font-arimo text-white/70">{{ step.description }}</p>
-            </li>
-          </ol>
+          <ServiceSteps />
         </div>
       </div>
     </section>
@@ -157,9 +151,9 @@
 </template>
 
 <script setup lang="ts">
-import { business, catalog } from "~/data/business";
+import { business, catalog, sectors } from "~/data/business";
 
-const dateModified = "2026-10-29";
+const dateModified = "2026-11-13";
 const featured = catalog.filter((item) => item.hasPage);
 
 const hubs = [
@@ -169,23 +163,10 @@ const hubs = [
   { name: "Taquari, Bom Retiro do Sul e Cruzeiro do Sul", description: "Agricultura, extração e logística no eixo da BR-386; basculantes, retroescavadeiras e colheitadeiras." },
 ];
 
-const sectors = [
-  { name: "Agroindústria e agricultura", equipment: "Tratores, colheitadeiras, plantadeiras, pulverizadores, carregadores e implementos.", seals: "gaxetas em poliuretano, raspadores de lábio duplo, kits de reparo por modelo de máquina." },
-  { name: "Metalmecânica", equipment: "Prensas hidráulicas, dobradeiras, injetoras, guilhotinas e máquinas de usinagem.", seals: "capped seal, gaxetas de alta pressão, anéis guia em PTFE, O-rings em Viton." },
-  { name: "Alimentos", equipment: "Prensas, lavadoras, atuadores e dosadores de frigoríficos, laticínios e agroindústrias.", seals: "O-rings em silicone e EPDM, gaxetas em PTFE, retentores em Viton." },
-  { name: "Transporte e construção", equipment: "Caminhões basculantes, guindautos, plataformas, empilhadeiras, escavadeiras e retroescavadeiras.", seals: "conjuntos OEOD, raspadores metálicos, gaxetas de haste, kits telescópicos." },
-];
-
-const steps = [
-  { title: "Identificação", description: "Envie pelo WhatsApp a foto da vedação antiga, as medidas do alojamento ou o modelo da máquina. Se preferir, traga a peça à loja." },
-  { title: "Orçamento", description: "Respondemos com perfil, material, disponibilidade e prazo. Vedações de linha costumam ter pronta entrega." },
-  { title: "Retirada ou envio", description: "Retire em Lajeado ou receba por motoboy nas cidades próximas e por transportadora no restante do Vale do Taquari e do RS." },
-];
-
 const faqs = [
   { question: "Vocês entregam em Estrela, Encantado e Teutônia?", answer: "Sim. Para Estrela, Cruzeiro do Sul e Arroio do Meio normalmente usamos motoboy; para Encantado, Teutônia e as demais cidades do Vale do Taquari enviamos por transportadora, com prazo informado no orçamento." },
   { question: "Posso levar a vedação antiga para identificar?", answer: "Sim, é a forma mais segura. Na loja em Lajeado medimos a peça antiga ou o próprio cilindro e indicamos o perfil e o material corretos." },
-  { question: "Atendem fora do Vale do Taquari?", answer: "Sim. Enviamos por transportadora para o Vale do Rio Pardo, a Serra Gaúcha, a Região Metropolitana de Porto Alegre e todo o Rio Grande do Sul." },
+  { question: "Atendem fora do Vale do Taquari?", answer: "Sim. Enviamos por transportadora para o Vale do Rio Pardo, a Serra Gaúcha, a Região Metropolitana de Porto Alegre, todo o Rio Grande do Sul e os demais estados do Brasil." },
   { question: "Qual o horário de atendimento da loja?", answer: `${business.hours.display}, na ${business.addressLine}. Fora do horário, mensagens no WhatsApp ${business.phoneDisplay} são respondidas no próximo dia útil.` },
 ];
 

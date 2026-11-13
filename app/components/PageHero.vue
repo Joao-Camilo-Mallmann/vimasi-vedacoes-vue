@@ -5,7 +5,7 @@
         :src="image"
         :alt="imageAlt"
         fetchpriority="high"
-        sizes="100vw"
+        sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw"
         width="1600"
         height="900"
         class="h-full w-full object-cover"

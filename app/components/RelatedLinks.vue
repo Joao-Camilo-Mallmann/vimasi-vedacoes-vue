@@ -5,7 +5,7 @@
         <h2 class="font-anton mb-6 text-sm tracking-widest text-white/40 uppercase">
           Ver também
         </h2>
-        <ul class="font-arimo grid grid-cols-1 gap-3 sm:grid-cols-2">
+        <ul role="list" class="font-arimo grid grid-cols-1 gap-3 sm:grid-cols-2">
           <li v-for="link in links" :key="link.to">
             <NuxtLink
               :to="link.to"
